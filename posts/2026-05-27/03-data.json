@@ -1,0 +1,14 @@
+{
+  "type": "review",
+  "headerLabel": "HERRAMIENTA / REVIEW",
+  "verdict": "RECOMENDADA",
+  "verdictWarn": false,
+  "category": "Seguridad · Claude Code",
+  "name": "Security Guidance",
+  "score": 4,
+  "scoreLabel": "4.0",
+  "summary": "Detecta **25 patrones peligrosos** en tiempo real: command injection, XSS y deserialización insegura. 3 niveles de chequeo: edición de archivos, turn del modelo y commit.",
+  "tags": ["Gratis", "Oficial Anthropic", "Plugin Marketplace", "Beta"],
+  "footerTag": "#ClaudeCode",
+  "cta": "INSTALAR /PLUGINS"
+}

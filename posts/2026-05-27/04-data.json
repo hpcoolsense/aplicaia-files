@@ -1,0 +1,24 @@
+{
+  "type": "compare",
+  "headerLabel": "ANTES / DESPUÉS",
+  "eyebrow": "Seguridad mientras codificás · Claude Code",
+  "titleLine1": "Sin guardia",
+  "titleLine2Pre": "a",
+  "titleLine2Accent": "3 capas reales.",
+  "before": {
+    "label": "Sin plugin",
+    "metric": "0",
+    "unit": "capas",
+    "headline": "Sin chequeo de seguridad mientras escribís código.",
+    "desc": "Issues pasan al PR review. Detectados tarde, costoso de corregir."
+  },
+  "after": {
+    "label": "Con plugin",
+    "metric": "3",
+    "unit": "capas",
+    "headline": "Revisión en edición, turn del modelo y commit.",
+    "desc": "30–40% menos security comments en PRs. Medido por Anthropic."
+  },
+  "footerTag": "SECURITY GUIDANCE",
+  "cta": "VER DIFF"
+}

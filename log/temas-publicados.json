@@ -1,0 +1,26 @@
+[
+  {
+    "fecha": "2026-05-27",
+    "tema": "El plugin de seguridad de Claude Code que explotó esta semana en X",
+    "feature_principal": "claude-code",
+    "angulo": "anuncio-oficial",
+    "slides": 5,
+    "tendencia_origen": "Anthropic Splits Claude Limits / Claude Code Security Plugin launch",
+    "tweet_ancla": {
+      "url": "https://x.com/ClaudeDevs/status/2059385239781384341",
+      "autor": "@ClaudeDevs",
+      "fecha_original": "2026-05-26",
+      "horas_antiguedad": 24,
+      "likes": 1500,
+      "retweets": 14000,
+      "replies": 320
+    },
+    "tweets_referencia": [
+      "https://x.com/oikon48/status/2059388946501771577",
+      "https://x.com/frxiaobei/status/2059444190808039451",
+      "https://x.com/The_Cyber_News/status/2059474737001316838"
+    ],
+    "post_id": null,
+    "instagram_url": null
+  }
+]

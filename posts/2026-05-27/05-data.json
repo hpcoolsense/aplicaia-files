@@ -1,0 +1,26 @@
+{
+  "type": "tips",
+  "headerLabel": "TIPS · CLAUDE CODE",
+  "eyebrow": "Cómo usar Security Guidance",
+  "titleLine1": "4 pasos para",
+  "titleLine2": "activarlo hoy.",
+  "items": [
+    {
+      "title": "Instalá con /plugins",
+      "desc": "Escribí /plugins en Claude Code, buscá Security Guidance e instalalo en segundos."
+    },
+    {
+      "title": "Configurá tu threat model",
+      "desc": "Creá .claude/claude-security-guidance.md con reglas propias de tu proyecto."
+    },
+    {
+      "title": "Tratalo como asistente, no garantía",
+      "desc": "El plugin sugiere, no certifica. Complementá con SAST y code review humano."
+    },
+    {
+      "title": "Revisá el diff antes del commit",
+      "desc": "El plugin también chequea en el commit — última línea de defensa."
+    }
+  ],
+  "cta": "GUARDÁ ESTE POST"
+}
