@@ -1,0 +1,24 @@
+{
+  "type": "compare",
+  "headerLabel": "ANTES VS AHORA",
+  "eyebrow": "Claude Code · workflows",
+  "titleLine1": "De un agente",
+  "titleLine2Pre": "a una",
+  "titleLine2Accent": "flota.",
+  "before": {
+    "label": "Antes",
+    "metric": "1",
+    "unit": "agente",
+    "headline": "Un agente solo, paso a paso.",
+    "desc": "Tareas secuenciales. Limitadas por el contexto de una sola sesión."
+  },
+  "after": {
+    "label": "Ahora",
+    "metric": "1000",
+    "unit": "subagentes",
+    "headline": "Flota paralela con verificación automática.",
+    "desc": "Claude planea, ejecuta en paralelo y chequea resultados antes de responder."
+  },
+  "footerTag": "DYNAMIC WORKFLOWS",
+  "cta": "ACTIVAR HOY"
+}

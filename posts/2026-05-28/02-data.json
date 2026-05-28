@@ -1,0 +1,10 @@
+{
+  "type": "stat",
+  "headerLabel": "CÓMO FUNCIONA",
+  "eyebrow": "Claude Code · Dynamic Workflows",
+  "number": "3",
+  "unit": "pasos automáticos",
+  "description": "Claude **escribe el script de orquestación**, lanza los subagentes en paralelo y verifica los resultados antes de devolverte la respuesta. Vos solo escribís el objetivo.",
+  "source": "Anthropic, 28 mayo 2026",
+  "cta": "VER MÁS"
+}

@@ -1,0 +1,22 @@
+{
+  "type": "tips",
+  "headerLabel": "TIPS · CLAUDE CODE",
+  "eyebrow": "Dynamic Workflows en la práctica",
+  "titleLine1": "3 formas de",
+  "titleLine2": "empezar hoy",
+  "items": [
+    {
+      "title": "Escribí 'workflow' en tu prompt",
+      "desc": "Con Opus 4.8 activado, esa palabra dispara la orquestación automática de subagentes."
+    },
+    {
+      "title": "Usá /ultracode para máxima potencia",
+      "desc": "Combiná Opus 4.8 con esfuerzo máximo y Claude arma el plan de subagentes solo."
+    },
+    {
+      "title": "Disponible en todos los planes pagos",
+      "desc": "Pro, Max, Team y Enterprise en research preview. Max y Team lo tienen por defecto."
+    }
+  ],
+  "cta": "GUARDÁ ESTE POST"
+}

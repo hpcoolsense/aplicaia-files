@@ -142,5 +142,29 @@
     ],
     "post_id": "6a1852638336ac7ede1e824a",
     "instagram_url": null
+  },
+  {
+    "fecha": "2026-05-28",
+    "tema": "Claude Code Dynamic Workflows: cómo lanzar cientos de subagentes con una sola instrucción",
+    "feature_principal": "claude-code",
+    "angulo": "novedad-version",
+    "slides": 5,
+    "tendencia_origen": "Claude Opus 4.8 + Dynamic Workflows launch",
+    "tweet_ancla": {
+      "url": "https://x.com/claudeai/status/2060042702150930686",
+      "autor": "@claudeai",
+      "fecha_original": "2026-05-28",
+      "horas_antiguedad": 2,
+      "likes": 42400,
+      "retweets": null,
+      "replies": null
+    },
+    "tweets_referencia": [
+      "https://x.com/minchoi/status/2060045211045073082",
+      "https://x.com/rohanpaul_ai/status/2060053696093077752",
+      "https://x.com/daniel_mac8/status/2060096270430027814"
+    ],
+    "post_id": null,
+    "instagram_url": null
   }
 ]

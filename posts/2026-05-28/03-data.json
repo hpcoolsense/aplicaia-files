@@ -1,0 +1,10 @@
+{
+  "type": "stat",
+  "headerLabel": "BENCHMARK",
+  "eyebrow": "Coding agentico de terminal · Opus 4.8",
+  "number": "74.6",
+  "unit": "%",
+  "description": "El salto más grande entre versiones de Opus: **+8.5 puntos** sobre el 66.1% de Opus 4.7. El modelo trabaja solo por más tiempo, detecta sus propios errores y sostiene tareas largas sin perder contexto.",
+  "source": "Anthropic benchmark interno, mayo 2026",
+  "cta": "VER BENCHMARKS"
+}
