@@ -1,5 +1,125 @@
 [
   {
+    "fecha": "2026-05-25",
+    "tema": "ChatGPT cambió su motor por defecto el 5 de mayo",
+    "feature_principal": "comparativa-modelo",
+    "angulo": "novedad-version",
+    "slides": null,
+    "tendencia_origen": "ChatGPT default model change",
+    "tweet_ancla": {
+      "url": null,
+      "autor": null,
+      "fecha_original": null,
+      "horas_antiguedad": null,
+      "likes": null,
+      "retweets": null,
+      "replies": null
+    },
+    "tweets_referencia": [],
+    "post_id": "6a14d69550e6f91fb3aeded2",
+    "instagram_url": null
+  },
+  {
+    "fecha": "2026-05-26",
+    "tema": "Gemini Flash superó al Pro en Google I/O 2026",
+    "feature_principal": "comparativa-modelo",
+    "angulo": "benchmark",
+    "slides": null,
+    "tendencia_origen": "Google I/O 2026 Gemini Flash",
+    "tweet_ancla": {
+      "url": null,
+      "autor": null,
+      "fecha_original": null,
+      "horas_antiguedad": null,
+      "likes": null,
+      "retweets": null,
+      "replies": null
+    },
+    "tweets_referencia": [],
+    "post_id": "6a158f254be9e85895bd6486",
+    "instagram_url": null
+  },
+  {
+    "fecha": "2026-05-26",
+    "tema": "El modelo de IA que Anthropic no quería publicar está llegando a Claude Code",
+    "feature_principal": "otro",
+    "angulo": "novedad-version",
+    "slides": null,
+    "tendencia_origen": "Claude Mythos en Claude Code",
+    "tweet_ancla": {
+      "url": null,
+      "autor": null,
+      "fecha_original": null,
+      "horas_antiguedad": null,
+      "likes": null,
+      "retweets": null,
+      "replies": null
+    },
+    "tweets_referencia": [],
+    "post_id": "6a15a93e2f81bb7329909951",
+    "instagram_url": null
+  },
+  {
+    "fecha": "2026-05-26",
+    "tema": "El modelo de IA que Anthropic se negó a lanzar apareció brevemente en Claude Code",
+    "feature_principal": "otro",
+    "angulo": "novedad-version",
+    "slides": null,
+    "tendencia_origen": "Claude Mythos en Claude Code",
+    "tweet_ancla": {
+      "url": null,
+      "autor": null,
+      "fecha_original": null,
+      "horas_antiguedad": null,
+      "likes": null,
+      "retweets": null,
+      "replies": null
+    },
+    "tweets_referencia": [],
+    "post_id": "6a162c468aca731b067ac0d3",
+    "instagram_url": null
+  },
+  {
+    "fecha": "2026-05-27",
+    "tema": "La IA que Anthropic prometió no liberar apareció en Claude Code y desapareció en minutos",
+    "feature_principal": "otro",
+    "angulo": "novedad-version",
+    "slides": null,
+    "tendencia_origen": "Claude Mythos en Claude Code",
+    "tweet_ancla": {
+      "url": null,
+      "autor": null,
+      "fecha_original": null,
+      "horas_antiguedad": null,
+      "likes": null,
+      "retweets": null,
+      "replies": null
+    },
+    "tweets_referencia": [],
+    "post_id": "6a163bd2bd73539cbb8341d9",
+    "instagram_url": null
+  },
+  {
+    "fecha": "2026-05-27",
+    "tema": "El plugin de seguridad que todos están instalando esta semana en Claude Code",
+    "feature_principal": "claude-code",
+    "angulo": "anuncio-oficial",
+    "slides": null,
+    "tendencia_origen": "Claude Code Security Guidance plugin",
+    "tweet_ancla": {
+      "url": null,
+      "autor": null,
+      "fecha_original": null,
+      "horas_antiguedad": null,
+      "likes": null,
+      "retweets": null,
+      "replies": null
+    },
+    "tweets_referencia": [],
+    "post_id": "6a16f565cfaeec883a2a32d2",
+    "instagram_url": null
+  },
+  {
     "fecha": "2026-05-27",
     "tema": "El plugin de seguridad de Claude Code que explotó esta semana en X",
     "feature_principal": "claude-code",
