@@ -1,0 +1,10 @@
+{
+  "type": "stat",
+  "headerLabel": "EL NÚMERO",
+  "eyebrow": "Bun Runtime · Claude Code",
+  "number": "750K",
+  "unit": "líneas",
+  "description": "de Zig portadas a Rust por Jarred Sumner en solo **6 días**. 2.188 archivos. 6.755 commits. 99.8% del test suite original pasando al merge.",
+  "source": "@jarredsumner, 28 mayo 2026",
+  "cta": "VER MÁS"
+}

@@ -1,0 +1,24 @@
+{
+  "type": "compare",
+  "headerLabel": "RESULTADO REAL",
+  "eyebrow": "Caso · Bun runtime migration",
+  "titleLine1": "De meses",
+  "titleLine2Pre": "a solo",
+  "titleLine2Accent": "6 días.",
+  "before": {
+    "label": "Manual",
+    "metric": "6-12",
+    "unit": "meses",
+    "headline": "Rewrite manual de 750K líneas Zig → Rust.",
+    "desc": "Equipo completo, revisiones exhaustivas, bugs de regresión imposibles de evitar."
+  },
+  "after": {
+    "label": "Dynamic Workflows",
+    "metric": "6",
+    "unit": "días",
+    "headline": "Cientos de agentes en paralelo, 2 revisores por archivo.",
+    "desc": "99.8% del test suite pasando. Merge a main completado."
+  },
+  "footerTag": "BUN + CLAUDE CODE",
+  "cta": "VER CASO"
+}

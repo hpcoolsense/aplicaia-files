@@ -1,0 +1,12 @@
+{
+  "type": "announce",
+  "pillIcon": "🦀",
+  "pillLabel": "Caso de Uso",
+  "date": "29 · MAY · 2026",
+  "kicker": "Claude Code en acción",
+  "titleLine1": "750.000 líneas",
+  "titleLine2Pre": "reescritas en",
+  "titleLine2Accent": "6 días.",
+  "lead": "El creador de **Bun** portó su runtime completo de Zig a Rust usando Claude Code y Dynamic Workflows. 99.8% del test suite pasando. Sin intervención manual masiva.",
+  "cta": "Seguí las slides →"
+}

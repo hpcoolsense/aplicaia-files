@@ -1,0 +1,14 @@
+{
+  "type": "review",
+  "headerLabel": "HERRAMIENTAS / REVIEW",
+  "verdict": "RECOMENDADA",
+  "verdictWarn": false,
+  "category": "Claude Code · Orquestación",
+  "name": "Dynamic Workflows",
+  "score": 5,
+  "scoreLabel": "5.0",
+  "summary": "Claude escribe un **script de orquestación en JavaScript**, lanza cientos de subagentes en paralelo y verifica el resultado antes de terminar. Cada archivo del rewrite de Bun tuvo dos agentes revisores.",
+  "tags": ["Claude Code", "Research Preview", "Max · Team · Enterprise", "Multi-agente"],
+  "footerTag": "#DynamicWorkflows",
+  "cta": "MÁS INFO"
+}

@@ -166,5 +166,28 @@
     ],
     "post_id": "6a19b216d97b575c1213a69f",
     "instagram_url": null
+  },
+  {
+    "fecha": "2026-05-29",
+    "tema": "Así reescribió el creador de Bun su runtime en Rust en 6 días con Claude Code",
+    "feature_principal": "claude-code",
+    "angulo": "caso-de-uso",
+    "slides": 5,
+    "tendencia_origen": "Bun Zig→Rust rewrite con Dynamic Workflows",
+    "tweet_ancla": {
+      "url": "https://x.com/jarredsumner/status/2060050578026189172",
+      "autor": "@jarredsumner",
+      "fecha_original": "2026-05-28",
+      "horas_antiguedad": 18,
+      "likes": null,
+      "retweets": null,
+      "replies": null
+    },
+    "tweets_referencia": [
+      "https://x.com/_catwu/status/2060051282698682576",
+      "https://x.com/blackanger/status/2059750545594941489"
+    ],
+    "post_id": null,
+    "instagram_url": null
   }
 ]

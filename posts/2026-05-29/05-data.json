@@ -1,0 +1,26 @@
+{
+  "type": "tips",
+  "headerLabel": "TIPS · IA APLICADA",
+  "eyebrow": "Qué aprendemos del caso Bun",
+  "titleLine1": "4 señales de que",
+  "titleLine2": "tu proyecto es migratable",
+  "items": [
+    {
+      "title": "Tenés tests que cubren el 80%+",
+      "desc": "Sin test suite robusta, el agente no puede verificar que el código portado se comporta igual."
+    },
+    {
+      "title": "La tarea es repetitiva y volumétrica",
+      "desc": "Migrar un patrón miles de veces es ideal para agentes paralelos. Lógica única y compleja no tanto."
+    },
+    {
+      "title": "El código origen está estructurado",
+      "desc": "Dynamic Workflows trabaja archivo por archivo. Código espagueti complica la orquestación."
+    },
+    {
+      "title": "Usás Claude Code Max, Team o Enterprise",
+      "desc": "Dynamic Workflows está en research preview solo para planes pagos de Claude Code."
+    }
+  ],
+  "cta": "GUARDÁ ESTE POST"
+}
