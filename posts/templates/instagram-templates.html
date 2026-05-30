@@ -1,0 +1,889 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<title>AplicaIA · Instagram Template Renderer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" />
+<style>
+  /* =====================================================================
+     SISTEMA VISUAL APLICAIA — extraído pixel-perfect de Instagram Templates.html
+     Fuente: Claude Design handoff (VmDOC3fwyUpmO8i24bzg5g)
+     No tocar tokens, sombras, gradientes ni tipografía sin re-validar.
+     ===================================================================== */
+  :root{
+    --bg:#000;
+    --surface:#0A0A0B;
+    --elev:#131316;
+    --ink:#F5F5F7;
+    --dim:#A1A1AA;
+    --mute:#71717A;
+    --yellow:#FACC15;
+    --border:rgba(255,255,255,0.08);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{
+    background:#000;
+    color:var(--ink);
+    font-family:"Inter",system-ui,sans-serif;
+    min-height:100vh;
+  }
+  /* RENDER MODE: canvas a tamaño real, sin scroll, sin padding */
+  body{
+    margin:0;
+    padding:0;
+    display:flex;
+    align-items:flex-start;
+    justify-content:flex-start;
+  }
+
+  /* ---- Shared canvas chrome ---- */
+  .canvas{
+    width:1080px;
+    height:1080px;
+    position:relative;
+    overflow:hidden;
+    background:#000;
+    color:var(--ink);
+    isolation:isolate;
+  }
+
+  /* grain (overlay textura) */
+  .canvas::after{
+    content:"";
+    position:absolute;inset:0;
+    background-image:radial-gradient(rgba(255,255,255,0.04) 1px, transparent 1px);
+    background-size:3px 3px;
+    mix-blend-mode:overlay;
+    pointer-events:none;
+    z-index:50;
+  }
+
+  /* utility */
+  .mono{
+    font-family:"JetBrains Mono",ui-monospace,monospace;
+    text-transform:uppercase;
+    letter-spacing:0.24em;
+  }
+  .wordmark{
+    font-family:"Inter",system-ui,sans-serif;
+    font-weight:900;
+    letter-spacing:-0.05em;
+    line-height:0.9;
+    display:inline-flex;
+    align-items:baseline;
+    gap:0.02em;
+    white-space:nowrap;
+  }
+  .wordmark .a{color:var(--yellow)}
+  .wordmark .ia{color:var(--ink)}
+
+  /* Header (shared) */
+  .ig-header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    color:rgba(255,255,255,0.5);
+    font-family:"JetBrains Mono",monospace;
+    font-size:18px;
+    letter-spacing:0.24em;
+    text-transform:uppercase;
+  }
+  .ig-header .dot{
+    display:inline-block;
+    width:10px;height:10px;border-radius:50%;
+    background:var(--yellow);
+    margin-right:14px;
+    box-shadow:0 0 18px rgba(250,204,21,0.7);
+  }
+
+  /* Footer (shared) */
+  .ig-footer{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    color:rgba(255,255,255,0.45);
+    font-family:"JetBrains Mono",monospace;
+    font-size:18px;
+    letter-spacing:0.24em;
+    text-transform:uppercase;
+  }
+  .ig-footer .swipe{
+    display:inline-flex;
+    align-items:center;
+    gap:12px;
+    color:var(--yellow);
+  }
+  .ig-footer .swipe svg{ width:18px;height:18px; }
+
+  /* ============================================================ */
+  /* 1) STAT CARD                                                 */
+  /* ============================================================ */
+  .stat .inner{
+    position:absolute;inset:0;
+    display:flex;flex-direction:column;justify-content:space-between;
+    padding:80px;
+    background:
+      radial-gradient(120% 60% at 80% -10%, rgba(250,204,21,0.12), transparent 55%),
+      #000;
+  }
+  .stat .eyebrow{
+    color:var(--yellow);
+    font-family:"JetBrains Mono",monospace;
+    font-size:24px;
+    letter-spacing:0.32em;
+    text-transform:uppercase;
+    font-weight:600;
+  }
+  .stat .number{
+    font-family:"Inter",sans-serif;
+    font-weight:900;
+    letter-spacing:-0.06em;
+    line-height:0.85;
+    font-size:380px;
+    color:var(--yellow);
+    margin-top:-30px;
+    margin-left:-12px;
+    text-shadow:0 0 80px rgba(250,204,21,0.25);
+  }
+  .stat .number .unit{
+    font-size:160px;
+    color:var(--ink);
+    margin-left:-10px;
+    letter-spacing:-0.03em;
+  }
+  .stat .description{
+    font-size:42px;
+    font-weight:500;
+    line-height:1.2;
+    color:var(--ink);
+    max-width:880px;
+    letter-spacing:-0.01em;
+    text-wrap:balance;
+  }
+  .stat .description strong{ font-weight:700; color:var(--yellow); }
+  .stat .source{
+    color:#71717A;
+    font-family:"JetBrains Mono",monospace;
+    font-size:18px;
+    letter-spacing:0.2em;
+    text-transform:uppercase;
+    margin-top:24px;
+  }
+  .stat .accent-line{
+    position:absolute;
+    left:0;top:300px;bottom:200px;width:6px;
+    background:linear-gradient(180deg, var(--yellow) 0%, transparent 100%);
+    opacity:0.7;
+  }
+
+  /* ============================================================ */
+  /* 2) TOOL REVIEW                                               */
+  /* ============================================================ */
+  .review .inner{
+    position:absolute;inset:0;
+    display:flex;flex-direction:column;justify-content:space-between;
+    padding:80px;
+    background:
+      radial-gradient(80% 50% at 50% -5%, rgba(250,204,21,0.10), transparent 55%),
+      radial-gradient(60% 40% at 100% 100%, rgba(250,204,21,0.06), transparent 60%),
+      #000;
+  }
+  .review .top-row{
+    display:flex;align-items:center;justify-content:space-between;gap:24px;
+  }
+  .review .verdict-pill{
+    display:inline-flex;align-items:center;gap:10px;
+    background:rgba(250,204,21,0.12);
+    border:1px solid rgba(250,204,21,0.35);
+    color:var(--yellow);
+    padding:14px 24px;
+    border-radius:999px;
+    font-family:"JetBrains Mono",monospace;
+    font-size:18px;
+    letter-spacing:0.28em;
+    text-transform:uppercase;
+    font-weight:600;
+  }
+  .review .verdict-pill.warn{
+    background:rgba(255,255,255,0.05);
+    border-color:rgba(255,255,255,0.15);
+    color:rgba(255,255,255,0.7);
+  }
+  .review .verdict-pill .check{
+    width:18px;height:18px;display:grid;place-items:center;
+  }
+  .review .tool-block{
+    display:flex;
+    flex-direction:column;
+    gap:24px;
+  }
+  .review .category{
+    color:var(--yellow);
+    font-family:"JetBrains Mono",monospace;
+    font-size:20px;
+    letter-spacing:0.32em;
+    text-transform:uppercase;
+    font-weight:600;
+  }
+  .review .tool-name{
+    font-family:"Inter",sans-serif;
+    font-weight:900;
+    letter-spacing:-0.05em;
+    font-size:160px;
+    line-height:0.92;
+    color:var(--ink);
+  }
+  .review .rating-row{
+    display:flex;
+    align-items:center;
+    gap:20px;
+  }
+  .review .stars{
+    display:inline-flex;gap:6px;
+  }
+  .review .star{
+    width:42px;height:42px;
+    color:var(--yellow);
+  }
+  .review .star.off{ color:rgba(255,255,255,0.15); }
+  .review .score{
+    font-family:"Inter",sans-serif;
+    font-weight:800;
+    font-size:38px;
+    color:var(--ink);
+    letter-spacing:-0.02em;
+  }
+  .review .score .total{
+    color:#71717A;
+    font-weight:600;
+  }
+  .review .summary{
+    font-size:34px;
+    line-height:1.35;
+    color:var(--dim);
+    max-width:920px;
+    font-weight:500;
+    letter-spacing:-0.005em;
+  }
+  .review .summary strong{ color:var(--ink); font-weight:700;}
+  .review .meta-row{
+    display:flex;
+    gap:16px;
+    flex-wrap:wrap;
+  }
+  .review .tag{
+    padding:10px 18px;
+    border:1px solid rgba(255,255,255,0.12);
+    border-radius:999px;
+    font-family:"JetBrains Mono",monospace;
+    font-size:14px;
+    letter-spacing:0.2em;
+    text-transform:uppercase;
+    color:rgba(255,255,255,0.6);
+  }
+
+  /* ============================================================ */
+  /* 3) TIP LIST                                                  */
+  /* ============================================================ */
+  .tips .inner{
+    position:absolute;inset:0;
+    display:flex;flex-direction:column;
+    padding:80px;
+    background:
+      radial-gradient(70% 40% at 100% 0%, rgba(250,204,21,0.10), transparent 60%),
+      #000;
+  }
+  .tips .heading{
+    display:flex;flex-direction:column;gap:14px;
+    margin-bottom:28px;
+  }
+  .tips .eyebrow{
+    color:var(--yellow);
+    font-family:"JetBrains Mono",monospace;
+    font-size:22px;
+    letter-spacing:0.32em;
+    text-transform:uppercase;
+    font-weight:600;
+  }
+  .tips h2{
+    font-family:"Inter",sans-serif;
+    font-weight:900;
+    letter-spacing:-0.045em;
+    line-height:0.92;
+    font-size:84px;
+    color:var(--ink);
+    text-wrap:balance;
+  }
+  .tips h2 .accent{ color:var(--yellow); }
+  .tips .list{
+    display:flex;flex-direction:column;
+    gap:0;
+    flex:1;
+  }
+  .tips .item{
+    display:grid;
+    grid-template-columns:96px 1fr;
+    gap:28px;
+    padding:20px 0;
+    border-top:1px solid rgba(255,255,255,0.08);
+    align-items:start;
+  }
+  .tips .item:last-child{ border-bottom:1px solid rgba(255,255,255,0.08); }
+  .tips .item .num{
+    font-family:"Inter",sans-serif;
+    font-weight:900;
+    font-size:64px;
+    line-height:1;
+    color:var(--yellow);
+    letter-spacing:-0.04em;
+    font-variant-numeric:tabular-nums;
+  }
+  .tips .item .body .title{
+    font-family:"Inter",sans-serif;
+    font-weight:800;
+    font-size:32px;
+    line-height:1.18;
+    color:var(--ink);
+    letter-spacing:-0.02em;
+    margin-bottom:6px;
+  }
+  .tips .item .body .desc{
+    font-size:20px;
+    line-height:1.4;
+    color:var(--dim);
+    font-weight:500;
+  }
+  .tips .footer-cta{
+    margin-top:auto;
+    padding-top:24px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    color:rgba(255,255,255,0.45);
+    font-family:"JetBrains Mono",monospace;
+    font-size:16px;
+    letter-spacing:0.24em;
+    text-transform:uppercase;
+  }
+  .tips .footer-cta .arrow{
+    display:inline-flex;align-items:center;gap:10px;color:var(--yellow);
+  }
+  .tips .footer-cta .arrow svg{width:18px;height:18px;}
+
+  /* ============================================================ */
+  /* 4) QUOTE / TESTIMONIO                                        */
+  /* ============================================================ */
+  .quote .inner{
+    position:absolute;inset:0;
+    display:flex;flex-direction:column;justify-content:space-between;
+    padding:80px;
+    background:
+      radial-gradient(70% 50% at 10% 0%, rgba(250,204,21,0.10), transparent 60%),
+      radial-gradient(60% 40% at 100% 100%, rgba(250,204,21,0.06), transparent 60%),
+      #000;
+  }
+  .quote .big-mark{
+    font-family:"Inter",sans-serif;
+    font-weight:900;
+    font-size:240px;
+    line-height:0.85;
+    color:var(--yellow);
+    letter-spacing:-0.05em;
+    opacity:0.85;
+    margin-bottom:-30px;
+    text-shadow:0 0 80px rgba(250,204,21,0.25);
+  }
+  .quote .quote-text{
+    font-family:"Inter",sans-serif;
+    font-weight:700;
+    font-size:60px;
+    line-height:1.18;
+    color:var(--ink);
+    letter-spacing:-0.025em;
+    text-wrap:balance;
+    max-width:920px;
+  }
+  .quote .attribution{
+    display:flex;align-items:center;gap:24px;
+    margin-top:auto;
+    padding-top:20px;
+  }
+  .quote .avatar{
+    width:84px;height:84px;
+    border-radius:50%;
+    background:linear-gradient(135deg, #FACC15 0%, #d97706 100%);
+    display:grid;place-items:center;
+    font-family:"Inter",sans-serif;
+    font-weight:900;
+    font-size:34px;
+    color:#000;
+    letter-spacing:-0.04em;
+    flex-shrink:0;
+  }
+  .quote .who{
+    display:flex;flex-direction:column;gap:4px;
+  }
+  .quote .who .name{
+    font-family:"Inter",sans-serif;
+    font-weight:800;
+    font-size:30px;
+    color:var(--ink);
+    letter-spacing:-0.015em;
+  }
+  .quote .who .role{
+    font-family:"JetBrains Mono",monospace;
+    font-size:16px;
+    letter-spacing:0.2em;
+    text-transform:uppercase;
+    color:var(--dim);
+  }
+
+  /* ============================================================ */
+  /* 5) BEFORE / AFTER                                            */
+  /* ============================================================ */
+  .compare .inner{
+    position:absolute;inset:0;
+    display:flex;flex-direction:column;
+    padding:80px;
+    background:
+      radial-gradient(60% 40% at 50% -5%, rgba(250,204,21,0.10), transparent 60%),
+      #000;
+  }
+  .compare .heading{
+    display:flex;flex-direction:column;gap:14px;
+    margin-bottom:40px;
+  }
+  .compare .eyebrow{
+    color:var(--yellow);
+    font-family:"JetBrains Mono",monospace;
+    font-size:22px;
+    letter-spacing:0.32em;
+    text-transform:uppercase;
+    font-weight:600;
+  }
+  .compare h2{
+    font-family:"Inter",sans-serif;
+    font-weight:900;
+    letter-spacing:-0.045em;
+    line-height:0.95;
+    font-size:74px;
+    color:var(--ink);
+    text-wrap:balance;
+  }
+  .compare h2 .accent{ color:var(--yellow); }
+  .compare .split{
+    flex:1;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:24px;
+    align-items:stretch;
+    position:relative;
+  }
+  .compare .side{
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:24px;
+    padding:36px 32px;
+    display:flex;flex-direction:column;gap:18px;
+    position:relative;
+  }
+  .compare .side.before{ background:rgba(255,255,255,0.02); }
+  .compare .side.after{
+    background:linear-gradient(180deg, rgba(250,204,21,0.10) 0%, rgba(250,204,21,0.02) 100%);
+    border-color:rgba(250,204,21,0.30);
+  }
+  .compare .side-label{
+    font-family:"JetBrains Mono",monospace;
+    font-size:14px;
+    letter-spacing:0.32em;
+    text-transform:uppercase;
+    font-weight:600;
+  }
+  .compare .side.before .side-label{ color:#71717A; }
+  .compare .side.after .side-label{ color:var(--yellow); }
+  .compare .metric{
+    font-family:"Inter",sans-serif;
+    font-weight:900;
+    line-height:0.9;
+    letter-spacing:-0.05em;
+    font-size:130px;
+  }
+  .compare .side.before .metric{ color:rgba(255,255,255,0.85); }
+  .compare .side.after .metric{
+    color:var(--yellow);
+    text-shadow:0 0 60px rgba(250,204,21,0.25);
+  }
+  .compare .metric .unit{
+    font-size:54px;
+    color:inherit;
+    opacity:0.8;
+    letter-spacing:-0.02em;
+    margin-left:4px;
+  }
+  .compare .label-row{
+    font-family:"Inter",sans-serif;
+    font-weight:700;
+    font-size:24px;
+    line-height:1.25;
+    color:var(--ink);
+    letter-spacing:-0.01em;
+  }
+  .compare .side.before .label-row{ color:rgba(245,245,247,0.85); }
+  .compare .desc{
+    font-size:18px;
+    line-height:1.4;
+    color:var(--dim);
+    margin-top:auto;
+  }
+  .compare .arrow-divider{
+    position:absolute;
+    left:50%;top:50%;
+    transform:translate(-50%,-50%);
+    width:64px;height:64px;
+    border-radius:50%;
+    background:#000;
+    border:1px solid rgba(250,204,21,0.4);
+    display:grid;place-items:center;
+    color:var(--yellow);
+    z-index:5;
+  }
+  .compare .arrow-divider svg{ width:28px;height:28px; }
+
+  /* ============================================================ */
+  /* 6) ANNOUNCEMENT                                              */
+  /* ============================================================ */
+  .announce .inner{
+    position:absolute;inset:0;
+    display:flex;flex-direction:column;
+    padding:80px;
+    background:
+      radial-gradient(50% 60% at 50% 50%, rgba(250,204,21,0.10), transparent 60%),
+      #000;
+  }
+  .announce .top{
+    display:flex;align-items:center;justify-content:space-between;
+  }
+  .announce .new-pill{
+    display:inline-flex;align-items:center;gap:12px;
+    padding:14px 24px;
+    border-radius:999px;
+    background:var(--yellow);
+    color:#000;
+    font-family:"JetBrains Mono",monospace;
+    font-size:20px;
+    font-weight:700;
+    letter-spacing:0.28em;
+    text-transform:uppercase;
+  }
+  .announce .date{
+    color:rgba(255,255,255,0.5);
+    font-family:"JetBrains Mono",monospace;
+    font-size:18px;
+    letter-spacing:0.24em;
+    text-transform:uppercase;
+  }
+  .announce .body{
+    flex:1;
+    display:flex;flex-direction:column;justify-content:center;
+    gap:32px;
+  }
+  .announce .kicker{
+    color:var(--yellow);
+    font-family:"JetBrains Mono",monospace;
+    font-size:22px;
+    letter-spacing:0.32em;
+    text-transform:uppercase;
+    font-weight:600;
+  }
+  .announce h2{
+    font-family:"Inter",sans-serif;
+    font-weight:900;
+    letter-spacing:-0.05em;
+    line-height:0.88;
+    font-size:140px;
+    color:var(--ink);
+    text-wrap:balance;
+  }
+  .announce h2 .accent{ color:var(--yellow); }
+  .announce .lead{
+    font-size:32px;
+    line-height:1.35;
+    color:var(--dim);
+    max-width:880px;
+    font-weight:500;
+    letter-spacing:-0.005em;
+  }
+  .announce .lead strong{ color:var(--ink); font-weight:700; }
+  .announce .bottom{
+    display:flex;align-items:center;justify-content:space-between;
+  }
+  .announce .cta-pill{
+    display:inline-flex;align-items:center;gap:14px;
+    background:transparent;
+    border:1px solid rgba(250,204,21,0.4);
+    color:var(--yellow);
+    padding:18px 32px;
+    border-radius:999px;
+    font-family:"JetBrains Mono",monospace;
+    font-size:18px;
+    letter-spacing:0.24em;
+    text-transform:uppercase;
+    font-weight:600;
+  }
+  .announce .cta-pill svg{width:16px;height:16px;}
+  .announce .handle{
+    color:rgba(255,255,255,0.5);
+    font-family:"JetBrains Mono",monospace;
+    font-size:18px;
+    letter-spacing:0.24em;
+    text-transform:uppercase;
+  }
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<script>
+/* =====================================================================
+   APLICAIA TEMPLATE RENDERER
+   Input: window.DATA (objeto JSON inyectado por render.py)
+          o ?data=<base64(JSON)> en la URL
+   Output: renderiza UNA plantilla del tipo data.type en 1080x1080
+   ===================================================================== */
+
+// HTML-escape para evitar inyección al meter texto del JSON en el DOM
+function esc(s){
+  if (s === undefined || s === null) return '';
+  return String(s)
+    .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+    .replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+}
+// Permite <strong>...</strong> dentro de campos marcados como "rich"
+// El usuario marca énfasis con **palabra** y se convierte a <strong>
+function rich(s){
+  if (!s) return '';
+  return esc(s).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+}
+
+// --- SVGs reutilizables ---
+const SVG = {
+  starFilled: '<svg class="star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>',
+  starOff: '<svg class="star off" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>',
+  arrowUR: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>',
+  check: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="20 6 9 17 4 12"/></svg>',
+  chevR: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>',
+  link: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>',
+  bookmark: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>',
+};
+
+const WORDMARK = '<span class="wordmark" style="font-size:26px"><span class="a">Aplica</span><span class="ia">&nbsp;IA</span></span>';
+
+// =====================================================================
+// PLANTILLAS — cada función toma `d` (data) y retorna el HTML del canvas
+// =====================================================================
+const TEMPLATES = {
+
+  // ---- 01 STAT CARD ---------------------------------------------------
+  stat: (d) => `
+    <div class="canvas stat">
+      <div class="accent-line"></div>
+      <div class="inner">
+        <div class="ig-header">
+          <span><span class="dot"></span>${esc(d.headerLabel || 'DATO')}</span>
+          ${WORDMARK}
+        </div>
+        <div>
+          <div class="eyebrow">${esc(d.eyebrow)}</div>
+          <div class="number">${esc(d.number)}<span class="unit">${esc(d.unit || '')}</span></div>
+          <p class="description">${rich(d.description)}</p>
+          <div class="source">Fuente · ${esc(d.source)}</div>
+        </div>
+        <div class="ig-footer">
+          <span>@APLICAIA</span>
+          <span class="swipe">${esc(d.cta || 'VER MÁS')} ${SVG.arrowUR}</span>
+        </div>
+      </div>
+    </div>`,
+
+  // ---- 02 TOOL REVIEW -------------------------------------------------
+  review: (d) => {
+    const stars = Array.from({length:5}, (_,i) => i < (d.score || 0) ? SVG.starFilled : SVG.starOff).join('');
+    const tags = (d.tags || []).map(t => `<span class="tag">${esc(t)}</span>`).join('');
+    const verdict = d.verdict || 'RECOMENDADA';
+    const verdictClass = d.verdictWarn ? 'verdict-pill warn' : 'verdict-pill';
+    return `
+    <div class="canvas review">
+      <div class="inner">
+        <div class="top-row">
+          <div class="ig-header" style="flex:1">
+            <span><span class="dot"></span>${esc(d.headerLabel || 'HERRAMIENTAS / REVIEW')}</span>
+          </div>
+          <div class="${verdictClass}">
+            <span class="check">${SVG.check}</span>
+            ${esc(verdict)}
+          </div>
+        </div>
+        <div class="tool-block">
+          <div class="category">${esc(d.category)}</div>
+          <h2 class="tool-name">${esc(d.name)}</h2>
+          <div class="rating-row">
+            <div class="stars">${stars}</div>
+            <div class="score">${esc(d.scoreLabel || d.score)}<span class="total"> / 5</span></div>
+          </div>
+        </div>
+        <p class="summary">${rich(d.summary)}</p>
+        <div>
+          <div class="meta-row" style="margin-bottom:32px">${tags}</div>
+          <div class="ig-footer">
+            <span>@APLICAIA · ${esc(d.footerTag || '#ToolReview')}</span>
+            <span class="swipe">${esc(d.cta || 'MÁS REVIEWS')} ${SVG.arrowUR}</span>
+          </div>
+        </div>
+      </div>
+    </div>`;
+  },
+
+  // ---- 03 TIP LIST ----------------------------------------------------
+  tips: (d) => {
+    const items = (d.items || []).map((it, i) => `
+      <div class="item">
+        <div class="num">${String(i+1).padStart(2,'0')}</div>
+        <div class="body">
+          <div class="title">${esc(it.title)}</div>
+          <div class="desc">${esc(it.desc)}</div>
+        </div>
+      </div>`).join('');
+    return `
+    <div class="canvas tips">
+      <div class="inner">
+        <div class="ig-header" style="margin-bottom:28px">
+          <span><span class="dot"></span>${esc(d.headerLabel || 'TIPS · IA APLICADA')}</span>
+          ${WORDMARK}
+        </div>
+        <div class="heading">
+          <div class="eyebrow">${esc(d.eyebrow)}</div>
+          <h2>${esc(d.titleLine1)}<br/><span class="accent">${esc(d.titleLine2)}</span></h2>
+        </div>
+        <div class="list">${items}</div>
+        <div class="footer-cta">
+          <span>@APLICAIA</span>
+          <span class="arrow">${esc(d.cta || 'GUARDÁ ESTE POST')} ${SVG.bookmark}</span>
+        </div>
+      </div>
+    </div>`;
+  },
+
+  // ---- 04 QUOTE -------------------------------------------------------
+  quote: (d) => `
+    <div class="canvas quote">
+      <div class="inner">
+        <div class="ig-header">
+          <span><span class="dot"></span>${esc(d.headerLabel || 'TESTIMONIO')}</span>
+          ${WORDMARK}
+        </div>
+        <div style="margin-top:60px">
+          <div class="big-mark">“</div>
+          <p class="quote-text">${esc(d.text)}</p>
+        </div>
+        <div class="attribution">
+          <div class="avatar">${esc(d.initials)}</div>
+          <div class="who">
+            <div class="name">${esc(d.name)}</div>
+            <div class="role">${esc(d.role)}</div>
+          </div>
+        </div>
+      </div>
+    </div>`,
+
+  // ---- 05 BEFORE / AFTER ---------------------------------------------
+  compare: (d) => `
+    <div class="canvas compare">
+      <div class="inner">
+        <div class="ig-header">
+          <span><span class="dot"></span>${esc(d.headerLabel || 'RESULTADO REAL')}</span>
+          ${WORDMARK}
+        </div>
+        <div class="heading" style="margin-top:32px">
+          <div class="eyebrow">${esc(d.eyebrow)}</div>
+          <h2>${esc(d.titleLine1)}<br/>${esc(d.titleLine2Pre || '')} <span class="accent">${esc(d.titleLine2Accent)}</span></h2>
+        </div>
+        <div class="split">
+          <div class="side before">
+            <div class="side-label">${esc(d.before.label || 'Antes')}</div>
+            <div class="metric">${esc(d.before.metric)}<span class="unit">${esc(d.before.unit || '')}</span></div>
+            <div class="label-row">${esc(d.before.headline)}</div>
+            <div class="desc">${esc(d.before.desc)}</div>
+          </div>
+          <div class="side after">
+            <div class="side-label">${esc(d.after.label || 'Después')}</div>
+            <div class="metric">${esc(d.after.metric)}<span class="unit">${esc(d.after.unit || '')}</span></div>
+            <div class="label-row">${esc(d.after.headline)}</div>
+            <div class="desc">${esc(d.after.desc)}</div>
+          </div>
+          <div class="arrow-divider">${SVG.chevR}</div>
+        </div>
+        <div class="ig-footer" style="margin-top:32px">
+          <span>@APLICAIA · ${esc(d.footerTag || '')}</span>
+          <span class="swipe">${esc(d.cta || 'VER CASO')} ${SVG.arrowUR}</span>
+        </div>
+      </div>
+    </div>`,
+
+  // ---- 06 ANNOUNCEMENT ------------------------------------------------
+  announce: (d) => `
+    <div class="canvas announce">
+      <div class="inner">
+        <div class="top">
+          <div class="new-pill">${esc(d.pillIcon || '✨')} ${esc(d.pillLabel || 'Novedad')}</div>
+          <div class="date">${esc(d.date)}</div>
+        </div>
+        <div class="body">
+          <div class="kicker">${esc(d.kicker)}</div>
+          <h2>${esc(d.titleLine1)}<br/>${esc(d.titleLine2Pre || '')} <span class="accent">${esc(d.titleLine2Accent)}</span></h2>
+          <p class="lead">${rich(d.lead)}</p>
+        </div>
+        <div class="bottom">
+          <div class="cta-pill">${SVG.link} ${esc(d.cta || 'Link en la bio')}</div>
+          <div class="handle">@APLICAIA</div>
+        </div>
+      </div>
+    </div>`,
+};
+
+// =====================================================================
+// BOOT
+// =====================================================================
+function getData(){
+  if (window.DATA) return window.DATA;
+  const enc = new URLSearchParams(location.search).get('data');
+  if (enc) {
+    try { return JSON.parse(decodeURIComponent(escape(atob(enc)))); }
+    catch(e){ console.error('Bad data param', e); return null; }
+  }
+  return null;
+}
+
+function render(){
+  const d = getData();
+  const root = document.getElementById('root');
+  if (!d) {
+    root.innerHTML = '<div style="padding:40px;font-family:JetBrains Mono,monospace;color:#FACC15">No DATA. Inyectá window.DATA o pasá ?data=&lt;base64 JSON&gt;</div>';
+    return;
+  }
+  const fn = TEMPLATES[d.type];
+  if (!fn) {
+    root.innerHTML = `<div style="padding:40px;font-family:JetBrains Mono,monospace;color:#FACC15">Tipo desconocido: ${esc(d.type)}<br/>Tipos válidos: ${Object.keys(TEMPLATES).join(', ')}</div>`;
+    return;
+  }
+  root.innerHTML = fn(d);
+  // Señal para Playwright: dispara cuando fuentes y layout están listos
+  document.fonts.ready.then(() => {
+    document.body.setAttribute('data-render-ready','1');
+  });
+}
+
+render();
+</script>
+</body>
+</html>
