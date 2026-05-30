@@ -1,0 +1,22 @@
+{
+  "type": "tips",
+  "headerLabel": "TIPS · CLAUDE OPUS 4.8",
+  "eyebrow": "Empezá hoy",
+  "titleLine1": "3 formas de",
+  "titleLine2": "aprovechar 4.8",
+  "items": [
+    {
+      "title": "Fast Mode para producción",
+      "desc": "3× más barato y 2.5× más rápido. Ideal para APIs con llamadas frecuentes donde la latencia importa."
+    },
+    {
+      "title": "UltraCode para proyectos grandes",
+      "desc": "Lanzá la tarea compleja y Opus 4.8 la divide en subagentes automáticamente. Sin split manual."
+    },
+    {
+      "title": "Bajá el esfuerzo en tareas simples",
+      "desc": "Low o Medium para clasificaciones y drafts. Ahorrás tokens sin sacrificar calidad donde importa."
+    }
+  ],
+  "cta": "GUARDÁ ESTE POST"
+}

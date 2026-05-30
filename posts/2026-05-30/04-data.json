@@ -1,0 +1,24 @@
+{
+  "type": "compare",
+  "headerLabel": "DYNAMIC WORKFLOWS",
+  "eyebrow": "Claude Code · Opus 4.8",
+  "titleLine1": "De 1 contexto",
+  "titleLine2Pre": "a",
+  "titleLine2Accent": "100+ agentes.",
+  "before": {
+    "label": "Antes",
+    "metric": "1",
+    "unit": "contexto",
+    "headline": "Proyectos grandes requerían split manual.",
+    "desc": "El límite de ventana de contexto bloqueaba tareas de escala enterprise."
+  },
+  "after": {
+    "label": "Ahora",
+    "metric": "100+",
+    "unit": "subagentes",
+    "headline": "Opus 4.8 planifica y ejecuta en paralelo.",
+    "desc": "UltraCode funde razonamiento máximo con orquestación automática de subagentes."
+  },
+  "footerTag": "DYNAMIC WORKFLOWS",
+  "cta": "VER MÁS"
+}

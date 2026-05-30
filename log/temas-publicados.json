@@ -189,5 +189,29 @@
     ],
     "post_id": "6a1a1fc92d20fc69c572de5c",
     "instagram_url": ""
+  },
+  {
+    "fecha": "2026-05-30",
+    "tema": "Claude Opus 4.8: Fast Mode 3×, benchmarks vs GPT-5.5 y controles de esfuerzo",
+    "feature_principal": "otro",
+    "angulo": "anuncio-oficial",
+    "slides": 6,
+    "tendencia_origen": "Claude Opus 4.8 launch",
+    "tweet_ancla": {
+      "url": "https://x.com/danshipper/status/2060043738752422304",
+      "autor": "@danshipper",
+      "fecha_original": "2026-05-28",
+      "horas_antiguedad": 48,
+      "likes": 1600,
+      "retweets": 182,
+      "replies": 134
+    },
+    "tweets_referencia": [
+      "https://x.com/claudeai/status/2060042702150930686",
+      "https://x.com/github/status/2060050235754242178",
+      "https://x.com/testingcatalog/status/2060041629755740414"
+    ],
+    "post_id": null,
+    "instagram_url": null
   }
 ]

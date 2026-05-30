@@ -1,0 +1,10 @@
+{
+  "type": "stat",
+  "headerLabel": "FAST MODE",
+  "eyebrow": "Velocidad · Costo",
+  "number": "3",
+  "unit": "× más barato",
+  "description": "Fast Mode de Opus 4.8 corre **2.5× más rápido** y cuesta **3× menos** que la generación anterior. Mismo precio estándar que Opus 4.7.",
+  "source": "Anthropic, mayo 2026",
+  "cta": "VER MÁS"
+}

@@ -1,0 +1,12 @@
+{
+  "type": "announce",
+  "pillIcon": "🚀",
+  "pillLabel": "NUEVO MODELO",
+  "date": "28 · MAY · 2026",
+  "kicker": "Claude Opus 4.8",
+  "titleLine1": "El modelo que",
+  "titleLine2Pre": "trabaja",
+  "titleLine2Accent": "solo.",
+  "lead": "Anthropic acaba de lanzar **Claude Opus 4.8**: más honesto, Fast Mode **3× más barato** y Dynamic Workflows para escalar con cientos de subagentes en paralelo.",
+  "cta": "Pasá las slides →"
+}

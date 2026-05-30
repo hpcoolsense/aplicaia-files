@@ -1,0 +1,10 @@
+{
+  "type": "stat",
+  "headerLabel": "BENCHMARK",
+  "eyebrow": "GDPval-AA · Elo Score",
+  "number": "1890",
+  "unit": "Elo",
+  "description": "**121 puntos Elo sobre GPT-5.5** (1769 Elo). En SWE-bench Pro: **69.2%** vs 64.3% de Opus 4.7. En Terminal-Bench 2.1: **74.6%** vs 66.1%.",
+  "source": "Anthropic, mayo 2026",
+  "cta": "VER MÁS"
+}
