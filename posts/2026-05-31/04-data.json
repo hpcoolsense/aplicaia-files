@@ -1,0 +1,24 @@
+{
+  "type": "compare",
+  "headerLabel": "VALUACIÓN · IA PRIVADA",
+  "eyebrow": "Comparativa · mayo 2026",
+  "titleLine1": "Anthropic",
+  "titleLine2Pre": "superó a",
+  "titleLine2Accent": "OpenAI.",
+  "before": {
+    "label": "OpenAI",
+    "metric": "$852",
+    "unit": "mil M",
+    "headline": "Última valuación privada.",
+    "desc": "Ronda de $122.000M cerrada en marzo 2026."
+  },
+  "after": {
+    "label": "Anthropic",
+    "metric": "$965",
+    "unit": "mil M",
+    "headline": "Serie H · mayo 2026.",
+    "desc": "5.3× de crecimiento en 8 meses. IPO proyectado oct 2026."
+  },
+  "footerTag": "ECOSISTEMA IA",
+  "cta": "VER MÁS"
+}

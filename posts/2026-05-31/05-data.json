@@ -1,0 +1,26 @@
+{
+  "type": "tips",
+  "headerLabel": "QUÉ CAMBIA PARA VOS",
+  "eyebrow": "Impacto en el ecosistema Claude",
+  "titleLine1": "Lo que el capital",
+  "titleLine2": "hace posible ahora",
+  "items": [
+    {
+      "title": "Más compute, más límites",
+      "desc": "El acuerdo con SpaceX Colossus suma 220.000 GPUs NVIDIA. Claude Code y la API ya aumentaron sus límites de uso."
+    },
+    {
+      "title": "Mythos llega a todos",
+      "desc": "Anthropic confirmó: el modelo Mythos, antes solo en preview para ciberseguridad, llega a usuarios generales 'en semanas'."
+    },
+    {
+      "title": "Chips propios en agenda",
+      "desc": "Samsung, SK Hynix y Micron como inversores no es casual. Anthropic avanza hacia controlar su propia cadena de infraestructura."
+    },
+    {
+      "title": "Última ronda privada",
+      "desc": "Anthropic indica que este es su último fundraise antes del IPO en octubre 2026. El modelo de incentivos del equipo cambia."
+    }
+  ],
+  "cta": "GUARDÁ ESTE POST"
+}

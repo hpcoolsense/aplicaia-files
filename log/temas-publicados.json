@@ -213,5 +213,29 @@
     ],
     "post_id": "6a1b71bebaa184f3f63d8c81",
     "instagram_url": ""
+  },
+  {
+    "fecha": "2026-05-31",
+    "tema": "Anthropic superó a OpenAI: de $380B a $965B de valuación en 90 días",
+    "feature_principal": "ecosistema",
+    "angulo": "anuncio-oficial",
+    "slides": 5,
+    "tendencia_origen": "Anthropic $65B Series H",
+    "tweet_ancla": {
+      "url": "https://x.com/AnthropicAI/status/2060061347522433422",
+      "autor": "@AnthropicAI",
+      "fecha_original": "2026-05-28",
+      "horas_antiguedad": 72,
+      "likes": 12000,
+      "retweets": 2800,
+      "replies": 890
+    },
+    "tweets_referencia": [
+      "https://x.com/siddarthpaim/status/2060083333607096443",
+      "https://x.com/MTSlive/status/2060135104194978157",
+      "https://x.com/YahooFinance/status/2060068477419876778"
+    ],
+    "post_id": null,
+    "instagram_url": null
   }
 ]
