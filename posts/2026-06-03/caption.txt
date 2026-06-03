@@ -1,0 +1,13 @@
+Podés armar tus propios asistentes de IA en una sola tarde. Cada uno se ocupa de una tarea que hoy hacés a mano, todos los días.
+
+La idea es simple: en vez de salir a buscar "la herramienta", empezás por una tarea repetitiva concreta y le construís un asistente con Claude que la resuelva de punta a punta. Le explicás el objetivo en lenguaje natural, le das acceso a tus datos y herramientas, lo probás con casos reales y lo ajustás. Cuando confiás en el resultado, lo dejás trabajando solo.
+
+No hace falta un equipo ni meses de desarrollo. La regla de oro: un asistente, una tarea. Así es fácil de armar, probar y delegar de verdad.
+
+Elegí hoy una sola tarea repetitiva y convertila en tu primer asistente.
+
+Pasá las slides →
+
+...
+
+#Claude #ClaudeAI #ClaudeCode #AplicaIA #Anthropic #InteligenciaArtificial #IAArgentina #IAaplicada #Tecnología #TransformaciónDigital #IA #AI #Argentina #Tech

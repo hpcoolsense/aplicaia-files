@@ -258,5 +258,25 @@
     "post_id": "6a1cc46f555710ee6cfe1566",
     "instagram_url": null,
     "nota": "Reconciliacion manual 2026-06-03: doble-publish de la Serie H en Zernio; este post_id no estaba en el log."
+  },
+  {
+    "fecha": "2026-06-03",
+    "tema": "Cómo armar asistentes de IA que automatizan tus tareas diarias",
+    "feature_principal": "skills",
+    "angulo": "tutorial",
+    "slides": 5,
+    "tendencia_origen": "Tutorial de un ingeniero de Anthropic: armar asistentes de IA paso a paso",
+    "tweet_ancla": {
+      "url": null,
+      "autor": null,
+      "fecha_original": null,
+      "horas_antiguedad": null,
+      "likes": null,
+      "retweets": null,
+      "replies": null
+    },
+    "tweets_referencia": [],
+    "post_id": null,
+    "instagram_url": null
   }
 ]
