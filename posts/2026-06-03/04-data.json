@@ -1,0 +1,24 @@
+{
+  "type": "compare",
+  "headerLabel": "ANTES / DESPUÉS",
+  "eyebrow": "Una tarea repetitiva",
+  "titleLine1": "De hacerla",
+  "titleLine2Pre": "a",
+  "titleLine2Accent": "delegarla.",
+  "before": {
+    "label": "Hoy",
+    "metric": "30",
+    "unit": "min/día",
+    "headline": "La hacés a mano, todos los días.",
+    "desc": "Copiás, pegás, ordenás y repetís. Tiempo que no vuelve."
+  },
+  "after": {
+    "label": "Con un asistente",
+    "metric": "0",
+    "unit": "min",
+    "headline": "El asistente la ejecuta solo.",
+    "desc": "Vos revisás el resultado, no el proceso."
+  },
+  "footerTag": "IA APLICADA",
+  "cta": "SEGUÍ →"
+}

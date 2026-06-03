@@ -1,0 +1,26 @@
+{
+  "type": "tips",
+  "headerLabel": "CÓMO ARMARLO",
+  "eyebrow": "El método, de cero a asistente",
+  "titleLine1": "4 pasos para",
+  "titleLine2": "empezar hoy",
+  "items": [
+    {
+      "title": "Elegí una tarea, no un sistema",
+      "desc": "Algo chico y repetitivo que hacés cada día. Un asistente = una tarea."
+    },
+    {
+      "title": "Escribí qué hace en lenguaje natural",
+      "desc": "Le explicás a Claude el objetivo, los pasos y cómo se ve un buen resultado."
+    },
+    {
+      "title": "Dale acceso a tus datos y herramientas",
+      "desc": "Conectá las fuentes que necesita para trabajar sin que le dictes todo."
+    },
+    {
+      "title": "Probá con casos reales y ajustá",
+      "desc": "Corré 10 casos de verdad, corregí, y recién ahí lo dejás trabajando solo."
+    }
+  ],
+  "cta": "GUARDÁ ESTE POST"
+}
