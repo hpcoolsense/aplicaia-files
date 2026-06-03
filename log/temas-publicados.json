@@ -237,5 +237,26 @@
     ],
     "post_id": "6a1cc421b328ad3d044bf633",
     "instagram_url": "https://www.instagram.com/p/DZBYIRNCOKe/"
+  },
+  {
+    "fecha": "2026-05-31",
+    "tema": "Anthropic cerró su Serie H: $65.000 millones a una valuación de $965B (duplicado reconciliado)",
+    "feature_principal": "ecosistema",
+    "angulo": "anuncio-oficial",
+    "slides": 5,
+    "tendencia_origen": "Anthropic $65B Series H",
+    "tweet_ancla": {
+      "url": "https://x.com/AnthropicAI/status/2060061347522433422",
+      "autor": "@AnthropicAI",
+      "fecha_original": "2026-05-28",
+      "horas_antiguedad": 72,
+      "likes": 12000,
+      "retweets": 2800,
+      "replies": 890
+    },
+    "tweets_referencia": [],
+    "post_id": "6a1cc46f555710ee6cfe1566",
+    "instagram_url": null,
+    "nota": "Reconciliacion manual 2026-06-03: doble-publish de la Serie H en Zernio; este post_id no estaba en el log."
   }
 ]
