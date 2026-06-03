@@ -1,0 +1,13 @@
+El 15 de junio cambia cómo se paga Claude, y a muchos los va a agarrar desprevenidos.
+
+Hasta ahora, si dejabas a Claude trabajando solo —agentes, scripts, automatizaciones— eso consumía tu suscripción Pro o Max sin costo extra. Desde el 15/06, Anthropic separa dos usos: el interactivo (vos escribiendo en el chat o en Claude Code) sigue incluido en tu plan; el programático (Agent SDK, claude -p headless, GitHub Actions y apps de terceros) pasa a un crédito mensual aparte, facturado a precio de API estándar.
+
+El crédito depende del plan: Pro US$20, Max 5x US$100, Max 20x US$200 por mes. Se renueva cada mes y no se acumula: lo que no usás, se pierde. A precio API, Sonnet sale US$3/US$15 y Opus US$5/US$25 por millón de tokens.
+
+Si automatizás con Claude, medí cuánto corrés por código esta semana y estimá si el crédito te alcanza antes de que llegue la fecha.
+
+Pasá las slides →
+
+...
+
+#Claude #ClaudeAI #ClaudeCode #AplicaIA #Anthropic #InteligenciaArtificial #IAArgentina #IAaplicada #Tecnología #TransformaciónDigital #IA #AI #Argentina #Tech

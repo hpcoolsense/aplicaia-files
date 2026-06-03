@@ -1,0 +1,24 @@
+{
+  "type": "compare",
+  "headerLabel": "QUÉ CAMBIA",
+  "eyebrow": "Dónde se descuenta cada uso",
+  "titleLine1": "A mano",
+  "titleLine2Pre": "vs",
+  "titleLine2Accent": "por código.",
+  "before": {
+    "label": "A mano",
+    "metric": "$0",
+    "unit": "extra",
+    "headline": "Chat y Claude Code interactivo.",
+    "desc": "Lo que usás escribiendo vos sigue incluido en tu plan, sin cambios."
+  },
+  "after": {
+    "label": "Por código",
+    "metric": "API",
+    "unit": "rate",
+    "headline": "Agent SDK, claude -p y GitHub Actions.",
+    "desc": "Todo lo que corre solo pasa a un crédito aparte, a precio de API estándar."
+  },
+  "footerTag": "POOL INTERACTIVO vs CRÉDITO AGENTES",
+  "cta": "VER PLANES →"
+}

@@ -1,0 +1,12 @@
+{
+  "type": "announce",
+  "pillIcon": "⚠️",
+  "pillLabel": "Cambio de planes",
+  "date": "03 · JUN · 2026",
+  "kicker": "Suscripciones Claude",
+  "titleLine1": "Tus agentes",
+  "titleLine2Pre": "se pagan",
+  "titleLine2Accent": "aparte.",
+  "lead": "Desde el **15 de junio**, el uso automático de Claude (agentes y código sin vos al teclado) sale del pool de tu suscripción y pasa a un **crédito mensual separado**, facturado a precio de API.",
+  "cta": "Pasá las slides →"
+}

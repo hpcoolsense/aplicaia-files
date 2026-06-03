@@ -1,0 +1,22 @@
+{
+  "type": "tips",
+  "headerLabel": "ANTES DEL 15",
+  "eyebrow": "Cómo llegar listo",
+  "titleLine1": "3 cosas para",
+  "titleLine2": "hacer ya",
+  "items": [
+    {
+      "title": "Medí cuánto corrés por código",
+      "desc": "Agent SDK, claude -p y GitHub Actions ahora tienen costo visible: revisalos esta semana."
+    },
+    {
+      "title": "Estimá tu gasto a precio API",
+      "desc": "Sonnet sale US$3/US$15 y Opus US$5/US$25 por millón de tokens. Calculá si el crédito te alcanza."
+    },
+    {
+      "title": "Separá lo manual de lo automático",
+      "desc": "Lo que hacés vos al teclado no cambia. Solo lo que corre solo pasa a créditos."
+    }
+  ],
+  "cta": "SEGUINOS @aplicai.ia.ar"
+}

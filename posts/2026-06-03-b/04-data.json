@@ -1,0 +1,26 @@
+{
+  "type": "tips",
+  "headerLabel": "CRÉDITO POR PLAN",
+  "eyebrow": "Uso programático · mensual",
+  "titleLine1": "Cuánto crédito",
+  "titleLine2": "trae tu plan",
+  "items": [
+    {
+      "title": "Pro → US$20 al mes",
+      "desc": "Crédito para agentes, en línea con el precio de tu suscripción."
+    },
+    {
+      "title": "Max 5x → US$100 al mes",
+      "desc": "Cinco veces el de Pro, pensado para uso intensivo."
+    },
+    {
+      "title": "Max 20x → US$200 al mes",
+      "desc": "El tope de las suscripciones para correr agentes."
+    },
+    {
+      "title": "No se acumula",
+      "desc": "Se renueva cada mes y lo que no usás se pierde."
+    }
+  ],
+  "cta": "GUARDÁ ESTE POST"
+}
