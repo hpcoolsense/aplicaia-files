@@ -1,0 +1,14 @@
+{
+  "type": "review",
+  "headerLabel": "QUÉ ES",
+  "verdict": "USO RESTRINGIDO",
+  "verdictWarn": true,
+  "category": "Seguridad · Auditoría de código",
+  "name": "Claude Mythos",
+  "score": 5,
+  "scoreLabel": "5.0",
+  "summary": "Un modelo de Claude que **no solo encuentra fallas: también arma el exploit funcional** de forma autónoma. Por ese doble uso, Anthropic lo mantiene cerrado: solo lo usan los socios defensivos del consorcio.",
+  "tags": ["Día cero", "Exploits autónomos", "No público", "Defensa"],
+  "footerTag": "#SeguridadIA",
+  "cta": "SEGUÍ →"
+}

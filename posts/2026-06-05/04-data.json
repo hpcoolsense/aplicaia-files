@@ -1,0 +1,24 @@
+{
+  "type": "compare",
+  "headerLabel": "RESULTADO REAL",
+  "eyebrow": "Open source · 1.000+ proyectos",
+  "titleLine1": "Candidatas",
+  "titleLine2Pre": "a fallas",
+  "titleLine2Accent": "reales.",
+  "before": {
+    "label": "Detectó",
+    "metric": "23K",
+    "unit": "+",
+    "headline": "Posibles fallas en +1.000 repos open source.",
+    "desc": "23.019 candidatas pasaron a revisión externa."
+  },
+  "after": {
+    "label": "Acierto",
+    "metric": "91",
+    "unit": "%",
+    "headline": "1.726 confirmadas por firmas externas.",
+    "desc": "Supera a muchos testers humanos."
+  },
+  "footerTag": "CLAUDE MYTHOS",
+  "cta": "SEGUÍ →"
+}

@@ -1,0 +1,22 @@
+{
+  "type": "tips",
+  "headerLabel": "QUÉ TE DEJA ESTE CASO",
+  "eyebrow": "Seguridad en la era IA",
+  "titleLine1": "3 ideas para",
+  "titleLine2": "llevarte hoy",
+  "items": [
+    {
+      "title": "La IA ya audita mejor que muchos",
+      "desc": "Encontró bugs que llevaban décadas escondidos en software que usás todos los días."
+    },
+    {
+      "title": "El mismo poder corta para los dos lados",
+      "desc": "Si encuentra y arma exploits, por eso se libera con control: defensa primero."
+    },
+    {
+      "title": "Revisá tu propio código con IA",
+      "desc": "No necesitás Mythos: un agente de Claude ya puede auditar tu repo y priorizar riesgos."
+    }
+  ],
+  "cta": "GUARDÁ ESTE POST"
+}

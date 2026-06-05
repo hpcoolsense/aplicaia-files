@@ -1,0 +1,12 @@
+{
+  "type": "announce",
+  "pillIcon": "🛡️",
+  "pillLabel": "Seguridad IA",
+  "date": "05 · JUN · 2026",
+  "kicker": "Caso real",
+  "titleLine1": "10.000",
+  "titleLine2Pre": "fallas",
+  "titleLine2Accent": "críticas.",
+  "lead": "Anthropic puso un modelo de Claude a **auditar el software que sostiene al mundo**. En seis semanas encontró más de 10.000 vulnerabilidades de día cero de severidad alta y crítica.",
+  "cta": "Pasá las slides →"
+}

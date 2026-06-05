@@ -278,5 +278,29 @@
     "tweets_referencia": [],
     "post_id": "6a209b1881bc03c6b884a8b0",
     "instagram_url": "https://www.instagram.com/p/DZI4Cz7jpJO/"
+  },
+  {
+    "fecha": "2026-06-05",
+    "tema": "Cómo la IA de Anthropic encontró 10.000 vulnerabilidades críticas en el software que usa el mundo",
+    "feature_principal": "ecosistema",
+    "angulo": "caso-de-uso",
+    "slides": 6,
+    "tendencia_origen": "Project Glasswing / Claude Mythos: Anthropic escala su iniciativa de seguridad con IA a ~150 organizaciones en 15+ paises (X bloqueado por allowlist de red; tendencia detectada via cobertura masiva multi-fuente)",
+    "tweet_ancla": {
+      "url": "https://techcrunch.com/2026/06/02/anthropic-scales-claude-mythos-to-critical-infrastructure-in-15-countries/",
+      "autor": "TechCrunch",
+      "fecha_original": "2026-06-02",
+      "horas_antiguedad": 72,
+      "likes": null,
+      "retweets": null,
+      "replies": null
+    },
+    "tweets_referencia": [
+      "https://www.anthropic.com/news/expanding-project-glasswing",
+      "https://thehackernews.com/2026/05/claude-mythos-ai-finds-10000-high.html",
+      "https://www.techtimes.com/articles/317873/20260605/anthropic-embeds-engineers-inside-nsa-offensive-cyber-ops-sues-pentagon-barring-claude.htm"
+    ],
+    "post_id": null,
+    "instagram_url": null
   }
 ]

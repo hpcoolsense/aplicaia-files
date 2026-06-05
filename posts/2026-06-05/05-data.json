@@ -1,0 +1,10 @@
+{
+  "type": "stat",
+  "headerLabel": "EL HALLAZGO",
+  "eyebrow": "FreeBSD · NFS",
+  "number": "17",
+  "unit": "años",
+  "description": "el tiempo que estuvo oculta una falla de **ejecución remota de código** que daba acceso root, hasta que el modelo la encontró. También aparecieron bugs de 27 años en OpenBSD.",
+  "source": "Anthropic · Glasswing",
+  "cta": "SEGUÍ →"
+}
