@@ -302,5 +302,30 @@
     ],
     "post_id": "6a235947186f4e4c78575682",
     "instagram_url": "https://www.instagram.com/p/DZOO6wMDDCI/"
+  },
+  {
+    "fecha": "2026-06-09",
+    "tema": "Claude dentro del framework Foundation Models de Apple: cómo usarlo en tus apps",
+    "feature_principal": "api-sdk",
+    "angulo": "anuncio-oficial",
+    "slides": 5,
+    "tendencia_origen": "Lanzamiento del paquete oficial de Swift de Anthropic para el framework Foundation Models de Apple, en torno a WWDC 2026 (X bloqueado por allowlist de red; tendencia detectada via cobertura masiva multi-fuente del 8-9 jun)",
+    "tweet_ancla": {
+      "url": "https://claude.com/blog/claude-for-foundation-models",
+      "autor": "Anthropic (claude.com blog)",
+      "fecha_original": "2026-06-08",
+      "horas_antiguedad": 24,
+      "likes": null,
+      "retweets": null,
+      "replies": null
+    },
+    "tweets_referencia": [
+      "https://www.apple.com/newsroom/2026/06/apple-aids-app-development-with-new-intelligence-frameworks-and-advanced-tools/",
+      "https://www.macrumors.com/2026/06/09/apple-outlines-major-ai-and-developer-tool-updates/",
+      "https://www.techtimes.com/articles/318039/20260609/wwdc-2026-developer-tools-foundation-models-now-swaps-ai-providers-without-code-changes.htm"
+    ],
+    "post_id": null,
+    "instagram_url": null,
+    "nota": "X bloqueado por allowlist de red; tweet ancla = anuncio oficial de Anthropic, respaldado por 3 fuentes independientes <96h."
   }
 ]

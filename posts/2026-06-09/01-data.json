@@ -1,0 +1,12 @@
+{
+  "type": "announce",
+  "pillIcon": "✨",
+  "pillLabel": "Novedad",
+  "date": "09 · JUN · 2026",
+  "kicker": "Desarrollo Apple",
+  "titleLine1": "Claude",
+  "titleLine2Pre": "dentro de",
+  "titleLine2Accent": "tus apps Apple.",
+  "lead": "Anthropic publicó un **paquete oficial de Swift** que conecta Claude con el framework Foundation Models de Apple. Ya podés llamar a Claude desde tus apps de iPhone, iPad y Mac con la misma API nativa.",
+  "cta": "Pasá las slides →"
+}

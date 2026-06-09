@@ -1,0 +1,24 @@
+{
+  "type": "compare",
+  "headerLabel": "CUÁNDO USAR CADA UNO",
+  "eyebrow": "On-device vs Claude",
+  "titleLine1": "Local",
+  "titleLine2Pre": "o",
+  "titleLine2Accent": "Claude.",
+  "before": {
+    "label": "Modelo de Apple",
+    "metric": "$0",
+    "unit": "local",
+    "headline": "On-device, gratis y offline.",
+    "desc": "Para tareas simples y privadas."
+  },
+  "after": {
+    "label": "Vía Claude",
+    "metric": "API",
+    "unit": "cloud",
+    "headline": "Razonamiento y código a pedido.",
+    "desc": "Derivás solo lo complejo a Claude."
+  },
+  "footerTag": "FOUNDATION MODELS",
+  "cta": "VER CASO"
+}

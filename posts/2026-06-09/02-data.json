@@ -1,0 +1,14 @@
+{
+  "type": "review",
+  "headerLabel": "QUÉ ES",
+  "verdict": "OFICIAL",
+  "verdictWarn": false,
+  "category": "Swift · Foundation Models",
+  "name": "Claude + Foundation Models",
+  "score": 5,
+  "scoreLabel": "5.0",
+  "summary": "Un paquete de Swift de Anthropic que integra Claude usando la misma **LanguageModelSession** del framework de Apple. Maneja streaming, tool calls y respuestas estructuradas directo en tu vista de SwiftUI.",
+  "tags": ["Swift Package", "Streaming", "Tool calls", "SwiftUI"],
+  "footerTag": "#ClaudeAI",
+  "cta": "SEGUÍ →"
+}

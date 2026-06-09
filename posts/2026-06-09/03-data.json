@@ -1,0 +1,10 @@
+{
+  "type": "stat",
+  "headerLabel": "DATO",
+  "eyebrow": "Cambiar de modelo",
+  "number": "0",
+  "unit": "cambios",
+  "description": "de lógica para alternar entre el modelo **on-device de Apple** y Claude: actualizás la dependencia de Swift Package Manager y el resto de tu app no se toca.",
+  "source": "Anthropic · paquete Foundation Models",
+  "cta": "VER MÁS"
+}

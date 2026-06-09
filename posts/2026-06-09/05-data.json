@@ -1,0 +1,26 @@
+{
+  "type": "tips",
+  "headerLabel": "TIPS · CLAUDE EN APPLE",
+  "eyebrow": "Para arrancar hoy",
+  "titleLine1": "Cómo aprovecharlo",
+  "titleLine2": "en tu próxima app",
+  "items": [
+    {
+      "title": "Sumá el paquete de Swift",
+      "desc": "Agregás la dependencia oficial de Anthropic con Swift Package Manager y ya tenés Claude disponible."
+    },
+    {
+      "title": "Prototipá con el modelo local",
+      "desc": "Empezá gratis y offline con el modelo on-device de Apple para validar la idea."
+    },
+    {
+      "title": "Derivá lo difícil a Claude",
+      "desc": "Cuando la tarea pide razonamiento o código, mandás esa consulta a Claude sin reescribir nada."
+    },
+    {
+      "title": "Funciona en todo el ecosistema",
+      "desc": "iOS, iPadOS, macOS, visionOS y watchOS 27 desde el primer día."
+    }
+  ],
+  "cta": "GUARDÁ ESTE POST"
+}
