@@ -1,0 +1,10 @@
+{
+  "type": "stat",
+  "headerLabel": "SEGURIDAD",
+  "eyebrow": "Credenciales sin riesgo",
+  "number": "0",
+  "unit": "claves expuestas",
+  "description": "El agente solo ve un **placeholder**: la clave real se adjunta en el borde de la red, únicamente hacia los dominios que vos habilitás. Ni un **prompt injection** llega al secreto.",
+  "source": "Vault de credenciales · Claude Platform",
+  "cta": "SEGUÍ →"
+}

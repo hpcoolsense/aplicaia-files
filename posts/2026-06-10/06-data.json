@@ -1,0 +1,26 @@
+{
+  "type": "tips",
+  "headerLabel": "CÓMO EMPEZAR",
+  "eyebrow": "Antes de programar tu primer agente",
+  "titleLine1": "4 cosas que",
+  "titleLine2": "conviene definir",
+  "items": [
+    {
+      "title": "Elegí UNA tarea repetitiva",
+      "desc": "Empezá por un solo cuello de botella, no por automatizar todo de una."
+    },
+    {
+      "title": "Definí bien el horario",
+      "desc": "El cron decide cuándo se despierta: pensalo según cuándo necesitás el resultado."
+    },
+    {
+      "title": "Habilitá solo lo necesario",
+      "desc": "Dale acceso únicamente a los dominios que debe tocar. Menos superficie, menos riesgo."
+    },
+    {
+      "title": "Revisá las primeras corridas",
+      "desc": "Mirá qué hizo en las primeras ejecuciones antes de confiarle el piloto automático."
+    }
+  ],
+  "cta": "GUARDÁ ESTE POST"
+}

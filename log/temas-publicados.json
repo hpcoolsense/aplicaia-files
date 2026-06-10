@@ -327,5 +327,38 @@
     "post_id": "6a289fac858652611da2a1e9",
     "instagram_url": "https://www.instagram.com/p/DZYiUy9CPDZ/",
     "nota": "X bloqueado por allowlist de red; tweet ancla = anuncio oficial de Anthropic, respaldado por 3 fuentes independientes <96h."
+  },
+  {
+    "fecha": "2026-06-10",
+    "tema": "Cómo poner tus agentes de IA a trabajar solos en horario fijo",
+    "feature_principal": "routines",
+    "angulo": "anuncio-oficial",
+    "slides": 6,
+    "tendencia_origen": "Anthropic habilitó en beta pública los 'scheduled deployments' (cron) para Claude Managed Agents, 9 jun 2026 (X bloqueado por allowlist de red; novedad detectada vía cobertura multi-fuente del 9-10 jun)",
+    "tweet_ancla": {
+      "url": "https://www.anthropic.com/engineering/managed-agents",
+      "autor": "Anthropic (engineering blog)",
+      "fecha_original": "2026-06-09",
+      "horas_antiguedad": 30,
+      "likes": null,
+      "retweets": null,
+      "replies": null
+    },
+    "tweets_referencia": [
+      "https://www.techtimes.com/articles/318163/20260610/claude-managed-agents-add-cron-schedules-credential-vaultsanthropic-beta-puts-agents-autopilot.htm",
+      "https://blockchain.news/ainews/claude-managed-agents-add-scheduled-deployments",
+      "https://thenewstack.io/anthropic-managed-agents-dreaming-outcomes/"
+    ],
+    "media_urls": [
+      "https://media.zernio.com/temp/1781133262168_7kcdemzh_2026-06-10-01.png",
+      "https://media.zernio.com/temp/1781133263751_268xzxjp_2026-06-10-02.png",
+      "https://media.zernio.com/temp/1781133265610_spqq0h11_2026-06-10-03.png",
+      "https://media.zernio.com/temp/1781133268606_gujtv1by_2026-06-10-04.png",
+      "https://media.zernio.com/temp/1781133271001_tjr48t5j_2026-06-10-05.png",
+      "https://media.zernio.com/temp/1781133272671_iabrvg4t_2026-06-10-06.png"
+    ],
+    "post_id": null,
+    "instagram_url": null,
+    "nota": "X bloqueado por allowlist de red; ancla = anuncio oficial de Anthropic (Managed Agents scheduled deployments, beta pública), respaldado por 3 fuentes independientes <96h."
   }
 ]

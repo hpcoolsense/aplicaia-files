@@ -1,0 +1,26 @@
+{
+  "type": "tips",
+  "headerLabel": "PARA QUÉ SIRVE",
+  "eyebrow": "Trabajo recurrente, en piloto automático",
+  "titleLine1": "4 tareas que",
+  "titleLine2": "ya no hacés a mano",
+  "items": [
+    {
+      "title": "Sync de datos nocturno",
+      "desc": "El agente actualiza tus tablas mientras dormís y deja todo listo para la mañana."
+    },
+    {
+      "title": "Scan de compliance semanal",
+      "desc": "Revisa reglas y políticas cada semana y te avisa solo si algo se rompió."
+    },
+    {
+      "title": "Digest diario",
+      "desc": "Resume lo importante del día y te lo entrega sin que se lo pidas."
+    },
+    {
+      "title": "Reportes recurrentes",
+      "desc": "Arma el informe semanal o mensual a partir de tus datos, en automático."
+    }
+  ],
+  "cta": "SEGUÍ →"
+}

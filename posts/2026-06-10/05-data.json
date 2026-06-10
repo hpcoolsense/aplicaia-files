@@ -1,0 +1,24 @@
+{
+  "type": "compare",
+  "headerLabel": "CASO REAL",
+  "eyebrow": "Rakuten · reportes desde planillas",
+  "titleLine1": "De armarlo",
+  "titleLine2Pre": "a",
+  "titleLine2Accent": "recibirlo.",
+  "before": {
+    "label": "Antes",
+    "metric": "100",
+    "unit": "% a mano",
+    "headline": "Alguien abría la planilla y armaba el reporte a mano.",
+    "desc": "Tarea repetitiva que dependía de acordarse y tener tiempo."
+  },
+  "after": {
+    "label": "Después",
+    "metric": "0",
+    "unit": "clics",
+    "headline": "Un agente programado analiza los datos y genera el informe.",
+    "desc": "Sale semanal o mensual, solo, sin que nadie lo dispare."
+  },
+  "footerTag": "RAKUTEN",
+  "cta": "SEGUÍ →"
+}

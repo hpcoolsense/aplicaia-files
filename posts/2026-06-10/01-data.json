@@ -1,0 +1,12 @@
+{
+  "type": "announce",
+  "pillIcon": "⚙️",
+  "pillLabel": "Novedad",
+  "date": "10 · JUN · 2026",
+  "kicker": "Automatización",
+  "titleLine1": "Tus agentes",
+  "titleLine2Pre": "trabajan",
+  "titleLine2Accent": "solos.",
+  "lead": "Ya podés dejar un **agente de IA corriendo en horario fijo**: se despierta solo, hace la tarea y se apaga. Sin servidores que mantener.",
+  "cta": "Pasá las slides →"
+}
