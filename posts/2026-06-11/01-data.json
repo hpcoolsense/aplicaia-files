@@ -1,0 +1,12 @@
+{
+  "type": "announce",
+  "pillIcon": "🚀",
+  "pillLabel": "Nuevo modelo",
+  "date": "11 · JUN · 2026",
+  "kicker": "Lanzamiento",
+  "titleLine1": "Llegó Fable 5",
+  "titleLine2Pre": "y rompió los",
+  "titleLine2Accent": "benchmarks.",
+  "lead": "Anthropic liberó al público **Claude Fable 5**, su primer modelo de clase Mythos: un escalón por encima de Opus 4.8. Marca récord en casi todos los benchmarks de programación que se le midieron.",
+  "cta": "Pasá las slides →"
+}

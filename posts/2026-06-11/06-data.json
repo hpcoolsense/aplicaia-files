@@ -1,0 +1,26 @@
+{
+  "type": "tips",
+  "headerLabel": "TIPS · CUÁNDO USARLA",
+  "eyebrow": "Antes de migrar a Fable 5",
+  "titleLine1": "4 claves para",
+  "titleLine2": "aprovecharla bien",
+  "items": [
+    {
+      "title": "Reservala para lo difícil",
+      "desc": "En código complejo y contextos enormes rinde; para tareas simples, Opus 4.8 te sale la mitad."
+    },
+    {
+      "title": "Activá memoria en agentes",
+      "desc": "Su salto de 3× aparece cuando le dejás escribir notas y retomar trabajo de larga duración."
+    },
+    {
+      "title": "Usá prompt caching",
+      "desc": "Con 90% de descuento en lecturas cacheadas ($1/M) bajás fuerte el costo de input."
+    },
+    {
+      "title": "Medí antes de migrar todo",
+      "desc": "Comparala con Opus 4.8 en TUS casos reales antes de pagar el doble por defecto."
+    }
+  ],
+  "cta": "GUARDÁ ESTE POST"
+}

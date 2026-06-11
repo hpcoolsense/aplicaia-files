@@ -1,0 +1,10 @@
+{
+  "type": "stat",
+  "headerLabel": "DATO",
+  "eyebrow": "Memoria persistente · agentes",
+  "number": "3",
+  "unit": "×",
+  "description": "mejoró su desempeño respecto de Opus 4.8 cuando **Fable 5** usa memoria en archivos para retomar y pulir su propio trabajo entre tareas largas.",
+  "source": "Anthropic, test agéntico Slay the Spire · jun 2026",
+  "cta": "VER MÁS"
+}

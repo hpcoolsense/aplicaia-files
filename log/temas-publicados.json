@@ -360,5 +360,38 @@
     "post_id": "6a29f05f60aedf71d413aa09",
     "instagram_url": "https://www.instagram.com/p/DZbGxzYCIOi/",
     "nota": "X bloqueado por allowlist de red; ancla = anuncio oficial de Anthropic (Managed Agents scheduled deployments, beta pública), respaldado por 3 fuentes independientes <96h."
+  },
+  {
+    "fecha": "2026-06-11",
+    "tema": "Claude Fable 5: los benchmarks del primer modelo Mythos que Anthropic abrió al público",
+    "feature_principal": "otro",
+    "angulo": "benchmark",
+    "slides": 6,
+    "tendencia_origen": "Lanzamiento de Claude Fable 5 (primer modelo de clase Mythos para público general), 9 jun 2026 — tendencia activa en X sobre Anthropic/Claude (detectada vía WebSearch de X trending; x.com bloqueado por allowlist de red para fetch directo)",
+    "tweet_ancla": {
+      "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+      "autor": "Anthropic (@AnthropicAI)",
+      "fecha_original": "2026-06-09",
+      "horas_antiguedad": 60,
+      "likes": null,
+      "retweets": null,
+      "replies": null
+    },
+    "tweets_referencia": [
+      "https://techcrunch.com/2026/06/09/anthropic-released-claude-fable-5-its-most-powerful-model-publicly-days-after-warning-ai-is-getting-too-dangerous/",
+      "https://www.cnbc.com/2026/06/09/anthropic-mythos-claude-fable-5.html",
+      "https://venturebeat.com/technology/anthropic-brings-mythos-to-the-masses-with-claude-fable-5-its-most-powerful-generally-available-model-ever"
+    ],
+    "media_urls": [
+      "https://media.zernio.com/temp/1781219604494_910ygksw_2026-06-11-01.png",
+      "https://media.zernio.com/temp/1781219620364_vaubaujt_2026-06-11-02.png",
+      "https://media.zernio.com/temp/1781219621973_b2xe5uxr_2026-06-11-03.png",
+      "https://media.zernio.com/temp/1781219623504_56n8jij8_2026-06-11-04.png",
+      "https://media.zernio.com/temp/1781219625267_xvudqxjv_2026-06-11-05.png",
+      "https://media.zernio.com/temp/1781219626797_u91dg4t4_2026-06-11-06.png"
+    ],
+    "post_id": null,
+    "instagram_url": null,
+    "nota": "x.com bloqueado por allowlist de red (curl/WebFetch 403); tendencia de Fable 5 confirmada vía WebSearch de X trending + cobertura multi-fuente independiente <96h. Ancla = anuncio oficial de Anthropic. PNGs render.py @2x reescalados a 1080x1080 (browser build 1223 bloqueado; se usó playwright 1.56 con chromium 1194 preinstalado)."
   }
 ]

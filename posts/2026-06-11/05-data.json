@@ -1,0 +1,14 @@
+{
+  "type": "review",
+  "headerLabel": "MODELOS / REVIEW",
+  "verdict": "TOP DE GAMA",
+  "verdictWarn": false,
+  "category": "Modelo frontier · API",
+  "name": "Claude Fable 5",
+  "score": 5,
+  "scoreLabel": "4.8",
+  "summary": "El modelo público más capaz de Anthropic: **95% en SWE-bench Verified** y 1M de contexto. Brilla en código complejo y en trabajo agéntico de larga duración. El costo es el peaje: cuesta el doble que Opus 4.8.",
+  "tags": ["1M contexto", "$10/M in · $50/M out", "API · Bedrock · Copilot", "Clase Mythos"],
+  "footerTag": "#ModelReview",
+  "cta": "MÁS REVIEWS"
+}

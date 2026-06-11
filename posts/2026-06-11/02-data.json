@@ -1,0 +1,10 @@
+{
+  "type": "stat",
+  "headerLabel": "DATO",
+  "eyebrow": "Programación · SWE-bench Pro",
+  "number": "80,3",
+  "unit": "%",
+  "description": "resolvió **Fable 5** en SWE-bench Pro, tareas reales de GitHub sin ayuda. Opus 4.8 quedó en 69,2% y GPT-5.5 en 58,6%.",
+  "source": "Anthropic, benchmarks oficiales · jun 2026",
+  "cta": "VER MÁS"
+}
