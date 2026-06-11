@@ -390,8 +390,8 @@
       "https://media.zernio.com/temp/1781219625267_xvudqxjv_2026-06-11-05.png",
       "https://media.zernio.com/temp/1781219626797_u91dg4t4_2026-06-11-06.png"
     ],
-    "post_id": null,
-    "instagram_url": null,
+    "post_id": "6a2b41a4749ead8f425ab7c8",
+    "instagram_url": "https://www.instagram.com/p/DZdrbwiiM5y/",
     "nota": "x.com bloqueado por allowlist de red (curl/WebFetch 403); tendencia de Fable 5 confirmada vía WebSearch de X trending + cobertura multi-fuente independiente <96h. Ancla = anuncio oficial de Anthropic. PNGs render.py @2x reescalados a 1080x1080 (browser build 1223 bloqueado; se usó playwright 1.56 con chromium 1194 preinstalado)."
   }
 ]
