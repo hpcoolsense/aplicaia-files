@@ -422,8 +422,8 @@
       "https://media.zernio.com/temp/1781365340855_7jgs902a_2026-06-13-04.png",
       "https://media.zernio.com/temp/1781365342804_agk2b4uy_2026-06-13-05.png"
     ],
-    "post_id": null,
-    "instagram_url": null,
+    "post_id": "6a2d7abc7504a33b48fb88b2",
+    "instagram_url": "https://www.instagram.com/p/DZiBPqMjQhJ/",
     "nota": "OVERRIDE MANUAL solicitado por el usuario (no salido del pipeline de tendencias). Tema noticioso/regulatorio fuera de los 6 angulos showcase de la rutina; clasificado como otro/anuncio-oficial solo para validez de catalogo y sincronia con Zernio. x.com bloqueado por allowlist de red; ancla = comunicado oficial de Anthropic, respaldado por 3 fuentes independientes <96h (Bloomberg, CNBC, Al Jazeera). NO se corrio el gate estricto de dedup 7.5 (la combinacion ya existe en el log). PNGs render.py @2x reescalados a 1080x1080 con Pillow."
   }
 ]
