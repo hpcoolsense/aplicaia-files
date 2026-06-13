@@ -1,0 +1,10 @@
+{
+  "type": "stat",
+  "headerLabel": "DATO",
+  "eyebrow": "Scheduled deployments",
+  "number": "0",
+  "unit": "servidores",
+  "description": "que mantener: le das un **horario tipo cron** y el agente abre una sesión nueva, hace la tarea y se apaga solo. Ideal para syncs nocturnos o reportes diarios.",
+  "source": "Claude Developer Platform, jun 2026",
+  "cta": "VER MÁS"
+}
