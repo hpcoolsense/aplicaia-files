@@ -393,5 +393,37 @@
     "post_id": "6a2b41a4749ead8f425ab7c8",
     "instagram_url": "https://www.instagram.com/p/DZdrbwiiM5y/",
     "nota": "x.com bloqueado por allowlist de red (curl/WebFetch 403); tendencia de Fable 5 confirmada vía WebSearch de X trending + cobertura multi-fuente independiente <96h. Ancla = anuncio oficial de Anthropic. PNGs render.py @2x reescalados a 1080x1080 (browser build 1223 bloqueado; se usó playwright 1.56 con chromium 1194 preinstalado)."
+  },
+  {
+    "fecha": "2026-06-13",
+    "tema": "EE.UU. ordenó suspender el acceso a Fable 5 y Mythos 5 para extranjeros",
+    "feature_principal": "otro",
+    "angulo": "anuncio-oficial",
+    "slides": 5,
+    "tendencia_origen": "Directiva del gobierno de EE.UU. (control de exportación) que obliga a Anthropic a deshabilitar Fable 5 y Mythos 5 para todo foreign national, 12 jun 2026",
+    "tweet_ancla": {
+      "url": "https://www.anthropic.com/news/fable-mythos-access",
+      "autor": "Anthropic (comunicado oficial)",
+      "fecha_original": "2026-06-12",
+      "horas_antiguedad": 18,
+      "likes": null,
+      "retweets": null,
+      "replies": null
+    },
+    "tweets_referencia": [
+      "https://www.bloomberg.com/news/articles/2026-06-13/anthropic-says-us-limits-foreign-access-to-fable-5-mythos-5",
+      "https://www.cnbc.com/2026/06/12/anthropic-disables-access-to-fable-5-and-mythos-5-to-comply-with-government-directive.html",
+      "https://www.aljazeera.com/news/2026/6/13/us-orders-anthropic-to-disable-ai-models-for-all-foreign-nationals"
+    ],
+    "media_urls": [
+      "https://media.zernio.com/temp/1781365336250_w9i70g81_2026-06-13-01.png",
+      "https://media.zernio.com/temp/1781365337877_r57sl4gm_2026-06-13-02.png",
+      "https://media.zernio.com/temp/1781365339383_700nj0zz_2026-06-13-03.png",
+      "https://media.zernio.com/temp/1781365340855_7jgs902a_2026-06-13-04.png",
+      "https://media.zernio.com/temp/1781365342804_agk2b4uy_2026-06-13-05.png"
+    ],
+    "post_id": null,
+    "instagram_url": null,
+    "nota": "OVERRIDE MANUAL solicitado por el usuario (no salido del pipeline de tendencias). Tema noticioso/regulatorio fuera de los 6 angulos showcase de la rutina; clasificado como otro/anuncio-oficial solo para validez de catalogo y sincronia con Zernio. x.com bloqueado por allowlist de red; ancla = comunicado oficial de Anthropic, respaldado por 3 fuentes independientes <96h (Bloomberg, CNBC, Al Jazeera). NO se corrio el gate estricto de dedup 7.5 (la combinacion ya existe en el log). PNGs render.py @2x reescalados a 1080x1080 con Pillow."
   }
 ]

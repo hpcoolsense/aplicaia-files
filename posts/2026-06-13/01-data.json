@@ -1,0 +1,12 @@
+{
+  "type": "announce",
+  "pillIcon": "🚨",
+  "pillLabel": "Actualidad",
+  "date": "13 · JUN · 2026",
+  "kicker": "Control de exportación",
+  "titleLine1": "EE.UU. frenó",
+  "titleLine2Pre": "a",
+  "titleLine2Accent": "Fable 5.",
+  "lead": "El gobierno de Estados Unidos ordenó a Anthropic **suspender el acceso** a Fable 5 y Mythos 5, sus modelos más potentes, para toda persona que no sea ciudadana o residente de EE.UU.",
+  "cta": "Pasá las slides →"
+}

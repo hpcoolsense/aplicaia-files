@@ -1,0 +1,26 @@
+{
+  "type": "tips",
+  "headerLabel": "QUÉ SIGNIFICA",
+  "eyebrow": "Para vos",
+  "titleLine1": "Qué hacer",
+  "titleLine2": "mientras tanto",
+  "items": [
+    {
+      "title": "Tus apps con Fable 5 hoy no responden",
+      "desc": "Si integraste Fable 5 o Mythos 5, el acceso está cortado fuera de EE.UU. hasta nuevo aviso."
+    },
+    {
+      "title": "El resto de Claude sigue activo",
+      "desc": "Opus 4.8 y los modelos previos no están alcanzados por la medida: podés migrar ahí."
+    },
+    {
+      "title": "Es regulatorio, no técnico",
+      "desc": "No es una caída ni un bug: es una orden del gobierno de EE.UU. por control de exportación."
+    },
+    {
+      "title": "Seguí el comunicado oficial",
+      "desc": "Anthropic publicó un statement y anticipó que dará más actualizaciones."
+    }
+  ],
+  "cta": "GUARDÁ ESTE POST"
+}

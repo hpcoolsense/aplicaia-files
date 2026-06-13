@@ -1,0 +1,10 @@
+{
+  "type": "stat",
+  "headerLabel": "A QUIÉN AFECTA",
+  "eyebrow": "Alcance de la medida",
+  "number": "0",
+  "unit": "acceso",
+  "description": "Ningún extranjero puede usar los modelos: ni dentro ni fuera de EE.UU., incluidos empleados extranjeros de Anthropic. **Argentina entra en ese grupo.**",
+  "source": "Directiva de control de exportación de EE.UU.",
+  "cta": "VER MÁS"
+}

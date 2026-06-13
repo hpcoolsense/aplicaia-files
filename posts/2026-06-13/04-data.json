@@ -1,0 +1,10 @@
+{
+  "type": "stat",
+  "headerLabel": "POR QUÉ",
+  "eyebrow": "El detonante",
+  "number": "1",
+  "unit": "jailbreak",
+  "description": "El gobierno dijo haber detectado un método para **saltar las protecciones** de Fable 5. Anthropic revisó la demo y encontró pocas vulnerabilidades menores ya conocidas. Citaron seguridad nacional.",
+  "source": "Anthropic y cobertura de prensa",
+  "cta": "VER MÁS"
+}
