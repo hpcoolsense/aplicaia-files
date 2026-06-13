@@ -425,37 +425,5 @@
     "post_id": "6a2d7abc7504a33b48fb88b2",
     "instagram_url": "https://www.instagram.com/p/DZiBPqMjQhJ/",
     "nota": "OVERRIDE MANUAL solicitado por el usuario (no salido del pipeline de tendencias). Tema noticioso/regulatorio fuera de los 6 angulos showcase de la rutina; clasificado como otro/anuncio-oficial solo para validez de catalogo y sincronia con Zernio. x.com bloqueado por allowlist de red; ancla = comunicado oficial de Anthropic, respaldado por 3 fuentes independientes <96h (Bloomberg, CNBC, Al Jazeera). NO se corrio el gate estricto de dedup 7.5 (la combinacion ya existe en el log). PNGs render.py @2x reescalados a 1080x1080 con Pillow."
-  },
-  {
-    "fecha": "2026-06-13",
-    "tema": "Claude Managed Agents: vaults para tus claves y agentes que arrancan solos con cron",
-    "feature_principal": "api-sdk",
-    "angulo": "novedad-version",
-    "slides": 5,
-    "tendencia_origen": "Release en el Claude Developer Platform (9-10 jun 2026): Claude Managed Agents suma scheduled deployments (cron) y credential vaults en beta publica",
-    "tweet_ancla": {
-      "url": "https://claude.com/blog/whats-new-in-claude-managed-agents",
-      "autor": "Anthropic (Claude Developer Platform, blog oficial)",
-      "fecha_original": "2026-06-10",
-      "horas_antiguedad": 72,
-      "likes": null,
-      "retweets": null,
-      "replies": null
-    },
-    "tweets_referencia": [
-      "https://www.techtimes.com/articles/318163/20260610/claude-managed-agents-add-cron-schedules-credential-vaultsanthropic-beta-puts-agents-autopilot.htm",
-      "https://blockchain.news/ainews/claude-managed-agents-add-scheduled-deployments",
-      "https://platform.claude.com/docs/en/release-notes/overview"
-    ],
-    "media_urls": [
-      "https://media.zernio.com/temp/1781392434167_7apfml4k_2026-06-13-b-01.png",
-      "https://media.zernio.com/temp/1781392441633_gdz1ov0l_2026-06-13-b-02.png",
-      "https://media.zernio.com/temp/1781392443712_pfmsytts_2026-06-13-b-03.png",
-      "https://media.zernio.com/temp/1781392450800_8q348i7t_2026-06-13-b-04.png",
-      "https://media.zernio.com/temp/1781392452265_r82zmblr_2026-06-13-b-05.png"
-    ],
-    "post_id": null,
-    "instagram_url": null,
-    "nota": "Segundo carrusel del 2026-06-13 (la entrada previa de hoy fue un OVERRIDE MANUAL de tema regulatorio). Tema productivo SHOWCASE salido del pipeline normal. x.com bloqueado por la allowlist de red del environment (403 en WebFetch y en x.com/search), por lo que NO se pudo leer trends ni metricas exactas de tweets: el ancla es el blog oficial de Anthropic (Claude Developer Platform) respaldado por 3 fuentes independientes <96h (TechTimes 10jun, blockchain.news, release notes de la plataforma). likes/retweets/replies quedan null (no inventados). PNGs: render.py corre @2x (2160x2160) y se reescalaron a 1080x1080 con Pillow LANCZOS. GH_TOKEN no estaba en el env; se uso el token de 'info util' de la rutina. Combinacion api-sdk|novedad-version inexistente en el log (dedup OK)."
   }
 ]
