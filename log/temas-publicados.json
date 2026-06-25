@@ -455,8 +455,8 @@
       "https://media.zernio.com/temp/1782355020977_oq3dgsf3_2026-06-25-05.png",
       "https://media.zernio.com/temp/1782355022590_ls3hvuik_2026-06-25-06.png"
     ],
-    "post_id": null,
-    "instagram_url": null,
+    "post_id": "6a3c9512d329de1abe078383",
+    "instagram_url": "https://www.instagram.com/p/DZ_hKNZiH7l/",
     "nota": "x.com bloqueado por allowlist de red (curl/WebFetch 403); tendencia de Claude Tag confirmada vía WebSearch de X trending + cobertura multi-fuente independiente <96h (TechCrunch, Fortune, VentureBeat, IT Pro, Salesforce). Ancla = anuncio oficial de Anthropic (23 jun 2026). Angulo tutorial: el carrusel desarrolla paso a paso cómo funciona y cómo ponerlo a trabajar. PNGs render.py @2x reescalados a 1080x1080 con Pillow (browser build 1223 bloqueado; playwright 1.56 con chromium 1194 preinstalado)."
   }
 ]
