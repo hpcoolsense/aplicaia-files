@@ -425,5 +425,38 @@
     "post_id": "6a2d7abc7504a33b48fb88b2",
     "instagram_url": "https://www.instagram.com/p/DZiBPqMjQhJ/",
     "nota": "OVERRIDE MANUAL solicitado por el usuario (no salido del pipeline de tendencias). Tema noticioso/regulatorio fuera de los 6 angulos showcase de la rutina; clasificado como otro/anuncio-oficial solo para validez de catalogo y sincronia con Zernio. x.com bloqueado por allowlist de red; ancla = comunicado oficial de Anthropic, respaldado por 3 fuentes independientes <96h (Bloomberg, CNBC, Al Jazeera). NO se corrio el gate estricto de dedup 7.5 (la combinacion ya existe en el log). PNGs render.py @2x reescalados a 1080x1080 con Pillow."
+  },
+  {
+    "fecha": "2026-06-25",
+    "tema": "Claude entra a tu Slack: cómo delegarle tareas a tu equipo con Claude Tag",
+    "feature_principal": "ecosistema",
+    "angulo": "tutorial",
+    "slides": 6,
+    "tendencia_origen": "Lanzamiento de Claude Tag (Anthropic suma @Claude a Slack como teammate compartido), 23 jun 2026 — tendencia activa en X sobre Anthropic/Claude (detectada vía WebSearch de X trending; x.com bloqueado por allowlist de red para fetch directo)",
+    "tweet_ancla": {
+      "url": "https://www.anthropic.com/news/introducing-claude-tag",
+      "autor": "Anthropic (@AnthropicAI / @claudeai)",
+      "fecha_original": "2026-06-23",
+      "horas_antiguedad": 48,
+      "likes": null,
+      "retweets": null,
+      "replies": null
+    },
+    "tweets_referencia": [
+      "https://techcrunch.com/2026/06/23/anthropics-claude-tag-is-learning-your-company-one-slack-message-at-a-time/",
+      "https://fortune.com/2026/06/23/anthropic-claude-tag-virtual-employee-tool-slack/",
+      "https://venturebeat.com/technology/anthropic-launches-claude-tag-replacing-its-slack-app-with-a-persistent-ai-teammate-that-learns-monitors-and-works-autonomously"
+    ],
+    "media_urls": [
+      "https://media.zernio.com/temp/1782355015020_g16jp2t3_2026-06-25-01.png",
+      "https://media.zernio.com/temp/1782355016585_cm6pr5rg_2026-06-25-02.png",
+      "https://media.zernio.com/temp/1782355018030_tvfjnaf1_2026-06-25-03.png",
+      "https://media.zernio.com/temp/1782355019440_nspdgzya_2026-06-25-04.png",
+      "https://media.zernio.com/temp/1782355020977_oq3dgsf3_2026-06-25-05.png",
+      "https://media.zernio.com/temp/1782355022590_ls3hvuik_2026-06-25-06.png"
+    ],
+    "post_id": null,
+    "instagram_url": null,
+    "nota": "x.com bloqueado por allowlist de red (curl/WebFetch 403); tendencia de Claude Tag confirmada vía WebSearch de X trending + cobertura multi-fuente independiente <96h (TechCrunch, Fortune, VentureBeat, IT Pro, Salesforce). Ancla = anuncio oficial de Anthropic (23 jun 2026). Angulo tutorial: el carrusel desarrolla paso a paso cómo funciona y cómo ponerlo a trabajar. PNGs render.py @2x reescalados a 1080x1080 con Pillow (browser build 1223 bloqueado; playwright 1.56 con chromium 1194 preinstalado)."
   }
 ]

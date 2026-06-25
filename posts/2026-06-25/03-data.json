@@ -1,0 +1,14 @@
+{
+  "type": "review",
+  "headerLabel": "QUÉ LO HACE DISTINTO",
+  "verdict": "COMPAÑERO IA",
+  "verdictWarn": false,
+  "category": "Colaboración · Slack",
+  "name": "Claude Tag",
+  "score": 5,
+  "scoreLabel": "Nuevo",
+  "summary": "No es un bot más. Es **un solo Claude compartido** por todo el canal, con **memoria persistente** del trabajo del equipo, que labura **en segundo plano** y avisa solo cuando algo necesita atención.",
+  "tags": ["Multiplayer", "Memoria", "Async", "Modo ambiente"],
+  "footerTag": "#ClaudeTag",
+  "cta": "SEGUÍ →"
+}

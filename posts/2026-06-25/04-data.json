@@ -1,0 +1,10 @@
+{
+  "type": "stat",
+  "headerLabel": "DATO",
+  "eyebrow": "Dentro de Anthropic",
+  "number": "65",
+  "unit": "%",
+  "description": "del código del equipo de Anthropic ya lo **genera Claude** con su versión interna de Tag — incluido buena parte del código que construyó **Claude Tag**.",
+  "source": "Anthropic, junio 2026",
+  "cta": "SEGUÍ →"
+}

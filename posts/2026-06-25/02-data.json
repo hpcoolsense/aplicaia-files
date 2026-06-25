@@ -1,0 +1,10 @@
+{
+  "type": "stat",
+  "headerLabel": "CÓMO FUNCIONA",
+  "eyebrow": "Puesta en marcha",
+  "number": "3",
+  "unit": "pasos",
+  "description": "Un admin **suma a Claude** al canal, lo **conecta a tus herramientas y datos**, y desde ahí cualquiera escribe **@Claude** para delegarle una tarea.",
+  "source": "Claude Tag · Anthropic",
+  "cta": "SEGUÍ →"
+}

@@ -1,0 +1,24 @@
+{
+  "type": "compare",
+  "headerLabel": "QUÉ CAMBIA",
+  "eyebrow": "Trabajo en equipo con IA",
+  "titleLine1": "De chats sueltos",
+  "titleLine2Pre": "a un",
+  "titleLine2Accent": "compañero.",
+  "before": {
+    "label": "Antes",
+    "metric": "1x1",
+    "unit": "chat",
+    "headline": "Una sesión privada por persona.",
+    "desc": "Cada uno le re-explica el contexto. Nada se comparte ni queda."
+  },
+  "after": {
+    "label": "Ahora",
+    "metric": "1",
+    "unit": "equipo",
+    "headline": "Un Claude compartido, con memoria del canal.",
+    "desc": "Recuerda el trabajo, ejecuta async y avisa cuando hace falta."
+  },
+  "footerTag": "CLAUDE TAG",
+  "cta": "SEGUÍ →"
+}

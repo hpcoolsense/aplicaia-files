@@ -1,0 +1,26 @@
+{
+  "type": "tips",
+  "headerLabel": "TIPS · CLAUDE TAG",
+  "eyebrow": "Antes de soltarlo en tu canal",
+  "titleLine1": "4 claves para",
+  "titleLine2": "sacarle provecho",
+  "items": [
+    {
+      "title": "Elegí bien los canales",
+      "desc": "El admin define a qué canales entra y qué herramientas y datos puede tocar."
+    },
+    {
+      "title": "Conectá tus herramientas",
+      "desc": "Sumale tus apps, datos y hasta el codebase: ahí es donde rinde de verdad."
+    },
+    {
+      "title": "Activá el modo ambiente",
+      "desc": "Dejá que monitoree el canal y retome hilos frenados sin que se lo pidas."
+    },
+    {
+      "title": "Mirá los límites y el log",
+      "desc": "Podés topear el gasto de tokens por canal y auditar todo lo que hizo."
+    }
+  ],
+  "cta": "GUARDÁ ESTE POST"
+}
