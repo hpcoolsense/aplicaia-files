@@ -488,8 +488,8 @@
       "https://media.zernio.com/temp/1782515694374_oa8ar32z_2026-06-26-05.png",
       "https://media.zernio.com/temp/1782515697274_ah7l9cbl_2026-06-26-06.png"
     ],
-    "post_id": null,
-    "instagram_url": null,
+    "post_id": "6a3f0e8af7a8f98e15f3d17a",
+    "instagram_url": "https://www.instagram.com/p/DaEWbUKjeCn/",
     "nota": "x.com bloqueado por allowlist de red (WebFetch 403); novedad confirmada vía WebSearch + release notes oficiales del Claude Developer Platform (26 jun 2026) y cobertura de docs/releasebot. Ancla = release notes oficiales del Developer Platform. Angulo novedad-version: release/changelog del nuevo code_execution_20260120 (REPL persistente + programmatic tool calling, benchmark -38% tokens). PNGs render.py @2x reescalados a 1080x1080 con Pillow (playwright 1.56 + chromium 1194 preinstalado)."
   }
 ]
