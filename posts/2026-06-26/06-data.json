@@ -1,0 +1,26 @@
+{
+  "type": "tips",
+  "headerLabel": "TIPS · IA APLICADA",
+  "eyebrow": "Cómo aprovecharlo",
+  "titleLine1": "4 ideas para",
+  "titleLine2": "agentes más eficientes",
+  "items": [
+    {
+      "title": "Activá la última versión",
+      "desc": "Poné el tool type en code_execution_20260120: no necesitás beta header."
+    },
+    {
+      "title": "Aprovechá el estado del REPL",
+      "desc": "Cargá los datos una vez y reusá variables entre pasos en vez de recalcular."
+    },
+    {
+      "title": "Orquestá tools por código",
+      "desc": "Dejá que Claude combine varias herramientas en un script y filtre el contexto."
+    },
+    {
+      "title": "Medí tokens y latencia",
+      "desc": "Compará tus flujos con y sin programmatic tool calling: el ahorro es real."
+    }
+  ],
+  "cta": "GUARDÁ ESTE POST"
+}

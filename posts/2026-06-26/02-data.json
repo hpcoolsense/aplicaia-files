@@ -1,0 +1,14 @@
+{
+  "type": "review",
+  "headerLabel": "NOVEDAD · DEV PLATFORM",
+  "verdict": "DISPONIBLE YA",
+  "verdictWarn": false,
+  "category": "Tool use · Agentes",
+  "name": "Code Execution con estado",
+  "score": 5,
+  "scoreLabel": "REPL",
+  "summary": "La nueva versión de **code execution** mantiene el estado del REPL entre ejecuciones: las variables y los dataframes **siguen en memoria** de un paso al otro. Menos recálculo, menos tokens y flujos de datos mucho más rápidos.",
+  "tags": ["REPL persistente", "Python · JS · Go", "Sin beta header", "Fable 5 · Opus 4.5+"],
+  "footerTag": "#DevPlatform",
+  "cta": "SEGUÍ →"
+}

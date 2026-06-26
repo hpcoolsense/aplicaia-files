@@ -1,0 +1,24 @@
+{
+  "type": "compare",
+  "headerLabel": "QUÉ CAMBIA",
+  "eyebrow": "Orquestar herramientas",
+  "titleLine1": "De round-trips",
+  "titleLine2Pre": "a",
+  "titleLine2Accent": "código.",
+  "before": {
+    "label": "Antes",
+    "metric": "N",
+    "unit": "viajes",
+    "headline": "Cada herramienta, un viaje de ida y vuelta al modelo.",
+    "desc": "Todos los resultados entran al contexto y lo saturan. Más latencia y más tokens."
+  },
+  "after": {
+    "label": "Después",
+    "metric": "1",
+    "unit": "script",
+    "headline": "Claude escribe código que llama y combina varias tools.",
+    "desc": "Procesa los resultados en el sandbox y decide qué entra al contexto."
+  },
+  "footerTag": "PROGRAMMATIC TOOL CALLING",
+  "cta": "SEGUÍ →"
+}

@@ -458,5 +458,38 @@
     "post_id": "6a3c9512d329de1abe078383",
     "instagram_url": "https://www.instagram.com/p/DZ_hKNZiH7l/",
     "nota": "x.com bloqueado por allowlist de red (curl/WebFetch 403); tendencia de Claude Tag confirmada vía WebSearch de X trending + cobertura multi-fuente independiente <96h (TechCrunch, Fortune, VentureBeat, IT Pro, Salesforce). Ancla = anuncio oficial de Anthropic (23 jun 2026). Angulo tutorial: el carrusel desarrolla paso a paso cómo funciona y cómo ponerlo a trabajar. PNGs render.py @2x reescalados a 1080x1080 con Pillow (browser build 1223 bloqueado; playwright 1.56 con chromium 1194 preinstalado)."
+  },
+  {
+    "fecha": "2026-06-26",
+    "tema": "Claude ejecuta código con estado y orquesta herramientas por código: lo nuevo para tus agentes",
+    "feature_principal": "api-sdk",
+    "angulo": "novedad-version",
+    "slides": 6,
+    "tendencia_origen": "Actualización del Claude Developer Platform (26 jun 2026): nueva versión de la herramienta de ejecución de código (code_execution_20260120) con estado persistente del REPL + programmatic tool calling, disponible en los 7 SDKs oficiales. Novedad técnica del ecosistema Claude activa hoy (x.com bloqueado por allowlist de red para fetch directo; detectada vía WebSearch + release notes oficiales del Developer Platform).",
+    "tweet_ancla": {
+      "url": "https://platform.claude.com/docs/en/release-notes/overview",
+      "autor": "Anthropic (Claude Developer Platform release notes)",
+      "fecha_original": "2026-06-26",
+      "horas_antiguedad": 6,
+      "likes": null,
+      "retweets": null,
+      "replies": null
+    },
+    "tweets_referencia": [
+      "https://releasebot.io/updates/anthropic/claude-developer-platform",
+      "https://platform.claude.com/docs/en/agents-and-tools/tool-use/programmatic-tool-calling",
+      "https://www.anthropic.com/engineering/advanced-tool-use"
+    ],
+    "media_urls": [
+      "https://media.zernio.com/temp/1782515687186_p9t4ujyq_2026-06-26-01.png",
+      "https://media.zernio.com/temp/1782515688741_m4ve6rl8_2026-06-26-02.png",
+      "https://media.zernio.com/temp/1782515690365_dclwzw3v_2026-06-26-03.png",
+      "https://media.zernio.com/temp/1782515691906_0huu2xfz_2026-06-26-04.png",
+      "https://media.zernio.com/temp/1782515694374_oa8ar32z_2026-06-26-05.png",
+      "https://media.zernio.com/temp/1782515697274_ah7l9cbl_2026-06-26-06.png"
+    ],
+    "post_id": null,
+    "instagram_url": null,
+    "nota": "x.com bloqueado por allowlist de red (WebFetch 403); novedad confirmada vía WebSearch + release notes oficiales del Claude Developer Platform (26 jun 2026) y cobertura de docs/releasebot. Ancla = release notes oficiales del Developer Platform. Angulo novedad-version: release/changelog del nuevo code_execution_20260120 (REPL persistente + programmatic tool calling, benchmark -38% tokens). PNGs render.py @2x reescalados a 1080x1080 con Pillow (playwright 1.56 + chromium 1194 preinstalado)."
   }
 ]

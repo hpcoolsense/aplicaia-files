@@ -1,0 +1,12 @@
+{
+  "type": "announce",
+  "pillIcon": "⚡",
+  "pillLabel": "Novedad",
+  "date": "26 · JUN · 2026",
+  "kicker": "Claude para developers",
+  "titleLine1": "Agentes que",
+  "titleLine2Pre": "ejecutan",
+  "titleLine2Accent": "código de verdad.",
+  "lead": "Claude ya no solo **escribe** código: lo **ejecuta**, recuerda el estado entre pasos y orquesta tus herramientas por código. Agentes más rápidos y más baratos.",
+  "cta": "Pasá las slides →"
+}

@@ -1,0 +1,10 @@
+{
+  "type": "stat",
+  "headerLabel": "DATO",
+  "eyebrow": "Programmatic tool calling",
+  "number": "38",
+  "unit": "%",
+  "description": "menos **tokens facturados** en un benchmark de 75 herramientas, **sin perder precisión**: Claude escribe código que llama varias tools y filtra qué entra a su contexto.",
+  "source": "Anthropic · Developer Platform",
+  "cta": "SEGUÍ →"
+}

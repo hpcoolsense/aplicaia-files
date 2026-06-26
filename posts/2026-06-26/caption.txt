@@ -1,0 +1,18 @@
+⚡ Tus agentes de IA ya no solo escriben código: ahora lo ejecutan, recuerdan lo que hicieron y orquestan tus herramientas solos.
+
+La última actualización del Developer Platform de Claude trae una nueva versión de su herramienta de ejecución de código con dos cambios grandes:
+
+🔹 Estado persistente (REPL): las variables y los dataframes quedan en memoria entre pasos. Cargás los datos una vez y los reusás, en lugar de recalcular todo en cada ejecución. Menos tokens y menos espera.
+
+🔹 Orquestación por código: en vez de un viaje de ida y vuelta por cada herramienta, Claude escribe código que llama y combina varias tools, procesa los resultados y decide qué entra a su contexto. En un benchmark de 75 herramientas, esto bajó 38% los tokens facturados sin perder precisión.
+
+Y lo mejor: ya está disponible en los 7 SDKs oficiales (Python, TypeScript, Go, Java, Ruby, PHP y C#), sin beta header.
+
+¿Qué significa para vos? Agentes más rápidos, más baratos y capaces de trabajar con datos reales de punta a punta.
+
+Guardá este post para tu próximo proyecto con agentes.
+
+Pasá las slides →
+
+...
+#Claude #ClaudeAI #ClaudeCode #AplicaIA #Anthropic #InteligenciaArtificial #IAArgentina #IAaplicada #Tecnología #TransformaciónDigital #IA #AI #Argentina #Tech

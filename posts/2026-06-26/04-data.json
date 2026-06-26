@@ -1,0 +1,10 @@
+{
+  "type": "stat",
+  "headerLabel": "DATO",
+  "eyebrow": "Disponible en todos los SDKs",
+  "number": "7",
+  "unit": "lenguajes",
+  "description": "Python, TypeScript, Go, Java, Ruby, PHP y C#: la nueva herramienta llega a **todos los SDKs oficiales** a la vez, lista para usar en producción.",
+  "source": "Anthropic · SDKs oficiales",
+  "cta": "SEGUÍ →"
+}
