@@ -1,0 +1,10 @@
+{
+  "type": "stat",
+  "headerLabel": "PASO 1",
+  "eyebrow": "Abrí el menú",
+  "number": "2",
+  "unit": "formas",
+  "description": "Escribí **/rewind**, o apretá **Esc dos veces** con el input vacío. Se abre la lista de checkpoints de toda tu sesión.",
+  "source": "Claude Code · checkpointing",
+  "cta": "PASO 2 →"
+}

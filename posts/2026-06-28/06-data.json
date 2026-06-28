@@ -1,0 +1,26 @@
+{
+  "type": "tips",
+  "headerLabel": "TIPS · /REWIND",
+  "eyebrow": "Para sacarle el jugo",
+  "titleLine1": "4 reglas para",
+  "titleLine2": "trabajar sin miedo",
+  "items": [
+    {
+      "title": "Animate a tareas grandes",
+      "desc": "Con checkpoints podés pedir cambios ambiciosos: si sale mal, volvés en un toque."
+    },
+    {
+      "title": "Rebobiná antes de cambiar de rumbo",
+      "desc": "¿La idea no funcionó? Volvé al checkpoint anterior en vez de pelearla a parches."
+    },
+    {
+      "title": "Comiteá lo importante igual",
+      "desc": "/rewind no toca git push ni borrados de terminal. Para lo serio, seguí con commits."
+    },
+    {
+      "title": "Recuperá tu último prompt",
+      "desc": "Reconstruye el contexto incluso de antes de un /clear. Nada se pierde por accidente."
+    }
+  ],
+  "cta": "GUARDÁ ESTE POST"
+}

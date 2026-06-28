@@ -1,0 +1,24 @@
+{
+  "type": "compare",
+  "headerLabel": "LO QUE SÍ Y LO QUE NO",
+  "eyebrow": "Antes de confiarte",
+  "titleLine1": "Revierte edits,",
+  "titleLine2Pre": "no la",
+  "titleLine2Accent": "terminal.",
+  "before": {
+    "label": "SÍ se revierte",
+    "metric": "Edits",
+    "unit": "de archivo",
+    "headline": "Todo lo que Claude tocó con sus herramientas de edición.",
+    "desc": "Código y conversación vuelven al checkpoint que elijas."
+  },
+  "after": {
+    "label": "NO se revierte",
+    "metric": "Bash",
+    "unit": "& push",
+    "headline": "git push, npm install, rm, mv o cp.",
+    "desc": "Los efectos de comandos de terminal quedan firmes."
+  },
+  "footerTag": "/REWIND",
+  "cta": "CIERRE →"
+}

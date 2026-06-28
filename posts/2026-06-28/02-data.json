@@ -1,0 +1,14 @@
+{
+  "type": "review",
+  "headerLabel": "FEATURE / REVIEW",
+  "verdict": "IMPRESCINDIBLE",
+  "verdictWarn": false,
+  "category": "Claude Code · Checkpointing",
+  "name": "/rewind",
+  "score": 5,
+  "scoreLabel": "5.0",
+  "summary": "Claude Code ahora **versiona tu sesión solo**: toma un snapshot de tu código **antes de cada edición**. Cada prompt que mandás crea un checkpoint al que podés volver en un toque.",
+  "tags": ["Checkpoints", "Automático", "Sin git", "v2.1.191"],
+  "footerTag": "#ClaudeCode",
+  "cta": "SEGUÍ →"
+}

@@ -1,0 +1,10 @@
+{
+  "type": "stat",
+  "headerLabel": "PASO 2",
+  "eyebrow": "Elegí qué volver atrás",
+  "number": "3",
+  "unit": "opciones",
+  "description": "En cada checkpoint elegís: restaurar **solo el código**, **solo la conversación**, o **las dos cosas** al mismo punto.",
+  "source": "Menú de /rewind",
+  "cta": "OJO ACÁ →"
+}
