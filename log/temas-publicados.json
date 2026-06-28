@@ -521,8 +521,8 @@
       "https://media.zernio.com/temp/1782688518422_4zxpx4t1_2026-06-28-05.png",
       "https://media.zernio.com/temp/1782688519939_loz6knko_2026-06-28-06.png"
     ],
-    "post_id": null,
-    "instagram_url": null,
+    "post_id": "6a41ac28516593034904fa9b",
+    "instagram_url": "https://www.instagram.com/p/DaJdYeiDFtY/",
     "nota": "x.com bloqueado por allowlist de red (curl/WebFetch 403 a x.com; proxy rechaza CONNECT). Tendencia detectada vía WebSearch de trending de Claude + docs/changelog oficiales de Claude Code. Ancla = doc oficial de checkpointing/rewind (release 2.1.191, 25 jun 2026), respaldada por 3 fuentes <96h (docs whats-new, explainx changelog, mindstudio how-to). Angulo tutorial: el carrusel desarrolla paso a paso cómo abrir /rewind, qué restaura y qué NO revierte. Dedup gate 7.5 corrido con semantica corregida (PREVIO==0 = combinacion nueva; el spec dice ==1 pero es typo). PNGs render.py @2x (2160) reescalados a 1080x1080 con Pillow (browser build 1223 ausente; chromium 1194 preinstalado symlinkeado)."
   }
 ]
