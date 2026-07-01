@@ -28,6 +28,19 @@ W, H = 1080, 1920          # lienzo vertical del Reel (9:16)
 FPS = 30
 
 
+def find_ffmpeg():
+    """ffmpeg del sistema, o el binario estático de imageio-ffmpeg (pip).
+    El entorno de la routine evita apt, así que imageio-ffmpeg es el fallback."""
+    exe = shutil.which("ffmpeg")
+    if exe:
+        return exe
+    try:
+        import imageio_ffmpeg
+        return imageio_ffmpeg.get_ffmpeg_exe()
+    except Exception:
+        return None
+
+
 def find_slides(day_dir: str):
     pats = sorted(glob.glob(os.path.join(day_dir, "*-imagen.png")))
     return pats
@@ -80,8 +93,10 @@ def main():
     ap.add_argument("--fps", type=int, default=FPS)
     args = ap.parse_args()
 
-    if not shutil.which("ffmpeg"):
-        sys.exit("FATAL: ffmpeg no está en el PATH")
+    ffmpeg = find_ffmpeg()
+    if not ffmpeg:
+        sys.exit("FATAL: no encuentro ffmpeg (ni en PATH ni vía imageio-ffmpeg).\n"
+                 "  Instalá: pip install imageio-ffmpeg   (o apt-get install ffmpeg)")
 
     if args.images:
         slides = args.images
@@ -109,7 +124,7 @@ def main():
     audio = args.audio if (args.audio and Path(args.audio).is_file()) else \
         (str(default_bg) if default_bg.is_file() else None)
 
-    cmd = ["ffmpeg", "-y"]
+    cmd = [ffmpeg, "-y"]
     for i, s in enumerate(slides):
         cmd += ["-loop", "1", "-framerate", str(args.fps), "-t", f"{durs[i]:.3f}", "-i", s]
 
