@@ -1,0 +1,12 @@
+{
+  "type": "announce",
+  "pillIcon": "⚡",
+  "pillLabel": "Nuevo modelo",
+  "date": "01 · JUL · 2026",
+  "kicker": "Anthropic",
+  "titleLine1": "Llegó",
+  "titleLine2Pre": "Claude",
+  "titleLine2Accent": "Sonnet 5",
+  "lead": "Un modelo **mid-tier** que roza el rendimiento de Opus 4.8 a **menos de la mitad del precio**, pensado para correr agentes de varios pasos.",
+  "cta": "Mirá el reel completo"
+}

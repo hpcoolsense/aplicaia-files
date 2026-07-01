@@ -1,0 +1,10 @@
+{
+  "type": "stat",
+  "headerLabel": "BENCHMARK",
+  "eyebrow": "Terminal-bench · tareas de agente",
+  "number": "76.1",
+  "unit": "%",
+  "description": "un salto de **+20,7 puntos** sobre Sonnet 4.6. Es el número que más importa para quien arma agentes que operan la terminal.",
+  "source": "Anthropic, jun 2026",
+  "cta": "Seguí →"
+}

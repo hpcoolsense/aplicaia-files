@@ -1,0 +1,24 @@
+{
+  "type": "compare",
+  "headerLabel": "SONNET 5 vs OPUS 4.8",
+  "eyebrow": "SWE-bench Verified · código real",
+  "titleLine1": "Casi el",
+  "titleLine2Pre": "mismo",
+  "titleLine2Accent": "puntaje.",
+  "before": {
+    "label": "Opus 4.8",
+    "metric": "79.4",
+    "unit": "%",
+    "headline": "El líder en código difícil.",
+    "desc": "También arriba en computer use (83,4% en OSWorld)."
+  },
+  "after": {
+    "label": "Sonnet 5",
+    "metric": "72.7",
+    "unit": "%",
+    "headline": "A pocos puntos, por menos de la mitad del costo.",
+    "desc": "Y 81,2% en OSWorld: casi lo mismo en computer use."
+  },
+  "footerTag": "CÓDIGO",
+  "cta": "Guardalo"
+}

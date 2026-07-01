@@ -1,0 +1,10 @@
+{
+  "type": "stat",
+  "headerLabel": "QUÉ ES",
+  "eyebrow": "Modelo mid-tier · Anthropic",
+  "number": "1M",
+  "unit": "tokens",
+  "description": "de ventana de contexto. Ya es el **modelo por defecto** en los planes Free y Pro, y también en Claude Code para flujos de agente.",
+  "source": "Anthropic, 30 jun 2026",
+  "cta": "Seguí viendo"
+}

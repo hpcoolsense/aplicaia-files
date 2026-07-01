@@ -539,5 +539,30 @@
     "post_id": "6a444ff58ec9a5023e639298",
     "instagram_url": null,
     "nota": "Entrada de reconciliación agregada a mano el 2026-07-01. El post estaba publicado en Zernio (@aplica.ia.ar, 2026-06-30 23:23 UTC) sin entrada en el log: su corrida publicó pero no llegó a commitear el update (Paso 9). Clasificado por el caption (comparativa Opus 4.8 vs GPT-5.5 para coding, SWE-bench Verified). instagram_url y media_urls quedan por completar desde Zernio si se necesitan para auditoría."
+  },
+  {
+    "fecha": "2026-07-01",
+    "tema": "Claude Sonnet 5: casi el rendimiento de Opus 4.8 a menos de la mitad del precio para correr agentes",
+    "formato": "reel",
+    "feature_principal": "sonnet-4-6",
+    "angulo": "novedad-version",
+    "slides": 6,
+    "tendencia_origen": "Anthropic launches Claude Sonnet 5",
+    "tweet_ancla": {
+      "url": "https://www.anthropic.com/news/claude-sonnet-5",
+      "autor": "@AnthropicAI",
+      "fecha_original": "2026-06-30",
+      "horas_antiguedad": 30,
+      "likes": null,
+      "retweets": null,
+      "replies": null
+    },
+    "tweets_referencia": [
+      "https://techcrunch.com/2026/06/30/anthropic-launches-claude-sonnet-5-as-a-cheaper-way-to-run-agents/",
+      "https://www.marktechpost.com/2026/06/30/anthropic-claude-sonnet-5-vs-sonnet-4-6-vs-opus-4-8-agentic-coding-benchmarks-api-pricing-and-cost-performance-tradeoffs-compared/",
+      "https://thenewstack.io/claude-sonnet-5-launch/"
+    ],
+    "post_id": null,
+    "instagram_url": null
   }
 ]

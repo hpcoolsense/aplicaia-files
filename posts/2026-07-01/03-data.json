@@ -1,0 +1,24 @@
+{
+  "type": "compare",
+  "headerLabel": "PRECIO API",
+  "eyebrow": "Costo por millón de tokens",
+  "titleLine1": "Casi Opus,",
+  "titleLine2Pre": "a mitad",
+  "titleLine2Accent": "de precio.",
+  "before": {
+    "label": "Opus 4.8",
+    "metric": "$5 / $25",
+    "unit": "in / out",
+    "headline": "El tope de gama.",
+    "desc": "Máxima precisión, pero el más caro por token."
+  },
+  "after": {
+    "label": "Sonnet 5",
+    "metric": "$2 / $10",
+    "unit": "in / out",
+    "headline": "Precio introductorio hasta el 31 de agosto.",
+    "desc": "Después pasa a $3 / $15. Igual, menos de la mitad."
+  },
+  "footerTag": "COSTO REAL",
+  "cta": "Guardalo"
+}
