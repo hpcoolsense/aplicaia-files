@@ -26,23 +26,27 @@ ROOT = Path(__file__).parent
 TEMPLATE = ROOT / "templates" / "instagram-templates.html"
 
 
-def render(data: dict, out_path: Path) -> Path:
-    """Renderiza el dict `data` al PNG `out_path`. Retorna el path final."""
+def render(data: dict, out_path: Path, template: Path = TEMPLATE, height: int = 1080, scale: int = 2) -> Path:
+    """Renderiza el dict `data` al PNG `out_path`. Retorna el path final.
+
+    template/height/scale permiten el modo reel (1080x1920 @1x) sin romper
+    el modo feed por defecto (1080x1080 @2x).
+    """
     try:
         from playwright.sync_api import sync_playwright
     except ImportError:
         sys.exit("ERROR: falta playwright. Instalá con:\n  pip install playwright && playwright install chromium")
 
-    if not TEMPLATE.exists():
-        sys.exit(f"ERROR: no encuentro la plantilla en {TEMPLATE}")
+    if not template.exists():
+        sys.exit(f"ERROR: no encuentro la plantilla en {template}")
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
 
     with sync_playwright() as p:
         browser = p.chromium.launch()
         ctx = browser.new_context(
-            viewport={"width": 1080, "height": 1080},
-            device_scale_factor=2,   # PNG @2x para nitidez
+            viewport={"width": 1080, "height": height},
+            device_scale_factor=scale,   # PNG @scale para nitidez
         )
         page = ctx.new_page()
 
@@ -50,7 +54,7 @@ def render(data: dict, out_path: Path) -> Path:
         page.add_init_script(f"window.DATA = {json.dumps(data, ensure_ascii=False)};")
 
         # file:// para que cargue sin servidor local
-        page.goto(TEMPLATE.resolve().as_uri(), wait_until="networkidle")
+        page.goto(template.resolve().as_uri(), wait_until="networkidle")
 
         # Esperamos a que el script marque que fuentes y layout están listos
         page.wait_for_selector('body[data-render-ready="1"]', timeout=15_000)
@@ -83,11 +87,22 @@ def main():
     ap = argparse.ArgumentParser(description="Renderiza un post de Instagram AplicaIA desde JSON.")
     ap.add_argument("input", help="Path a JSON, o '-' para stdin")
     ap.add_argument("-o", "--output", help="PNG de salida (default: renders/<type>-<timestamp>.png)")
+    ap.add_argument("--template", help="HTML de plantilla (default: templates/instagram-templates.html)")
+    ap.add_argument("--height", type=int, default=1080, help="Alto del canvas en px (1080 feed / 1920 reel)")
+    ap.add_argument("--scale", type=int, default=2, help="device_scale_factor (2 = @2x)")
+    ap.add_argument("--reel", action="store_true",
+                    help="Atajo: template reel + alto 1920 + scale 1 (salida 1080x1920)")
     args = ap.parse_args()
 
     data = load_data(args.input)
     out = Path(args.output) if args.output else default_outpath(data)
-    render(data, out)
+    if args.reel:
+        template = ROOT / "templates" / "instagram-templates-reel.html"
+        height, scale = 1920, 1
+    else:
+        template = Path(args.template) if args.template else TEMPLATE
+        height, scale = args.height, args.scale
+    render(data, out, template=template, height=height, scale=scale)
 
 
 if __name__ == "__main__":
