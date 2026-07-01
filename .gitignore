@@ -1,0 +1,2 @@
+# Reels rendered per run: uploaded to R2 and published, kept out of git to avoid bloat
+posts/**/reel.mp4
