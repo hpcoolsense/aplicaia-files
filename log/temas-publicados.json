@@ -524,5 +524,20 @@
     "post_id": "6a41ac28516593034904fa9b",
     "instagram_url": "https://www.instagram.com/p/DaJdYeiDFtY/",
     "nota": "x.com bloqueado por allowlist de red (curl/WebFetch 403 a x.com; proxy rechaza CONNECT). Tendencia detectada vía WebSearch de trending de Claude + docs/changelog oficiales de Claude Code. Ancla = doc oficial de checkpointing/rewind (release 2.1.191, 25 jun 2026), respaldada por 3 fuentes <96h (docs whats-new, explainx changelog, mindstudio how-to). Angulo tutorial: el carrusel desarrolla paso a paso cómo abrir /rewind, qué restaura y qué NO revierte. Dedup gate 7.5 corrido con semantica corregida (PREVIO==0 = combinacion nueva; el spec dice ==1 pero es typo). PNGs render.py @2x (2160) reescalados a 1080x1080 con Pillow (browser build 1223 ausente; chromium 1194 preinstalado symlinkeado)."
+  },
+  {
+    "fecha": "2026-06-30",
+    "tema": "Opus 4.8 vs GPT-5.5 para programar",
+    "formato": "carrusel",
+    "feature_principal": "comparativa-modelo",
+    "angulo": "comparativa",
+    "slides": null,
+    "tendencia_origen": "reconciliación manual (post huérfano detectado por el sync check del 2026-07-01)",
+    "tweet_ancla": null,
+    "tweets_referencia": [],
+    "media_urls": [],
+    "post_id": "6a444ff58ec9a5023e639298",
+    "instagram_url": null,
+    "nota": "Entrada de reconciliación agregada a mano el 2026-07-01. El post estaba publicado en Zernio (@aplica.ia.ar, 2026-06-30 23:23 UTC) sin entrada en el log: su corrida publicó pero no llegó a commitear el update (Paso 9). Clasificado por el caption (comparativa Opus 4.8 vs GPT-5.5 para coding, SWE-bench Verified). instagram_url y media_urls quedan por completar desde Zernio si se necesitan para auditoría."
   }
 ]
