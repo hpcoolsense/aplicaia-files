@@ -564,5 +564,29 @@
     ],
     "post_id": "6a448ba0a0c2591010448c69",
     "instagram_url": null
+  },
+  {
+    "fecha": "2026-07-02",
+    "tema": "60 Skills en un solo agente: así se arma un experto de dominio (caso Claude Science)",
+    "formato": "reel",
+    "feature_principal": "skills",
+    "angulo": "caso-de-uso",
+    "slides": 6,
+    "tendencia_origen": "Lanzamiento de Claude Science (Claude for Life Sciences)",
+    "tweet_ancla": {
+      "url": "https://www.anthropic.com/news/claude-for-life-sciences",
+      "autor": "Anthropic (anuncio oficial)",
+      "fecha_original": "2026-06-30",
+      "horas_antiguedad": 48,
+      "likes": null,
+      "retweets": null,
+      "replies": null
+    },
+    "tweets_referencia": [
+      "https://www.technologyreview.com/2026/06/30/1139987/claude-science-is-anthropics-newest-flagship-product/",
+      "https://www.cnbc.com/2026/06/30/anthropic-launches-ai-drug-discovery-program-claude-science.html"
+    ],
+    "post_id": null,
+    "instagram_url": null
   }
 ]

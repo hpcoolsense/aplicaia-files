@@ -1,0 +1,26 @@
+{
+  "type": "tips",
+  "headerLabel": "TIPS · IA APLICADA",
+  "eyebrow": "Llevalo a tu trabajo",
+  "titleLine1": "Armá tu propio",
+  "titleLine2": "agente experto",
+  "items": [
+    {
+      "title": "Empaquetá tus tareas como Skills",
+      "desc": "Cada proceso repetido que hacés a mano puede volverse una capacidad reutilizable."
+    },
+    {
+      "title": "Conectá tus datos reales",
+      "desc": "Sin conectores el agente adivina. Con conectores responde con tu información."
+    },
+    {
+      "title": "Dejá que Claude orqueste",
+      "desc": "Un agente que delega en sub-agentes escala mejor que un prompt gigante."
+    },
+    {
+      "title": "Empezá por un dominio chico",
+      "desc": "Un experto en una sola tarea vale más que un generalista mediocre."
+    }
+  ],
+  "cta": "GUARDÁ ESTE POST"
+}
