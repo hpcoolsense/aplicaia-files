@@ -1,0 +1,14 @@
+Anthropic armó un copiloto científico juntando más de 60 Skills en un solo agente. Y la técnica sirve para cualquier dominio, no solo para laboratorios.
+
+¿Qué es una Skill? Una capacidad empaquetada: instrucciones + herramientas que el modelo carga sola cuando la necesita, sin gastar contexto hasta ese momento. Sumás muchas y el agente se vuelve experto en un tema entero.
+
+La otra pieza son los conectores: enganchan tus bases de datos, archivos y APIs para que el agente trabaje con información real, no solo con lo que recuerda. Y cuando la tarea es grande, un asistente principal delega en sub-agentes especializados, como un investigador líder reparte el trabajo en su equipo.
+
+La lección: no necesitás un modelo distinto para cada problema. Empaquetá tus tareas como Skills, conectá tus datos y dejá que Claude orqueste.
+
+Empezá por un dominio chico y crecé desde ahí.
+
+Mirá el reel completo y guardalo 🔖
+
+...
+#Claude #ClaudeAI #ClaudeCode #AplicaIA #Anthropic #InteligenciaArtificial #IAArgentina #IAaplicada #Tecnología #TransformaciónDigital #IA #AI #Argentina #Tech #Reels
