@@ -1,0 +1,24 @@
+{
+  "type": "compare",
+  "headerLabel": "CÓMO SE DESPLIEGA",
+  "eyebrow": "Elegís dónde corre",
+  "titleLine1": "Tu nube",
+  "titleLine2Pre": "o la de",
+  "titleLine2Accent": "Anthropic.",
+  "before": {
+    "label": "Hosted on Azure",
+    "metric": "1",
+    "unit": "factura",
+    "headline": "Corre en tu Azure, con identidad y gobernanza propias.",
+    "desc": "Con zona de datos de EE.UU. para requisitos de residencia."
+  },
+  "after": {
+    "label": "Hosted on Anthropic",
+    "metric": "API",
+    "unit": "completa",
+    "headline": "Todas las funciones del API de Claude.",
+    "desc": "Para features o modelos que todavía no están en Azure."
+  },
+  "footerTag": "MICROSOFT FOUNDRY",
+  "cta": "Guardalo"
+}

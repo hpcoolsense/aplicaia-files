@@ -1,0 +1,26 @@
+{
+  "type": "tips",
+  "headerLabel": "TIPS · IA APLICADA",
+  "eyebrow": "Antes de moverte a Azure",
+  "titleLine1": "Qué mirar",
+  "titleLine2": "para aprovecharlo",
+  "items": [
+    {
+      "title": "Residencia de datos",
+      "desc": "Si tu compliance exige datos en cierta región, la zona de datos de EE.UU. lo resuelve."
+    },
+    {
+      "title": "Una sola factura",
+      "desc": "El uso de Claude se descuenta de tu compromiso de Azure. Nada de proveedores sueltos."
+    },
+    {
+      "title": "Opus para lo difícil, Haiku para el volumen",
+      "desc": "Elegís modelo por tarea y bajás costos con prompt caching."
+    },
+    {
+      "title": "La gobernanza que ya tenés",
+      "desc": "Usás la identidad, red y controles de Azure que tu equipo ya opera."
+    }
+  ],
+  "cta": "GUARDÁ ESTE POST"
+}

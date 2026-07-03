@@ -1,0 +1,10 @@
+{
+  "type": "stat",
+  "headerLabel": "INFRAESTRUCTURA",
+  "eyebrow": "NVIDIA Blackwell Ultra",
+  "number": "1ª",
+  "unit": "vez",
+  "description": "que Claude corre sobre **GPU NVIDIA**: los chips **GB300 Blackwell Ultra** con red Quantum-X800 InfiniBand, dentro de Microsoft Foundry.",
+  "source": "Anthropic + NVIDIA + Microsoft",
+  "cta": "Seguí viendo"
+}

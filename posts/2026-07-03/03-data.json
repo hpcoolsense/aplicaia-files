@@ -1,0 +1,10 @@
+{
+  "type": "stat",
+  "headerLabel": "MODELOS",
+  "eyebrow": "Disponibles vía Messages API",
+  "number": "2",
+  "unit": "modelos",
+  "description": "**Claude Opus 4.8** y **Claude Haiku 4.5** listos en Azure, con **prompt caching** y **extended thinking** para coding, trabajo agéntico y razonamiento complejo.",
+  "source": "Claude en Microsoft Foundry",
+  "cta": "Seguí →"
+}

@@ -588,5 +588,29 @@
     ],
     "post_id": "6a46f2fa6992fe919ba83ce2",
     "instagram_url": "https://www.instagram.com/reel/DaTw4vJjxvu/"
+  },
+  {
+    "fecha": "2026-07-03",
+    "tema": "Claude ahora corre en tu Azure: disponible en Microsoft Foundry sobre GPU NVIDIA Blackwell Ultra",
+    "formato": "reel",
+    "feature_principal": "pricing-acceso",
+    "angulo": "anuncio-oficial",
+    "slides": 5,
+    "tendencia_origen": "Claude in Microsoft Foundry GA (Azure + NVIDIA GB300 Blackwell Ultra)",
+    "tweet_ancla": {
+      "url": "https://claude.com/blog/claude-in-microsoft-foundry",
+      "autor": "Anthropic (blog oficial)",
+      "fecha_original": "2026-06-30",
+      "horas_antiguedad": 72,
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    "tweets_referencia": [
+      "https://azure.microsoft.com/en-us/blog/claude-in-microsoft-foundry-is-now-generally-available/",
+      "https://blogs.nvidia.com/blog/anthropic-nvidia-gb300-blackwell-ultra-microsoft-azure/"
+    ],
+    "post_id": null,
+    "instagram_url": null
   }
 ]
