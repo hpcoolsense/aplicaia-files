@@ -1,0 +1,10 @@
+{
+  "type": "stat",
+  "headerLabel": "CONTROL Y SEGURIDAD",
+  "eyebrow": "Vos decidís hasta dónde llega",
+  "number": "2",
+  "unit": "modos",
+  "description": "**\"Preguntá antes de actuar\"** arma un plan y espera tu OK; **\"Actuá sin preguntar\"** corre solo. Además pide permiso por cada dominio antes de tocar un sitio.",
+  "source": "Guía de permisos · Claude Help Center",
+  "cta": "Seguí viendo"
+}

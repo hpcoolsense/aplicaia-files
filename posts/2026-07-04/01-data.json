@@ -1,0 +1,12 @@
+{
+  "type": "announce",
+  "pillIcon": "🌐",
+  "pillLabel": "Novedad",
+  "date": "01 · JUL · 2026",
+  "kicker": "Anuncio oficial",
+  "titleLine1": "Claude ahora",
+  "titleLine2Pre": "usa tu",
+  "titleLine2Accent": "navegador.",
+  "lead": "Anthropic liberó **Claude en Chrome** para todos los planes pagos: la extensión navega, hace clic, completa formularios y cruza pestañas por vos.",
+  "cta": "Mirá el reel completo"
+}

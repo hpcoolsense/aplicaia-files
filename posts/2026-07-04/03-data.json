@@ -1,0 +1,24 @@
+{
+  "type": "compare",
+  "headerLabel": "EN LA PRÁCTICA",
+  "eyebrow": "Tarea repetitiva en el navegador",
+  "titleLine1": "Del clic a clic",
+  "titleLine2Pre": "a",
+  "titleLine2Accent": "una orden.",
+  "before": {
+    "label": "Antes",
+    "metric": "15",
+    "unit": "min",
+    "headline": "Vos abrís pestañas, copiás datos y llenás cada formulario a mano.",
+    "desc": "Repetís los mismos pasos en cada sitio, uno por uno."
+  },
+  "after": {
+    "label": "Con Claude",
+    "metric": "1",
+    "unit": "orden",
+    "headline": "Claude navega, hace clic, completa el formulario y cruza pestañas.",
+    "desc": "Le describís la tarea una vez; incluso puede repetirla en automático."
+  },
+  "footerTag": "CLAUDE EN CHROME",
+  "cta": "Seguí →"
+}

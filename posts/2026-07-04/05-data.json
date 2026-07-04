@@ -1,0 +1,22 @@
+{
+  "type": "tips",
+  "headerLabel": "CÓMO EMPEZAR BIEN",
+  "eyebrow": "Tu primera sesión en Chrome",
+  "titleLine1": "3 pasos para",
+  "titleLine2": "usarlo sin sustos",
+  "items": [
+    {
+      "title": "Instalá la extensión en un plan pago",
+      "desc": "Va con Pro, Max, Team o Enterprise. En Pro corre sobre Haiku 4.5."
+    },
+    {
+      "title": "Arrancá en modo \"preguntá antes\"",
+      "desc": "Dejá que arme el plan y aprobá cada acción hasta que le tengas confianza."
+    },
+    {
+      "title": "Dale permiso sitio por sitio",
+      "desc": "Habilitá solo los dominios que usás; en Team/Enterprise el admin define la lista."
+    }
+  ],
+  "cta": "GUARDÁ ESTE POST"
+}

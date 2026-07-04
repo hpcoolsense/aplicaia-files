@@ -612,5 +612,29 @@
     ],
     "post_id": "6a48439ffa32ee7bf352253a",
     "instagram_url": "https://www.instagram.com/reel/DaWVVR5glXt/"
+  },
+  {
+    "fecha": "2026-07-04",
+    "tema": "Claude en Chrome ya es oficial: el agente que navega, hace clic y completa formularios por vos",
+    "formato": "reel",
+    "feature_principal": "computer-use",
+    "angulo": "anuncio-oficial",
+    "slides": 5,
+    "tendencia_origen": "Claude in Chrome general availability (GA)",
+    "tweet_ancla": {
+      "url": "https://code.claude.com/docs/en/changelog",
+      "autor": "Claude Code changelog (Anthropic, oficial)",
+      "fecha_original": "2026-07-01",
+      "horas_antiguedad": 72,
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    "tweets_referencia": [
+      "https://code.claude.com/docs/en/changelog",
+      "https://www.joinnextdev.com/blog/ai-tools-weekly-claude-code-gets-chrome-background-agents-2-more"
+    ],
+    "post_id": null,
+    "instagram_url": null
   }
 ]
