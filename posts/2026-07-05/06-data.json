@@ -1,0 +1,22 @@
+{
+  "type": "tips",
+  "headerLabel": "CÓMO APROVECHARLO",
+  "eyebrow": "Goberná el gasto sin frenar al equipo",
+  "titleLine1": "3 pasos para",
+  "titleLine2": "no pasarte del budget",
+  "items": [
+    {
+      "title": "Poné un tope con alertas",
+      "desc": "Definí el límite de la org y dejá que Claude avise al 75% y 90% antes de bloquear a nadie."
+    },
+    {
+      "title": "Asigná modelo por equipo",
+      "desc": "Ingeniería full, ventas en Sonnet, operaciones en Haiku: lo rutinario no arranca en lo más caro."
+    },
+    {
+      "title": "Llevá el costo a tu dashboard",
+      "desc": "Con la Analytics API ves el gasto de Claude junto a AWS, GCP y Azure en un solo lugar."
+    }
+  ],
+  "cta": "GUARDÁ ESTE POST"
+}

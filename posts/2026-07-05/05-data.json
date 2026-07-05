@@ -1,0 +1,10 @@
+{
+  "type": "stat",
+  "headerLabel": "ANALÍTICA DE COSTO",
+  "eyebrow": "FinOps para tu IA",
+  "number": "1",
+  "unit": "API",
+  "description": "El tablero muestra gasto por grupo y por usuario, con artifacts, archivos y skills al lado de su costo. La **Analytics API** exporta todo a Datadog, CloudZero y Finout.",
+  "source": "Blog oficial de Claude",
+  "cta": "Seguí viendo"
+}

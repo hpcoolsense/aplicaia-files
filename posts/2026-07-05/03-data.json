@@ -1,0 +1,10 @@
+{
+  "type": "stat",
+  "headerLabel": "LÍMITES POR MODELO",
+  "eyebrow": "Cada equipo, su modelo",
+  "number": "1",
+  "unit": "regla",
+  "description": "El admin define con qué modelo arranca cada grupo: **ingeniería con acceso full, ventas en Sonnet, operaciones en Haiku**. La tarea rutinaria ya no empieza en lo más caro.",
+  "source": "Blog oficial de Claude",
+  "cta": "Seguí →"
+}

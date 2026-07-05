@@ -1,0 +1,10 @@
+{
+  "type": "stat",
+  "headerLabel": "ALERTAS DE GASTO",
+  "eyebrow": "Te avisa antes de bloquear",
+  "number": "75/90",
+  "unit": "%",
+  "description": "Los admins reciben aviso al **75% y 90%** del tope de la organización. Los usuarios lo ven al 75% y 95% y piden ampliar el límite sin salir de Claude, antes de frenar la tarea.",
+  "source": "Blog oficial de Claude",
+  "cta": "Seguí viendo"
+}

@@ -636,5 +636,29 @@
     ],
     "post_id": "6a4994cb9b7953c01d3bc0b6",
     "instagram_url": "https://www.instagram.com/reel/DaY55o5DfkC/"
+  },
+  {
+    "fecha": "2026-07-05",
+    "tema": "Claude Enterprise suma control de gastos: alertas al 75/90%, límites por modelo y analítica de costo por usuario",
+    "formato": "reel",
+    "feature_principal": "pricing-acceso",
+    "angulo": "novedad-version",
+    "slides": 6,
+    "tendencia_origen": "Claude Enterprise cost controls / spend alerts (jul 2026)",
+    "tweet_ancla": {
+      "url": "https://claude.com/blog/giving-admins-more-visibility-and-control-over-claude-usage-and-spend",
+      "autor": "Anthropic (blog oficial de Claude)",
+      "fecha_original": "2026-07-02",
+      "horas_antiguedad": 72,
+      "likes": null,
+      "retweets": null,
+      "replies": null
+    },
+    "tweets_referencia": [
+      "https://www.techtimes.com/articles/319687/20260704/claude-enterprise-spend-controls-arrive-agentic-ai-bills-blow-past-budgets.htm",
+      "https://www.finout.io/blog/anthropics-enterprise-analytics"
+    ],
+    "post_id": null,
+    "instagram_url": null
   }
 ]
