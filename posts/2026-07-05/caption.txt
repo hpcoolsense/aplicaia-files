@@ -1,0 +1,17 @@
+Los agentes de IA trabajan solos… y la factura también crece sola. 💸
+
+Claude Enterprise sumó una capa de controles de costo y analítica para que el gasto no se dispare sin que nadie se entere. Qué trae:
+
+• Límites por modelo: el admin decide con qué modelo arranca cada equipo. Ingeniería con acceso full, ventas en Sonnet, operaciones en Haiku. La tarea rutinaria deja de correr en lo más caro.
+• Alertas de gasto: aviso al 75% y 90% del tope de la organización antes de bloquear a nadie. El usuario las ve al 75% y 95% y puede pedir más límite sin salir de Claude.
+• Analítica real: un tablero muestra el costo por grupo y por usuario, con artifacts, archivos y skills al lado de lo que cuestan. Y una Analytics API que exporta todo a Datadog, CloudZero o Finout.
+
+¿Por qué importa? Empresas grandes ya quemaron presupuestos enteros de IA en pocos meses. Con esto, el gasto se vuelve visible y gobernable sin frenar al equipo.
+
+Si tenés varios equipos usando IA, empezá por poner un tope con alertas y asignar modelo según la tarea. El resto lo ves en el dashboard.
+
+Mirá el reel completo y guardalo 🔖
+
+...
+
+#Claude #ClaudeAI #ClaudeCode #AplicaIA #Anthropic #InteligenciaArtificial #IAArgentina #IAaplicada #Tecnología #TransformaciónDigital #IA #AI #Argentina #Tech #Reels
