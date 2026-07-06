@@ -660,5 +660,29 @@
     ],
     "post_id": "6a4ae60fd827706d86ce7c66",
     "instagram_url": "https://www.instagram.com/reel/DabelICnVp8/"
+  },
+  {
+    "fecha": "2026-07-06",
+    "tema": "Claude Code vs Codex: el mano a mano de los dos agentes de terminal (benchmarks julio 2026)",
+    "formato": "reel",
+    "feature_principal": "claude-code",
+    "angulo": "comparativa",
+    "slides": 6,
+    "tendencia_origen": "Comparativa de agentes de terminal Claude Code vs Codex (cobertura julio 2026)",
+    "tweet_ancla": {
+      "url": "https://www.morphllm.com/comparisons/codex-vs-claude-code",
+      "autor": "morphllm.com",
+      "fecha_original": "2026-07-01",
+      "horas_antiguedad": 96,
+      "likes": null,
+      "retweets": null,
+      "replies": null
+    },
+    "tweets_referencia": [
+      "https://www.developersdigest.tech/blog/claude-code-vs-codex-app-2026",
+      "https://aimultiple.com/agent-harness"
+    ],
+    "post_id": null,
+    "instagram_url": null
   }
 ]

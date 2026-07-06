@@ -1,0 +1,10 @@
+{
+  "type": "stat",
+  "headerLabel": "DATO",
+  "eyebrow": "Adopción · GitHub 2026",
+  "number": "10",
+  "unit": "%",
+  "description": "de **todos los commits públicos** de GitHub ya los escribe Claude Code: unos 326.000 por día, contra el 4% que tenía en febrero.",
+  "source": "Métricas de commits públicos, jul 2026",
+  "cta": "Seguí →"
+}

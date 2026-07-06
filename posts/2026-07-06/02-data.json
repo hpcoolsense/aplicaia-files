@@ -1,0 +1,24 @@
+{
+  "type": "compare",
+  "headerLabel": "BENCHMARK · TERMINAL",
+  "eyebrow": "Terminal-Bench 2.1 · tareas de shell",
+  "titleLine1": "En la terminal",
+  "titleLine2Pre": "manda",
+  "titleLine2Accent": "Codex.",
+  "before": {
+    "label": "Claude Code",
+    "metric": "78.9",
+    "unit": "%",
+    "headline": "Opus 4.8, el mejor par usable de Claude.",
+    "desc": "Segundo puesto en tareas de terminal automatizadas."
+  },
+  "after": {
+    "label": "Codex",
+    "metric": "83.4",
+    "unit": "%",
+    "headline": "GPT-5.5 lidera el leaderboard público.",
+    "desc": "En SWE-bench Verified quedan casi empatados: 88.7 vs 88.6."
+  },
+  "footerTag": "TERMINAL-BENCH 2.1",
+  "cta": "Seguí viendo"
+}

@@ -1,0 +1,26 @@
+{
+  "type": "tips",
+  "headerLabel": "CÓMO ELEGIR",
+  "eyebrow": "No hay ganador único",
+  "titleLine1": "Cuál te",
+  "titleLine2": "conviene a vos",
+  "items": [
+    {
+      "title": "Tarea acotada y presupuesto ajustado",
+      "desc": "Codex: actúa rápido, gasta menos y rinde en shell y cambios chicos."
+    },
+    {
+      "title": "Problema grande y mucho contexto",
+      "desc": "Claude Code: planifica, razona sobre más código y escala a varios agentes."
+    },
+    {
+      "title": "Mirá el costo real, no solo el precio",
+      "desc": "Claude usa 3–4× más tokens, pero suele entregar un resultado más completo."
+    },
+    {
+      "title": "Probá los dos en TU repo",
+      "desc": "Los benchmarks orientan; tu base de código decide quién gana."
+    }
+  ],
+  "cta": "GUARDÁ ESTE POST"
+}

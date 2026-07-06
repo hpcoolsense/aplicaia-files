@@ -1,0 +1,24 @@
+{
+  "type": "compare",
+  "headerLabel": "ARQUITECTURA · SUB-AGENTES",
+  "eyebrow": "Cómo paralelizan el trabajo",
+  "titleLine1": "Dos formas",
+  "titleLine2Pre": "de escalar",
+  "titleLine2Accent": "en paralelo.",
+  "before": {
+    "label": "Codex",
+    "metric": "8",
+    "unit": "workers",
+    "headline": "Modelo manager-worker aislado.",
+    "desc": "Un agente descompone la tarea y lanza hasta 8 workers en sandboxes cloud."
+  },
+  "after": {
+    "label": "Claude Code",
+    "metric": "∞",
+    "unit": "en equipo",
+    "headline": "Agent Teams que se mensajean entre sí.",
+    "desc": "Cada uno con su contexto y su git worktree; comparten task list con dependencias."
+  },
+  "footerTag": "SUB-AGENTES 2026",
+  "cta": "Seguí →"
+}

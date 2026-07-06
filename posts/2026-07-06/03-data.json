@@ -1,0 +1,24 @@
+{
+  "type": "compare",
+  "headerLabel": "BENCHMARK · DIFICULTAD",
+  "eyebrow": "SWE-bench Pro · tareas complejas",
+  "titleLine1": "En lo difícil",
+  "titleLine2Pre": "se da vuelta:",
+  "titleLine2Accent": "Claude.",
+  "before": {
+    "label": "Codex",
+    "metric": "58.6",
+    "unit": "%",
+    "headline": "Rápido y barato en tareas acotadas.",
+    "desc": "Pierde tracción cuando el problema se vuelve grande."
+  },
+  "after": {
+    "label": "Claude Code",
+    "metric": "69.2",
+    "unit": "%",
+    "headline": "Opus 4.8 saca 10 puntos de ventaja.",
+    "desc": "Planifica y razona sobre más contexto antes de tocar código."
+  },
+  "footerTag": "SWE-BENCH PRO",
+  "cta": "Seguí viendo"
+}
