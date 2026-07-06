@@ -1,0 +1,17 @@
+Claude Code vs Codex: el mano a mano de los dos agentes de terminal que más se usan en 2026. 👇
+
+En la terminal pura, Codex (GPT-5.5) manda: 83,4% en Terminal-Bench 2.1 contra 78,9% del mejor par usable de Claude Code. En SWE-bench Verified quedan prácticamente empatados.
+
+Pero cuando el problema se vuelve difícil, se da vuelta: en SWE-bench Pro, Claude Code con Opus 4.8 saca 10 puntos de ventaja (69,2% vs 58,6%).
+
+También cambia la arquitectura. Codex usa un modelo manager-worker con hasta 8 agentes aislados en la nube. Claude Code arma Agent Teams que se mensajean entre sí, comparten una task list con dependencias y trabajan cada uno en su propio git worktree.
+
+Y en adopción no hay discusión: Claude Code ya escribe cerca del 10% de todos los commits públicos de GitHub, unos 326.000 por día.
+
+La bajada: no hay un ganador único. Codex para tareas acotadas y presupuesto ajustado; Claude Code para problemas grandes con mucho contexto. Ojo con el costo real: Claude usa 3–4× más tokens, pero suele entregar un resultado más completo. Probá los dos en tu propio repo: los benchmarks orientan, tu base de código decide.
+
+Mirá el reel completo y guardalo 🔖
+
+...
+
+#Claude #ClaudeAI #ClaudeCode #AplicaIA #Anthropic #InteligenciaArtificial #IAArgentina #IAaplicada #Tecnología #TransformaciónDigital #IA #AI #Argentina #Tech #Reels
