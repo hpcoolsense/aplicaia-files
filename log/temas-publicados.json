@@ -684,5 +684,31 @@
     ],
     "post_id": "6a4c392d4c838f48ff964fe9",
     "instagram_url": "https://www.instagram.com/reel/DaeEMW7Dp4N/"
+  },
+  {
+    "fecha": "2026-07-07",
+    "tema": "Claude Cowork llega a la web y al celular: corre en la nube con la laptop cerrada",
+    "formato": "reel",
+    "feature_principal": "remote-control",
+    "angulo": "anuncio-oficial",
+    "slides": 6,
+    "tendencia_origen": "Anuncio oficial de Anthropic: Claude Cowork se expande a web y mobile (7 jul 2026)",
+    "tweet_ancla": {
+      "url": "https://x.com/claudeai/status/2074525815820169320",
+      "autor": "@claudeai",
+      "fecha_original": "2026-07-07",
+      "horas_antiguedad": 8,
+      "likes": null,
+      "retweets": null,
+      "replies": null
+    },
+    "tweets_referencia": [
+      "https://claude.com/blog/cowork-web-mobile",
+      "https://www.macrumors.com/2026/07/07/claude-cowork-mobile-web/",
+      "https://thenewstack.io/claude-cowork-cloud-mobile/",
+      "https://www.nbcnews.com/tech/tech-news/anthropic-will-make-claude-cowork-available-users-cloud-rcna353218"
+    ],
+    "post_id": null,
+    "instagram_url": null
   }
 ]

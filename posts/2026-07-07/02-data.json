@@ -1,0 +1,24 @@
+{
+  "type": "compare",
+  "headerLabel": "QUÉ CAMBIA",
+  "eyebrow": "Cowork · escritorio → nube",
+  "titleLine1": "De estar",
+  "titleLine2Pre": "a",
+  "titleLine2Accent": "delegar.",
+  "before": {
+    "label": "Antes",
+    "metric": "1",
+    "unit": "app",
+    "headline": "Solo en la app de escritorio.",
+    "desc": "El agente corría en tu compu. Si la cerrabas, la tarea se frenaba."
+  },
+  "after": {
+    "label": "Ahora",
+    "metric": "3",
+    "unit": "canales",
+    "headline": "Escritorio, web y celular, con la sesión en la nube.",
+    "desc": "Sigue en segundo plano sin ningún dispositivo online y te avisa si necesita permiso."
+  },
+  "footerTag": "CLAUDE COWORK",
+  "cta": "Seguí viendo"
+}

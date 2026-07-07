@@ -1,0 +1,10 @@
+{
+  "type": "stat",
+  "headerLabel": "DATO",
+  "eyebrow": "Cómo se usa Cowork",
+  "number": "+90",
+  "unit": "%",
+  "description": "del uso de Cowork **no es programar**: son operaciones de negocio y creación de contenido. Reconciliar gastos, armar trackers, preparar decks.",
+  "source": "Anthropic, 7 jul 2026",
+  "cta": "Seguí →"
+}

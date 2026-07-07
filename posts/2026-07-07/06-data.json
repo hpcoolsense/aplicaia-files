@@ -1,0 +1,22 @@
+{
+  "type": "tips",
+  "headerLabel": "TIPS · IA APLICADA",
+  "eyebrow": "Qué le podés delegar hoy",
+  "titleLine1": "3 tareas para",
+  "titleLine2": "sacarte de encima",
+  "items": [
+    {
+      "title": "Reconciliar el gasto del trimestre",
+      "desc": "Cruza los números y te deja el memo de variaciones listo para revisar."
+    },
+    {
+      "title": "Convertir contratos en un tracker",
+      "desc": "Toma una carpeta de contratos y arma la grilla de renovaciones con los riesgos marcados."
+    },
+    {
+      "title": "Armar el deck del cliente",
+      "desc": "Junta transcripciones de llamadas y datos del pipeline y prepara la presentación de mañana."
+    }
+  ],
+  "cta": "GUARDÁ ESTE POST"
+}
