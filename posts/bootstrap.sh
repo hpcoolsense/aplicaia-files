@@ -31,6 +31,9 @@ test -f posts/templates/reel-player.html || { echo "FATAL: falta reel-player.htm
 test -f posts/templates/reels-manifest.json || { echo "FATAL: falta reels-manifest.json"; exit 1; }
 test -d posts/examples/reels || { echo "FATAL: faltan examples/reels"; exit 1; }
 test -f posts/assets/reel-bg.mp3 || { echo "FATAL: falta la música reel-bg.mp3"; exit 1; }
+MCOUNT=$(ls posts/assets/music/*.mp3 2>/dev/null | wc -l)
+[ "$MCOUNT" -ge 6 ] || { echo "FATAL: catálogo de música incompleto ($MCOUNT pistas)"; exit 1; }
+test -f posts/assets/music/music-manifest.json || { echo "FATAL: falta music-manifest.json"; exit 1; }
 
 echo "== [bootstrap] playwright (pin que matchea el chromium de la imagen) =="
 # Probamos lanzar chromium; si falla, vamos bajando a versiones que matcheen el

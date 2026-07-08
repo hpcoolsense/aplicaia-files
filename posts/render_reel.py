@@ -13,6 +13,8 @@ JSON de entrada (ver posts/examples/reels/ y posts/templates/reels-manifest.json
     {
       "template": "anuncio" | "lanzamiento" | "tips" | "countdown" | "caso" | "metricas",
       "accent":   "#FACC15",          // opcional (default amarillo APLICA IA)
+      "music":    "<id>",             // opcional: pista de posts/assets/music/<id>.mp3
+                                      //   (catálogo: posts/assets/music/music-manifest.json)
       "content":  { ... }             // campos de la plantilla; lo no seteado usa defaults
     }
 
@@ -30,6 +32,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).parent
 PLAYER = ROOT / "templates" / "reel-player.html"
+MUSIC_DIR = ROOT / "assets" / "music"
 DEFAULT_AUDIO = ROOT / "assets" / "reel-bg.mp3"
 
 TEMPLATE_IDS = {"lanzamiento", "anuncio", "tips", "countdown", "caso", "metricas"}
@@ -132,6 +135,11 @@ def main():
         audio = None
     elif args.audio:
         audio = Path(args.audio)
+    elif data.get("music"):
+        audio = MUSIC_DIR / f"{data['music']}.mp3"
+        if not audio.is_file():
+            print(f"⚠ música '{data['music']}' no está en {MUSIC_DIR} — uso la default")
+            audio = DEFAULT_AUDIO
     else:
         audio = DEFAULT_AUDIO
 

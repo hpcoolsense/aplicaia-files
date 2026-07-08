@@ -1,6 +1,7 @@
 {
   "template": "anuncio",
   "accent": "#FACC15",
+  "music": "tech-time-technology",
   "content": {
     "kicker": "Nuevo de Anthropic",
     "titulo": "Claude ahora\ntrabaja con vos.\n*En equipo.*",

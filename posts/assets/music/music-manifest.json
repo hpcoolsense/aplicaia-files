@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "descripcion": "Catálogo de música de fondo para los reels. La routine elige UNA pista por reel (campo 'music' del reel-data.json = id de acá). Todas están normalizadas a -14 LUFS, recortadas a 60s y son licencia Pixabay: uso comercial OK, sin atribución, no registrables en Content ID (riesgo de mute/claim mínimo).",
+  "como_elegir": [
+    "Elegí por MOOD según la plantilla y el tono del tema (mapeo abajo).",
+    "Variedad: mirá el campo 'musica' de las últimas 2-3 entradas del log — no repitas pista; si el mood se repite, alterná entre las pistas de ese mood.",
+    "El render usa los primeros segundos de la pista con fade in/out automático; no hay que editar nada."
+  ],
+  "mapeo_mood_a_plantilla": {
+    "lofi": ["tips"],
+    "tech": ["anuncio", "lanzamiento"],
+    "corporate": ["caso", "metricas"],
+    "trap": ["countdown"],
+    "cinematic": ["lanzamiento"]
+  },
+  "guia_mood": {
+    "lofi": "tutoriales y tips — foco de lectura, calmo, no compite con el texto",
+    "tech": "anuncios y novedades — electrónica limpia con pulso, precisión e innovación",
+    "corporate": "casos de éxito y métricas — energía positiva ascendente que acompaña los números",
+    "trap": "countdowns y rankings — punch que marca cada ítem (variante suave, apta B2B)",
+    "cinematic": "lanzamientos grandes — build-up épico para el reveal del titular"
+  },
+  "pistas": [
+    {"id": "lofi-walk", "titulo": "Walk lofi background music for video", "autor": "Lesfm", "mood": "lofi", "fuente": "https://pixabay.com/music/beats-walk-lofi-background-music-for-video-8452/"},
+    {"id": "lofi-morning-ig60", "titulo": "My Lofi Morning music (IG Version 60s)", "autor": "Lesfm", "mood": "lofi", "fuente": "https://pixabay.com/music/beats-my-lofi-morning-music-ig-version-60s-9651/"},
+    {"id": "lofi-chilling-ego", "titulo": "Chilling Ego", "autor": "Lesfm", "mood": "lofi", "fuente": "https://pixabay.com/music/beats-chilling-ego-8753/"},
+    {"id": "tech-time-technology", "titulo": "Time Technology", "autor": "Coma-Media", "mood": "tech", "fuente": "https://pixabay.com/music/upbeat-time-technology-11257/"},
+    {"id": "tech-space-age", "titulo": "Space Age", "autor": "AleXZavesa", "mood": "tech", "fuente": "https://pixabay.com/music/beats-space-age-10714/"},
+    {"id": "tech-beautiful-technology", "titulo": "Beautiful Technology", "autor": "Coma-Media", "mood": "tech", "fuente": "https://pixabay.com/music/upbeat-beautiful-technology-11948/"},
+    {"id": "corp-jungle-bass", "titulo": "Slideshow Jungle Bass (MAIN)", "autor": "ZakharValaha", "mood": "corporate", "fuente": "https://pixabay.com/music/future-bass-slideshow-jungle-bass-main-9836/"},
+    {"id": "corp-business-uplifting", "titulo": "Business Uplifting Optimistic Technology", "autor": "REDproductions", "mood": "corporate", "fuente": "https://pixabay.com/music/corporate-business-uplifting-optimistic-technology-light-ambient-music-21028/"},
+    {"id": "corp-emotional-uplifting", "titulo": "Emotional Optimistic Motivating Corporate", "autor": "REDproductions", "mood": "corporate", "fuente": "https://cdn.pixabay.com/audio/2022/02/23/audio_438aa838a5.mp3"},
+    {"id": "trap-powerful-advertising", "titulo": "Powerful Advertising Trap", "autor": "Anton Vlasov", "mood": "trap", "fuente": "https://pixabay.com/music/trap-powerful-advertising-trap-15884/"},
+    {"id": "trap-500-sale", "titulo": "500$ sale", "autor": "D-GarenCQB", "mood": "trap", "fuente": "https://pixabay.com/music/trap-500-sale-9729/"},
+    {"id": "trap-goat", "titulo": "Goat", "autor": "prazkhanal", "mood": "trap", "fuente": "https://cdn.pixabay.com/audio/2022/02/15/audio_ccbea44f70.mp3"},
+    {"id": "epic-power-60s", "titulo": "Epic Power (60s Version)", "autor": "Lesfm", "mood": "cinematic", "fuente": "https://pixabay.com/music/main-title-epic-power-60s-version-10903/"},
+    {"id": "epic-cinematic-trailer", "titulo": "Epic Cinematic Trailer Background Music", "autor": "Lesfm", "mood": "cinematic", "fuente": "https://pixabay.com/music/main-title-epic-cinematic-trailer-background-music-for-videos-5771/"},
+    {"id": "epic-trailer-johnsib", "titulo": "Epic Trailer", "autor": "John Sib", "mood": "cinematic", "fuente": "https://cdn.pixabay.com/audio/2021/04/03/audio_dd7c2d159a.mp3"}
+  ]
+}

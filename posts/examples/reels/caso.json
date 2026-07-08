@@ -1,6 +1,7 @@
 {
   "template": "caso",
   "accent": "#A3E635",
+  "music": "corp-business-uplifting",
   "content": {
     "kicker": "Caso real · Developer",
     "cliente": "Un dev migró 40 repos legacy con Claude Code en una semana.",

@@ -1,6 +1,7 @@
 {
   "template": "tips",
   "accent": "#FACC15",
+  "music": "lofi-walk",
   "content": {
     "hookTop": "Guardá esto",
     "hook": "5 skills de Claude que podés *usar hoy*",

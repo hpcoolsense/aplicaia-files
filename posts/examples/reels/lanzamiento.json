@@ -1,6 +1,7 @@
 {
   "template": "lanzamiento",
   "accent": "#FACC15",
+  "music": "epic-power-60s",
   "content": {
     "hookWords": "Salió\nClaude\n*Fable 5.*",
     "durHook": 2.8,

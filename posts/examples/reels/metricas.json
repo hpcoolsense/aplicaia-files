@@ -1,6 +1,7 @@
 {
   "template": "metricas",
   "accent": "#22D3EE",
+  "music": "corp-jungle-bass",
   "content": {
     "kicker": "Benchmark",
     "titulo": "Fable 5\nvs *GPT-5.5*",
