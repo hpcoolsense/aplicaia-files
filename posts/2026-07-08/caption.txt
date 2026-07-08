@@ -1,0 +1,14 @@
+La sorpresa del agente de IA de moda: casi nadie lo usa para programar.
+
+Anthropic analizó 1,2 millones de sesiones de Claude Cowork (su agente que trabaja solo en segundo plano) de más de 600.000 organizaciones. El resultado rompe el mito de que estas herramientas son "solo para devs".
+
+El 33% del uso fue procesos y operaciones de negocio: armar reportes juntando datos sueltos, checklists de onboarding, conciliar planillas. Otro 16% fue creación de contenido y textos: borradores, propuestas, presentaciones. ¿Programar código? Apenas el 9%.
+
+Traducido: el 91% de lo que la gente hace con un agente de IA no tiene nada que ver con escribir software. Es "el trabajo alrededor del trabajo" —esas tareas repetitivas que te comen la semana— lo que se está delegando primero.
+
+La bajada es clara: si esperabas saber programar para sacarle jugo a la IA, los datos dicen lo contrario. El mayor impacto hoy está en operaciones, administración y contenido.
+
+Mirá el reel completo y guardalo 🔖
+
+...
+#Claude #ClaudeAI #ClaudeCode #AplicaIA #Anthropic #InteligenciaArtificial #IAArgentina #IAaplicada #Tecnología #TransformaciónDigital #IA #AI #Argentina #Tech #Reels

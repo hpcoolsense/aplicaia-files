@@ -1,0 +1,37 @@
+{
+  "template": "metricas",
+  "accent": "#22D3EE",
+  "music": "corp-business-uplifting",
+  "content": {
+    "kicker": "Datos reales",
+    "titulo": "1,2M sesiones\nde *Cowork*",
+    "durTitulo": 2.8,
+    "metrics": [
+      {
+        "prefix": "",
+        "value": 33,
+        "suffix": "%",
+        "label": "procesos y operaciones de negocio",
+        "dur": 3.0
+      },
+      {
+        "prefix": "",
+        "value": 16,
+        "suffix": "%",
+        "label": "creación de contenido y textos",
+        "dur": 3.0
+      },
+      {
+        "prefix": "",
+        "value": 9,
+        "suffix": "%",
+        "label": "programar código",
+        "dur": 3.0
+      }
+    ],
+    "cierre": "91% *no es código.*",
+    "cta": "Mirá el reel completo",
+    "handle": "@aplicai.ia.ar",
+    "durCierre": 3.4
+  }
+}

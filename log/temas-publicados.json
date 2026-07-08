@@ -710,5 +710,31 @@
     ],
     "post_id": "6a4d89a5cbe743f402d6f145",
     "instagram_url": "https://www.instagram.com/reel/DagodkJimT2/"
+  },
+  {
+    "fecha": "2026-07-08",
+    "tema": "El agente de IA que casi nadie usa para programar: los datos de 1,2M sesiones de Claude Cowork",
+    "formato": "reel",
+    "plantilla": "metricas",
+    "musica": "corp-business-uplifting",
+    "feature_principal": "remote-control",
+    "angulo": "benchmark",
+    "tendencia_origen": "Reporte de uso de Claude Cowork (1,2M sesiones)",
+    "tweet_ancla": {
+      "url": "https://claude.com/blog/how-people-are-using-claude-cowork",
+      "autor": "Anthropic (blog oficial claude.com)",
+      "fecha_original": "2026-07-07",
+      "horas_antiguedad": 18,
+      "likes": null,
+      "retweets": null,
+      "replies": null
+    },
+    "tweets_referencia": [
+      "https://venturebeat.com/technology/anthropic-brings-claude-cowork-to-mobile-and-web-as-usage-data-shows-most-users-arent-coding",
+      "https://techcrunch.com/2026/07/07/the-coding-agent-wars-are-spilling-into-the-rest-of-the-office-claude-cowork/",
+      "https://siliconangle.com/2026/07/07/anthropic-brings-cowork-desktop-onto-web-mobile/"
+    ],
+    "post_id": null,
+    "instagram_url": null
   }
 ]
