@@ -1,0 +1,23 @@
+{
+  "template": "caso",
+  "accent": "#A3E635",
+  "content": {
+    "kicker": "Caso real · Developer",
+    "cliente": "Un dev migró 40 repos legacy con Claude Code en una semana.",
+    "durIntro": 3.0,
+    "problema": "6 meses\nde migración\n*a mano.*",
+    "durProblema": 3.2,
+    "metric": {
+      "prefix": "-",
+      "value": 95,
+      "suffix": "%",
+      "label": "del tiempo estimado de migración",
+      "dur": 3.4
+    },
+    "resultado": "De 6 meses a *una semana.*",
+    "durResultado": 3.0,
+    "cta": "Mirá cómo lo hizo",
+    "handle": "@aplicai.ia.ar",
+    "durCta": 2.8
+  }
+}

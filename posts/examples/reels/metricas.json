@@ -1,0 +1,36 @@
+{
+  "template": "metricas",
+  "accent": "#22D3EE",
+  "content": {
+    "kicker": "Benchmark",
+    "titulo": "Fable 5\nvs *GPT-5.5*",
+    "durTitulo": 2.8,
+    "metrics": [
+      {
+        "prefix": "",
+        "value": 94,
+        "suffix": "%",
+        "label": "en SWE-bench (código real)",
+        "dur": 3.0
+      },
+      {
+        "prefix": "",
+        "value": 3,
+        "suffix": "×",
+        "label": "menos errores en agentes largos",
+        "dur": 3.0
+      },
+      {
+        "prefix": "",
+        "value": 1,
+        "suffix": "M",
+        "label": "tokens de contexto",
+        "dur": 3.0
+      }
+    ],
+    "cierre": "Los números *hablan.*",
+    "cta": "Mirá el reel completo",
+    "handle": "@aplicai.ia.ar",
+    "durCierre": 3.2
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "version": 1,
+  "descripcion": "Catálogo de plantillas de reel animado. La routine elige UNA por reel según el ángulo del tema, completa su content (ver posts/examples/reels/<id>.json) y renderiza con: python3 posts/render_reel.py <json> -o <reel.mp4>",
+  "reglas_de_redaccion": [
+    "Marcá *así* la palabra o frase a pintar con el color de acento. Usalo en 1-2 lugares por escena, no más.",
+    "La puntuación pegada a una palabra marcada va DENTRO de las marcas: '*Aplicala.*' y no '*Aplicala*.' (si no, el punto queda flotando separado).",
+    "Campos multilínea usan \\n para separar líneas. Líneas cortas pegan más fuerte que oraciones largas.",
+    "Respetá los límites de caracteres: el texto se auto-achica para entrar, pero pasado el límite pierde impacto.",
+    "Cada escena/tip/métrica tiene su 'dur' en segundos (podés ajustar ±1s). Duración total recomendada: 10-35s. Nunca >90s.",
+    "El total del reel = suma de las dur. No agregues ni saques campos del schema del example."
+  ],
+  "accents": {
+    "default": "#FACC15",
+    "opciones": ["#FACC15", "#A3E635", "#22D3EE", "#FB923C", "#A78BFA"],
+    "guia": "#FACC15 (amarillo marca) es el default y el que más identidad tiene — usalo salvo motivo puntual. #22D3EE para temas técnicos/benchmark, #A3E635 para casos de éxito/resultados positivos, #FB923C para warnings/errores, #A78BFA para features creativas."
+  },
+  "plantillas": [
+    {
+      "id": "lanzamiento",
+      "nombre": "Lanzamiento",
+      "tag": "Anuncio",
+      "estructura": "hook de palabras que golpean una a una → titular → 3 puntos numerados → CTA",
+      "cuando_usarla": "Anuncio oficial GRANDE o release importante (angulo: anuncio-oficial, novedad-version cuando es un lanzamiento fuerte). El hook de palabras sueltas genera máxima expectativa.",
+      "limites": {
+        "hookWords": "2-4 líneas, 1-2 palabras por línea, ≤12 chars c/u",
+        "titulo": "≤90 chars",
+        "puntos": "3-4 líneas, ≤45 chars c/u",
+        "cta": "≤24 chars", "handle": "≤28 chars"
+      }
+    },
+    {
+      "id": "anuncio",
+      "nombre": "Novedad",
+      "tag": "Anuncio",
+      "estructura": "titular en líneas con máscara → frase con palabra gigante de fondo → detalle → CTA",
+      "cuando_usarla": "Novedad o feature nueva estándar (angulo: anuncio-oficial, novedad-version). La más versátil para noticias del día. fraseWord = LA palabra clave del tema (corta, en mayúsculas pega más).",
+      "limites": {
+        "titulo": "2-3 líneas, ≤16 chars c/u",
+        "fraseWord": "1 palabra, ≤8 chars",
+        "frase": "≤80 chars",
+        "detalle": "≤90 chars",
+        "cta": "≤24 chars", "handle": "≤28 chars"
+      }
+    },
+    {
+      "id": "tips",
+      "nombre": "Tips · Lista",
+      "tag": "Tips",
+      "estructura": "hook → 3-5 tips con dígito gigante de fondo → CTA de guardado",
+      "cuando_usarla": "Tutoriales y guías paso a paso (angulo: tutorial; también caso-de-uso desglosado en aprendizajes). CTA natural: 'Guardalo'.",
+      "limites": {
+        "hook": "≤60 chars",
+        "tips": "3-5 items, ≤60 chars c/u",
+        "cierre": "≤24 chars", "handle": "≤28 chars"
+      }
+    },
+    {
+      "id": "countdown",
+      "nombre": "Countdown",
+      "tag": "Tips",
+      "estructura": "hook → items en cuenta regresiva (N…1, número gigante) → CTA",
+      "cuando_usarla": "Rankings y listas con jerarquía: errores comunes, mejores usos, features rankeadas (angulo: tutorial, comparativa cuando es un ranking). El item MÁS fuerte va ÚLTIMO (es el #1).",
+      "limites": {
+        "hook": "≤60 chars",
+        "items": "3-5 items ordenados del último al primero, ≤70 chars c/u",
+        "cierre": "≤28 chars", "handle": "≤28 chars"
+      }
+    },
+    {
+      "id": "caso",
+      "nombre": "Caso de éxito",
+      "tag": "Caso",
+      "estructura": "intro del contexto → problema en líneas duras → UNA métrica count-up → resultado → CTA",
+      "cuando_usarla": "Caso de uso real con UN número fuerte (angulo: caso-de-uso; benchmark cuando hay una cifra dominante). La métrica es el clímax: elegí el número más impactante.",
+      "limites": {
+        "cliente": "≤80 chars",
+        "problema": "2-3 líneas, ≤16 chars c/u",
+        "metric": "value numérico; prefix/suffix ≤4 chars; label ≤40 chars",
+        "resultado": "≤70 chars",
+        "cta": "≤30 chars", "handle": "≤28 chars"
+      }
+    },
+    {
+      "id": "metricas",
+      "nombre": "Métricas",
+      "tag": "Caso",
+      "estructura": "título → 2-4 números count-up en serie → cierre con frase + CTA",
+      "cuando_usarla": "Benchmarks y comparativas con varios números (angulo: benchmark, comparativa). Cada métrica una escena: los números son los protagonistas.",
+      "limites": {
+        "titulo": "2 líneas, ≤14 chars c/u",
+        "metrics": "2-4 items; value numérico; label ≤40 chars",
+        "cierre": "≤20 chars", "cta": "≤24 chars", "handle": "≤28 chars"
+      }
+    }
+  ],
+  "mapeo_angulo_a_plantilla": {
+    "anuncio-oficial": ["anuncio", "lanzamiento"],
+    "novedad-version": ["anuncio", "lanzamiento"],
+    "tutorial": ["tips", "countdown"],
+    "caso-de-uso": ["caso", "tips"],
+    "benchmark": ["metricas", "caso"],
+    "comparativa": ["metricas", "countdown"]
+  }
+}

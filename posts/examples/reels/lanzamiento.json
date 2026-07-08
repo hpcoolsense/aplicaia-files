@@ -1,0 +1,16 @@
+{
+  "template": "lanzamiento",
+  "accent": "#FACC15",
+  "content": {
+    "hookWords": "Salió\nClaude\n*Fable 5.*",
+    "durHook": 2.8,
+    "kicker": "Anuncio oficial",
+    "titulo": "El modelo más inteligente de *Anthropic* ya está disponible.",
+    "durTitulo": 3.2,
+    "puntos": "Razonamiento más profundo\nMejor en código y agentes\nDisponible desde hoy",
+    "durPuntos": 3.6,
+    "cta": "Mirá el reel completo",
+    "handle": "@aplicai.ia.ar",
+    "durCta": 2.8
+  }
+}

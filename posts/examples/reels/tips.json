@@ -1,0 +1,34 @@
+{
+  "template": "tips",
+  "accent": "#FACC15",
+  "content": {
+    "hookTop": "Guardá esto",
+    "hook": "5 skills de Claude que podés *usar hoy*",
+    "durHook": 2.8,
+    "tips": [
+      {
+        "text": "Genera documentos Word y Excel reales",
+        "dur": 2.8
+      },
+      {
+        "text": "Arma presentaciones desde un prompt",
+        "dur": 2.8
+      },
+      {
+        "text": "Analiza PDFs de cientos de páginas",
+        "dur": 2.8
+      },
+      {
+        "text": "Automatiza reportes recurrentes",
+        "dur": 2.8
+      },
+      {
+        "text": "Crea tus propias skills a medida",
+        "dur": 2.8
+      }
+    ],
+    "cierre": "Guardalo",
+    "handle": "@aplicai.ia.ar",
+    "durCierre": 2.8
+  }
+}

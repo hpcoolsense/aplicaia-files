@@ -1,0 +1,26 @@
+{
+  "template": "countdown",
+  "accent": "#FB923C",
+  "content": {
+    "hookTop": "Ojo con esto",
+    "hook": "*3 errores* al usar IA en tu negocio",
+    "durHook": 2.8,
+    "items": [
+      {
+        "text": "Usar el modelo equivocado para cada tarea",
+        "dur": 3.0
+      },
+      {
+        "text": "No darle contexto de tu negocio",
+        "dur": 3.0
+      },
+      {
+        "text": "Empezar por la herramienta y no por el problema",
+        "dur": 3.0
+      }
+    ],
+    "cierre": "El #1 es el más caro",
+    "handle": "@aplicai.ia.ar",
+    "durCierre": 2.8
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "template": "anuncio",
+  "accent": "#FACC15",
+  "content": {
+    "kicker": "Nuevo de Anthropic",
+    "titulo": "Claude ahora\ntrabaja con vos.\n*En equipo.*",
+    "durTitulo": 3.2,
+    "fraseWord": "COWORK",
+    "frase": "Claude Cowork llega a la web y al *celular.*",
+    "durFrase": 3.0,
+    "detalle": "Sesiones compartidas, contexto común y tareas en paralelo.",
+    "durDetalle": 2.8,
+    "cta": "Mirá el reel completo",
+    "handle": "@aplicai.ia.ar",
+    "durCta": 2.8
+  }
+}
