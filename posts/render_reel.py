@@ -12,11 +12,13 @@ Uso:
 JSON de entrada (ver posts/examples/reels/ y posts/templates/reels-manifest.json):
     {
       "template": "anuncio" | "lanzamiento" | "tips" | "countdown" | "caso" | "metricas",
-      "accent":   "#FACC15",          // opcional (default amarillo APLICA IA)
       "music":    "<id>",             // opcional: pista de posts/assets/music/<id>.mp3
                                       //   (catálogo: posts/assets/music/music-manifest.json)
       "content":  { ... }             // campos de la plantilla; lo no seteado usa defaults
     }
+
+El acento es SIEMPRE #FACC15 (amarillo APLICA IA): identidad de marca. Cualquier
+"accent" que venga en el JSON se ignora y se fuerza el amarillo.
 
 Requiere: playwright con chromium; ffmpeg en PATH o `pip install imageio-ffmpeg`.
 """
@@ -123,6 +125,11 @@ def main():
 
     raw = sys.stdin.read() if args.input == "-" else Path(args.input).read_text(encoding="utf-8")
     data = json.loads(raw)
+
+    # Identidad de marca: el acento es siempre el amarillo APLICA IA.
+    if data.get("accent") not in (None, "#FACC15"):
+        print(f"⚠ accent '{data.get('accent')}' ignorado — la marca usa solo #FACC15")
+    data["accent"] = "#FACC15"
 
     tpl = data.get("template")
     if tpl not in TEMPLATE_IDS:

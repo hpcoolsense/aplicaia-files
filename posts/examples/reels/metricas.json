@@ -1,6 +1,6 @@
 {
   "template": "metricas",
-  "accent": "#22D3EE",
+  "accent": "#FACC15",
   "music": "corp-jungle-bass",
   "content": {
     "kicker": "Benchmark",
@@ -30,7 +30,7 @@
       }
     ],
     "cierre": "Los números *hablan.*",
-    "cta": "Mirá el reel completo",
+    "cta": "Pedí tu diagnóstico",
     "handle": "@aplicai.ia.ar",
     "durCierre": 3.2
   }

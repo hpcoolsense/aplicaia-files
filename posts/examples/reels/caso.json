@@ -1,6 +1,6 @@
 {
   "template": "caso",
-  "accent": "#A3E635",
+  "accent": "#FACC15",
   "music": "corp-business-uplifting",
   "content": {
     "kicker": "Caso real · Developer",
@@ -17,7 +17,7 @@
     },
     "resultado": "De 6 meses a *una semana.*",
     "durResultado": 3.0,
-    "cta": "Mirá cómo lo hizo",
+    "cta": "Tu caso puede ser el próximo",
     "handle": "@aplicai.ia.ar",
     "durCta": 2.8
   }

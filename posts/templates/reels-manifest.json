@@ -1,18 +1,21 @@
 {
   "version": 1,
   "descripcion": "Catálogo de plantillas de reel animado. La routine elige UNA por reel según el ángulo del tema, completa su content (ver posts/examples/reels/<id>.json) y renderiza con: python3 posts/render_reel.py <json> -o <reel.mp4>",
+  "principio_fundamental": "La plantilla es un MOLDE ESTÉTICO, no un formulario a completar. El contenido sale del TEMA del día y de sus fuentes; la plantilla solo aporta el ritmo visual. El reel cuenta UNA historia coherente de punta a punta (hook → desarrollo → cierre): leídas en orden, las escenas tienen que sonar como un guión fluido que alguien sin contexto entiende. Los textos de los examples/defaults son SOLO placeholders de formato — jamás copies su contenido ni sus números.",
   "reglas_de_redaccion": [
-    "Marcá *así* la palabra o frase a pintar con el color de acento. Usalo en 1-2 lugares por escena, no más.",
+    "PROHIBIDO inventar números, métricas, porcentajes o 'datos' para llenar una plantilla: cada cifra del reel tiene que existir explícitamente en el ancla o sus fuentes. Si el tema no trae números reales, usá una plantilla narrativa (anuncio, lanzamiento, tips) en vez de caso/metricas.",
+    "CTA del cierre: una acción que el espectador pueda hacer AHÍ MISMO — 'Guardá este reel', 'Seguinos para más', 'Compartilo con tu equipo', 'Link en la bio'. PROHIBIDO 'Mirá el reel completo' o variantes (ya lo está viendo) y PROHIBIDO 'pasá las slides'/'deslizá'.",
+    "Marcá *así* la palabra o frase a pintar con el acento amarillo. Usalo en 1-2 lugares por escena, no más.",
     "La puntuación pegada a una palabra marcada va DENTRO de las marcas: '*Aplicala.*' y no '*Aplicala*.' (si no, el punto queda flotando separado).",
     "Campos multilínea usan \\n para separar líneas. Líneas cortas pegan más fuerte que oraciones largas.",
     "Respetá los límites de caracteres: el texto se auto-achica para entrar, pero pasado el límite pierde impacto.",
-    "Cada escena/tip/métrica tiene su 'dur' en segundos (podés ajustar ±1s). Duración total recomendada: 10-35s. Nunca >90s.",
+    "Cada escena/tip/métrica tiene su 'dur' en segundos (podés ajustar ±1s). Duración total recomendada: 12-35s. Nunca >90s.",
     "El total del reel = suma de las dur. No agregues ni saques campos del schema del example."
   ],
   "accents": {
     "default": "#FACC15",
-    "opciones": ["#FACC15", "#A3E635", "#22D3EE", "#FB923C", "#A78BFA"],
-    "guia": "#FACC15 (amarillo marca) es el default y el que más identidad tiene — usalo salvo motivo puntual. #22D3EE para temas técnicos/benchmark, #A3E635 para casos de éxito/resultados positivos, #FB923C para warnings/errores, #A78BFA para features creativas."
+    "opciones": ["#FACC15"],
+    "guia": "El acento es SIEMPRE #FACC15 (amarillo APLICA IA) — identidad de marca, sin excepciones. render_reel.py lo fuerza aunque el JSON diga otra cosa."
   },
   "plantillas": [
     {
@@ -71,7 +74,7 @@
       "nombre": "Caso de éxito",
       "tag": "Caso",
       "estructura": "intro del contexto → problema en líneas duras → UNA métrica count-up → resultado → CTA",
-      "cuando_usarla": "Caso de uso real con UN número fuerte (angulo: caso-de-uso; benchmark cuando hay una cifra dominante). La métrica es el clímax: elegí el número más impactante.",
+      "cuando_usarla": "Caso de uso real con UN número fuerte que esté EXPLÍCITO en las fuentes (angulo: caso-de-uso; benchmark con una cifra dominante). La métrica es el clímax. Si el tema no trae un número real y verificable, NO uses esta plantilla.",
       "limites": {
         "cliente": "≤80 chars",
         "problema": "2-3 líneas, ≤16 chars c/u",
@@ -85,7 +88,7 @@
       "nombre": "Métricas",
       "tag": "Caso",
       "estructura": "título → 2-4 números count-up en serie → cierre con frase + CTA",
-      "cuando_usarla": "Benchmarks y comparativas con varios números (angulo: benchmark, comparativa). Cada métrica una escena: los números son los protagonistas.",
+      "cuando_usarla": "Benchmarks y comparativas con varios números REALES tomados del ancla/fuentes (angulo: benchmark, comparativa). Cada métrica una escena: los números son los protagonistas. Si no hay 2+ cifras verificables en las fuentes, NO uses esta plantilla.",
       "limites": {
         "titulo": "2 líneas, ≤14 chars c/u",
         "metrics": "2-4 items; value numérico; label ≤40 chars",
