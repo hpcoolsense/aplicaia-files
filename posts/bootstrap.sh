@@ -66,12 +66,27 @@ git config user.email "tomyrengi@gmail.com"
 git config user.name "aplicaia-routine"
 git config commit.gpgsign false
 
-echo "== [bootstrap] remote auth =="
-if [ -n "${GH_TOKEN:-}" ]; then
+echo "== [bootstrap] acceso de push (dos mundos posibles del sandbox) =="
+# El sandbox varía por corrida: a veces el git sale por el proxy de la plataforma
+# (que usa la Claude App y respeta el toggle "Allow unrestricted branch pushes"),
+# a veces hay egress directo a github.com (donde sirve el GH_TOKEN en la URL).
+# Probamos en orden y NO abortamos: si main queda bloqueado, el Paso 7.5 tiene
+# fallback a la rama claude/ designada.
+PUSH_MODE="none"
+if git push --dry-run origin main >/dev/null 2>&1; then
+  PUSH_MODE="plataforma"
+  echo "  -> push a main OK vía remote de la plataforma"
+elif [ -n "${GH_TOKEN:-}" ]; then
   git remote set-url origin "https://${GH_TOKEN}@github.com/hpcoolsense/aplicaia-files.git"
-  echo "  -> remote via GH_TOKEN"
+  if git push --dry-run origin main >/dev/null 2>&1; then
+    PUSH_MODE="token"
+    echo "  -> push a main OK vía GH_TOKEN directo"
+  else
+    echo "  -> WARN: main bloqueado (proxy y token). Paso 7.5 usará la rama claude/ de la sesión."
+  fi
 else
-  echo "FATAL: GH_TOKEN no está configurado en el environment"; exit 1
+  echo "  -> WARN: sin GH_TOKEN y el remote de la plataforma no permite main."
 fi
+echo "PUSH_MODE=${PUSH_MODE}"
 
 echo "== [bootstrap] OK =="
