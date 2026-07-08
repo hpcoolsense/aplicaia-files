@@ -1,65 +1,82 @@
-# aplicaia-files — Reel diario de AplicaIA
+# aplicaia-files — Reel animado diario de AplicaIA
 
 Repositorio de la **Cloud Routine** que publica un Reel diario en Instagram
-(@aplicai.ia.ar) sobre novedades del ecosistema Claude. Estética negro/amarillo
-APLICA IA, formato 9:16.
+(@aplicai.ia.ar) sobre novedades del ecosistema Claude. Reels 9:16 de
+**tipografía cinética** (plantillas animadas diseñadas en Claude Design) con la
+estética APLICA IA y música de fondo.
 
-> El sistema anterior de **publicaciones/carrusel (feed 1080×1080)** fue removido
-> el 2026-07-07 — plantillas, renderer raíz y ejemplos duplicados viven solo en el
-> historial de git. Todo lo vigente está en `posts/`.
+> Historial: el sistema de publicaciones/carrusel (feed 1080×1080) se removió el
+> 2026-07-07, y el slideshow de PNGs con transiciones (v5) fue reemplazado ese
+> mismo día por este pipeline de animación real (v6). Todo vive en el historial de git.
 
 ## Estructura
 
 ```
 posts/
-├── bootstrap.sh                          # Paso 0 de la routine: clone/pull + playwright pineado + remote auth
-├── render.py                             # JSON → PNG 1080×1920 (una pantalla del reel)
-├── make_reel.py                          # PNGs del día → reel.mp4 (slideup + música)
+├── bootstrap.sh                 # Paso 0 de la routine: clone/pull + playwright pineado + ffmpeg + checks
+├── render_reel.py               # reel-data.json → frames (chromium headless) → reel.mp4 (H.264 + música)
+├── build_player.py              # re-ensambla reel-player.html tras editar reel-src/ (correrlo a mano)
 ├── templates/
-│   └── instagram-templates-reel.html     # template vertical con los 6 tipos de pantalla
-├── examples/                             # schema de referencia de cada tipo (NO inventar campos)
-│   ├── announce-example.json             # portada / anuncio
-│   ├── stat-example.json                 # número/benchmark
-│   ├── review-example.json               # reseña/quote con autor
-│   ├── quote-example.json                # cita destacada
-│   ├── compare-example.json              # comparativa A vs B
-│   └── tips-example.json                 # lista de tips / cierre
+│   ├── reel-player.html         # player AUTOCONTENIDO (React+Babel+fuentes inline, cero red) — generado
+│   ├── reels-manifest.json      # catálogo: cuándo usar cada plantilla, límites, acentos, mapeo ángulo→plantilla
+│   └── reel-src/                # fuentes del sistema de diseño (espejo del proyecto Claude Design "AplicaIA")
+│       ├── animations.jsx       #   motor de timeline (Sprite, easings, TimelineContext)
+│       ├── reel-kinetics.jsx    #   primitivas cinéticas (WordSlam, Cascade, CountUpBig, CTAPill…)
+│       ├── reel-templates.jsx   #   las 6 plantillas (lanzamiento, anuncio, tips, countdown, caso, metricas)
+│       ├── reel-player.jsx      #   runner headless (window.DATA + window.__seek determinístico)
+│       └── vendor/              #   React, Babel standalone y fuentes woff2 (offline)
+├── examples/reels/              # schema de referencia del reel-data.json de cada plantilla
 ├── assets/
-│   └── reel-bg.mp3                       # música de fondo (reemplazable, sin copyright)
-└── AAAA-MM-DD/                           # una carpeta por reel publicado
-    ├── NN-data.json                      # datos de cada pantalla
-    ├── NN-imagen.png                     # render 1080×1920
-    └── caption.txt                       # caption usado (opcional)
+│   └── reel-bg.mp3              # música de fondo (reemplazable, sin copyright)
+└── AAAA-MM-DD/                  # una carpeta por reel publicado
+    ├── reel-data.json           # plantilla + acento + contenido del día (la "fuente" del reel)
+    └── caption.txt              # caption usado
 
 log/
-└── temas-publicados.json                 # dedup: qué (feature, ángulo, tema) ya se publicó + post_id
+└── temas-publicados.json        # dedup: (feature, ángulo, tema) publicados + plantilla + post_id
 ```
 
 ## Flujo de un reel
 
 ```bash
-# 1) renderizar cada pantalla (vertical 1080×1920)
-python3 posts/render.py posts/AAAA-MM-DD/NN-data.json -o posts/AAAA-MM-DD/NN-imagen.png
+# 1) escribir posts/AAAA-MM-DD/reel-data.json
+#    (elegir plantilla con posts/templates/reels-manifest.json;
+#     copiar el schema de posts/examples/reels/<plantilla>.json)
 
-# 2) componer el reel (toma los NN-imagen.png en orden, transición slideup + música)
-python3 posts/make_reel.py posts/AAAA-MM-DD -o posts/AAAA-MM-DD/reel.mp4
+# 2) renderizar la animación completa
+python3 posts/render_reel.py posts/AAAA-MM-DD/reel-data.json -o posts/AAAA-MM-DD/reel.mp4
 ```
 
-Salida: H.264, 1080×1920, 30 fps, `+faststart`, AAC. ~3 s por pantalla
-(portada +0.6 s, cierre +1.4 s), transición 0.6 s. El MP4 **no se commitea**
-(solo JSONs y PNGs, para no inflar el repo).
+Salida: H.264, 1080×1920, 30 fps, `+faststart`, AAC, con fade de audio. El render
+es **determinístico**: mismo JSON → mismo video, frame a frame. El MP4 **no se
+commitea** (`.gitignore`); al repo van `reel-data.json` + `caption.txt`.
 
-## Reglas del contenido
+## Las 6 plantillas
 
-- 4 a 6 pantallas por reel; la portada es siempre tipo `announce`.
-- Los JSON respetan el schema de `posts/examples/` — no inventar campos.
-- CTAs de reel ("Mirá el reel completo", "Guardalo"), nunca "pasá las slides".
-- Dedup por `(feature_principal, angulo)` contra `log/temas-publicados.json`;
-  la reserva se pushea a main ANTES de publicar.
+| id | tag | estructura |
+|---|---|---|
+| `lanzamiento` | Anuncio | palabras que golpean una a una → titular → puntos → CTA |
+| `anuncio` | Anuncio | titular por máscaras → palabra gigante de fondo → detalle → CTA |
+| `tips` | Tips | hook → 3-5 tips con dígito gigante → CTA de guardado |
+| `countdown` | Tips | hook → cuenta regresiva N…1 con número gigante → CTA |
+| `caso` | Caso | contexto → problema → métrica count-up → resultado → CTA |
+| `metricas` | Caso | título → serie de count-ups → cierre + CTA |
+
+Detalles, límites de texto y guía de acentos: `posts/templates/reels-manifest.json`.
+
+## Editar las plantillas
+
+La fuente de verdad de diseño es el proyecto **"AplicaIA" en claude.ai/design**
+(archivos con el mismo nombre). Para actualizar:
+
+1. Bajar el/los `.jsx` modificados a `posts/templates/reel-src/`.
+2. `python3 posts/build_player.py` (regenera `reel-player.html`).
+3. Probar: `python3 posts/render_reel.py posts/examples/reels/anuncio.json -o /tmp/test.mp4`.
+4. Commit de `reel-src/` + `reel-player.html` juntos.
 
 ## Requisitos del entorno
 
 - Playwright con chromium (la imagen de la routine lo trae horneado;
   `posts/bootstrap.sh` pinea la versión de playwright que matchea).
-- ffmpeg: del sistema o vía `pip install imageio-ffmpeg` (el entorno evita apt).
+- ffmpeg: `bootstrap.sh` lo resuelve vía `pip install imageio-ffmpeg` (sin apt).
 - `GH_TOKEN` en las variables del environment para el push del dedup.

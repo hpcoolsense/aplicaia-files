@@ -25,11 +25,12 @@ fi
 cd "$REPO_DIR"
 git pull origin main
 
-echo "== [bootstrap] archivos base =="
-test -f posts/render.py || { echo "FATAL: falta render.py"; exit 1; }
-test -f posts/templates/instagram-templates-reel.html || { echo "FATAL: falta template reel"; exit 1; }
-test -f posts/make_reel.py || { echo "FATAL: falta make_reel.py"; exit 1; }
-test -d posts/examples || { echo "FATAL: faltan examples"; exit 1; }
+echo "== [bootstrap] archivos base (pipeline reel animado) =="
+test -f posts/render_reel.py || { echo "FATAL: falta render_reel.py"; exit 1; }
+test -f posts/templates/reel-player.html || { echo "FATAL: falta reel-player.html (correr posts/build_player.py)"; exit 1; }
+test -f posts/templates/reels-manifest.json || { echo "FATAL: falta reels-manifest.json"; exit 1; }
+test -d posts/examples/reels || { echo "FATAL: faltan examples/reels"; exit 1; }
+test -f posts/assets/reel-bg.mp3 || { echo "FATAL: falta la música reel-bg.mp3"; exit 1; }
 
 echo "== [bootstrap] playwright (pin que matchea el chromium de la imagen) =="
 # Probamos lanzar chromium; si falla, vamos bajando a versiones que matcheen el
@@ -51,6 +52,11 @@ if ! python3 -c "import playwright" 2>/dev/null || ! launch_ok; then
 else
   echo "  -> playwright actual ya lanza chromium OK"
 fi
+
+echo "== [bootstrap] ffmpeg (estático vía pip; el entorno evita apt) =="
+python3 -c "import imageio_ffmpeg" 2>/dev/null || pip3 install --quiet imageio-ffmpeg
+python3 -c "import imageio_ffmpeg; print('  -> ffmpeg:', imageio_ffmpeg.get_ffmpeg_exe())" \
+  || { echo "FATAL: no ffmpeg"; exit 1; }
 
 echo "== [bootstrap] git config =="
 git config user.email "tomyrengi@gmail.com"
