@@ -1,13 +1,16 @@
 #!/usr/bin/env python3
 """
-AplicaIA Instagram Template Renderer
-====================================
+AplicaIA Instagram Template Renderer (Reels)
+============================================
 
-Toma un JSON con datos de un post, lo renderiza usando templates/instagram-templates.html
-y guarda un PNG 1080x1080 listo para subir a Instagram.
+Toma un JSON con datos de una pantalla, lo renderiza usando
+templates/instagram-templates-reel.html y guarda un PNG 1080x1920 (9:16).
+
+El modo feed 1080x1080 se removió junto con sus plantillas de publicación;
+este renderer produce únicamente pantallas verticales de Reel.
 
 Uso:
-    python render.py examples/stat-example.json -o renders/post.png
+    python render.py examples/stat-example.json -o posts/AAAA-MM-DD/01-imagen.png
     cat data.json | python render.py - -o out.png   # stdin
     python render.py data.json                       # default: renders/<type>-<timestamp>.png
 
@@ -23,15 +26,11 @@ import time
 from pathlib import Path
 
 ROOT = Path(__file__).parent
-TEMPLATE = ROOT / "templates" / "instagram-templates.html"
+TEMPLATE = ROOT / "templates" / "instagram-templates-reel.html"
 
 
-def render(data: dict, out_path: Path, template: Path = TEMPLATE, height: int = 1080, scale: int = 2) -> Path:
-    """Renderiza el dict `data` al PNG `out_path`. Retorna el path final.
-
-    template/height/scale permiten el modo reel (1080x1920 @1x) sin romper
-    el modo feed por defecto (1080x1080 @2x).
-    """
+def render(data: dict, out_path: Path, template: Path = TEMPLATE, height: int = 1920, scale: int = 1) -> Path:
+    """Renderiza el dict `data` al PNG `out_path`. Retorna el path final."""
     try:
         from playwright.sync_api import sync_playwright
     except ImportError:
@@ -87,22 +86,17 @@ def main():
     ap = argparse.ArgumentParser(description="Renderiza un post de Instagram AplicaIA desde JSON.")
     ap.add_argument("input", help="Path a JSON, o '-' para stdin")
     ap.add_argument("-o", "--output", help="PNG de salida (default: renders/<type>-<timestamp>.png)")
-    ap.add_argument("--template", help="HTML de plantilla (default: templates/instagram-templates.html)")
-    ap.add_argument("--height", type=int, default=1080, help="Alto del canvas en px (1080 feed / 1920 reel)")
-    ap.add_argument("--scale", type=int, default=2, help="device_scale_factor (2 = @2x)")
+    ap.add_argument("--template", help="HTML de plantilla (default: templates/instagram-templates-reel.html)")
+    ap.add_argument("--height", type=int, default=1920, help="Alto del canvas en px (default 1920, reel 9:16)")
+    ap.add_argument("--scale", type=int, default=1, help="device_scale_factor (default 1)")
     ap.add_argument("--reel", action="store_true",
-                    help="Atajo: template reel + alto 1920 + scale 1 (salida 1080x1920)")
+                    help="Compatibilidad: el modo reel ya es el default; este flag no cambia nada")
     args = ap.parse_args()
 
     data = load_data(args.input)
     out = Path(args.output) if args.output else default_outpath(data)
-    if args.reel:
-        template = ROOT / "templates" / "instagram-templates-reel.html"
-        height, scale = 1920, 1
-    else:
-        template = Path(args.template) if args.template else TEMPLATE
-        height, scale = args.height, args.scale
-    render(data, out, template=template, height=height, scale=scale)
+    template = Path(args.template) if args.template else TEMPLATE
+    render(data, out, template=template, height=args.height, scale=args.scale)
 
 
 if __name__ == "__main__":

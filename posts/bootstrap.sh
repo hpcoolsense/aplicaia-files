@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Bootstrap idempotente para la Routine "Carrusel diario Claude".
+# Bootstrap idempotente para la Routine "Reel diario Claude".
 # Reemplaza al Paso 0 inline: el environment remoto arranca vacío en cada corrida.
 #
 # Uso desde la routine:
@@ -27,7 +27,8 @@ git pull origin main
 
 echo "== [bootstrap] archivos base =="
 test -f posts/render.py || { echo "FATAL: falta render.py"; exit 1; }
-test -f posts/templates/instagram-templates.html || { echo "FATAL: falta template"; exit 1; }
+test -f posts/templates/instagram-templates-reel.html || { echo "FATAL: falta template reel"; exit 1; }
+test -f posts/make_reel.py || { echo "FATAL: falta make_reel.py"; exit 1; }
 test -d posts/examples || { echo "FATAL: faltan examples"; exit 1; }
 
 echo "== [bootstrap] playwright (pin que matchea el chromium de la imagen) =="
