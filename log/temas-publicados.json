@@ -736,5 +736,30 @@
     ],
     "post_id": "6a4db8368f8a97706b040284",
     "instagram_url": "https://www.instagram.com/reel/Dag_MRFDMRj/"
+  },
+  {
+    "fecha": "2026-07-08",
+    "tema": "Sonnet 5 se metió en la pelea del código: casi el tope, a menos de la mitad del precio",
+    "formato": "reel",
+    "plantilla": "metricas",
+    "musica": "corp-jungle-bass",
+    "feature_principal": "sonnet-5",
+    "angulo": "benchmark",
+    "tendencia_origen": "Sonnet 5 benchmarks de agentes de código",
+    "tweet_ancla": {
+      "url": "https://www.anthropic.com/news/claude-sonnet-5",
+      "autor": "Anthropic (anuncio oficial)",
+      "fecha_original": "2026-07-07",
+      "horas_antiguedad": null,
+      "likes": null,
+      "retweets": null,
+      "replies": null
+    },
+    "tweets_referencia": [
+      "https://www.anthropic.com/news/claude-sonnet-5"
+    ],
+    "post_id": "6a4dc5523da45d65acf27814",
+    "instagram_url": "https://www.instagram.com/reel/DahFsxhjJQQ/",
+    "_nota": "Reconciliado a mano el 2026-07-09: la corrida del 2026-07-08 03:34 UTC publicó pero el proxy le bloqueó el push del log. plantilla/musica inferidas del contenido (benchmark con cifras)."
   }
 ]
