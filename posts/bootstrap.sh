@@ -27,6 +27,7 @@ git pull origin main
 
 echo "== [bootstrap] archivos base (pipeline reel animado) =="
 test -f posts/render_reel.py || { echo "FATAL: falta render_reel.py"; exit 1; }
+test -f posts/discover.py || { echo "FATAL: falta discover.py"; exit 1; }
 test -f posts/templates/reel-player.html || { echo "FATAL: falta reel-player.html (correr posts/build_player.py)"; exit 1; }
 test -f posts/templates/reels-manifest.json || { echo "FATAL: falta reels-manifest.json"; exit 1; }
 test -d posts/examples/reels || { echo "FATAL: faltan examples/reels"; exit 1; }
