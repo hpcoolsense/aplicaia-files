@@ -1,0 +1,18 @@
+{
+  "template": "anuncio",
+  "accent": "#FACC15",
+  "music": "corp-emotional-uplifting",
+  "content": {
+    "kicker": "¿Usás IA todos los días?",
+    "titulo": "La IA ahora\nte pone un\n*espejo.*",
+    "durTitulo": 3.5,
+    "fraseWord": "CLARO",
+    "frase": "Descubrí en qué te ayuda y cuánto la usás. *Sin vueltas.*",
+    "durFrase": 3.3,
+    "detalle": "Ponés horas sin IA y elegís qué tareas seguís haciendo *vos mismo.*",
+    "durDetalle": 3.4,
+    "cta": "Guardá este reel 🔖",
+    "handle": "@aplicai.ia.ar",
+    "durCta": 3.0
+  }
+}

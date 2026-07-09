@@ -787,5 +787,32 @@
     ],
     "post_id": "6a4fb455c50d984945f430d2",
     "instagram_url": "https://www.instagram.com/reel/Dak3TN8Etgm/"
+  },
+  {
+    "fecha": "2026-07-09",
+    "tema": "Claude ahora te muestra un espejo de cómo usás la IA (y te deja ponerle límites)",
+    "formato": "reel",
+    "plantilla": "anuncio",
+    "musica": "corp-emotional-uplifting",
+    "feature_principal": "otro",
+    "angulo": "caso-de-uso",
+    "fuente_descubrimiento": "websearch",
+    "ancla": {
+      "url": "https://www.anthropic.com/news/reflect-with-claude",
+      "titulo": "A new way to reflect on how you use Claude (Reflect)",
+      "autor": "Anthropic",
+      "fecha_original": "2026-07-09",
+      "horas_antiguedad": 6,
+      "puntos": null,
+      "comentarios": null
+    },
+    "fuentes_referencia": [
+      "https://www.anthropic.com/news/reflect-with-claude",
+      "https://techcrunch.com/2026/07/09/anthropics-new-claude-feature-is-quietly-selling-you-on-ai/",
+      "https://www.testingcatalog.com/anthropic-adds-usage-reflection-dashboard-to-claude-for-all-users/",
+      "https://www.techbuzz.ai/articles/anthropic-launches-claude-wrapped-for-ai-usage-analytics"
+    ],
+    "post_id": null,
+    "instagram_url": null
   }
 ]
