@@ -2,6 +2,13 @@
   "version": 1,
   "descripcion": "Catálogo de plantillas de reel animado. La routine elige UNA por reel según el ángulo del tema, completa su content (ver posts/examples/reels/<id>.json) y renderiza con: python3 posts/render_reel.py <json> -o <reel.mp4>",
   "principio_fundamental": "La plantilla es un MOLDE ESTÉTICO, no un formulario a completar. El contenido sale del TEMA del día y de sus fuentes; la plantilla solo aporta el ritmo visual. El reel cuenta UNA historia coherente de punta a punta (hook → desarrollo → cierre): leídas en orden, las escenas tienen que sonar como un guión fluido que alguien sin contexto entiende. Los textos de los examples/defaults son SOLO placeholders de formato — jamás copies su contenido ni sus números.",
+  "tono_y_voz": [
+    "PÚBLICO: dueños de PyMEs, emprendedores y curiosos de la IA SIN base técnica. NO le hablás a programadores.",
+    "CERO JERGA: prohibido usar términos técnicos sin traducir (MCP, API, SDK, benchmark, tokens, deploy, agente, endpoint, repo, prompt engineering...). Regla de oro: si el dueño de un kiosco no lo entiende en 2 segundos, reescribilo. Ejemplos: 'MCP' → 'conectar la IA con tus aplicaciones'; 'agente' → 'una IA que trabaja sola'; 'benchmark' → 'pruebas de rendimiento'; 'Claude Code' → 'la IA que programa por vos'.",
+    "BENEFICIO > TECNOLOGÍA: no cuentes QUÉ salió, contá QUÉ GANA el que está mirando. 'Salió Claude X con 1M de contexto' → 'La IA ahora lee TODOS tus documentos de una sola vez'. Cada escena responde: ¿y a mí qué?",
+    "PUNCH VENDEDOR: hooks de curiosidad, urgencia y FOMO — 'Tu competencia ya lo está usando', 'Mientras dormías, la IA aprendió a...', 'Nadie te está contando esto'. Superlativos y energía alta: SÍ. Datos o cifras inventadas: NO (la regla de números reales de las fuentes sigue firme — el humo está en la energía, nunca en los hechos).",
+    "FRASES CORTAS que golpean. Una idea por escena. Como se lo contás a un amigo en un asado, no como un paper. Nada de 'permite optimizar procesos': decí 'te ahorra horas todos los días'."
+  ],
   "reglas_de_redaccion": [
     "PROHIBIDO inventar números, métricas, porcentajes o 'datos' para llenar una plantilla: cada cifra del reel tiene que existir explícitamente en el ancla o sus fuentes. Si el tema no trae números reales, usá una plantilla narrativa (anuncio, lanzamiento, tips) en vez de caso/metricas.",
     "CTA del cierre: una acción que el espectador pueda hacer AHÍ MISMO — 'Guardá este reel', 'Seguinos para más', 'Compartilo con tu equipo', 'Link en la bio'. PROHIBIDO 'Mirá el reel completo' o variantes (ya lo está viendo) y PROHIBIDO 'pasá las slides'/'deslizá'.",

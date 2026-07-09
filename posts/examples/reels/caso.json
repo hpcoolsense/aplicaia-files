@@ -3,21 +3,21 @@
   "accent": "#FACC15",
   "music": "corp-business-uplifting",
   "content": {
-    "kicker": "Caso real · Developer",
-    "cliente": "Un dev migró 40 repos legacy con Claude Code en una semana.",
+    "kicker": "Caso real · PyME",
+    "cliente": "Una distribuidora cargaba 900 pedidos a mano por semana.",
     "durIntro": 3.0,
-    "problema": "6 meses\nde migración\n*a mano.*",
+    "problema": "6 horas\npor día\n*tiradas.*",
     "durProblema": 3.2,
     "metric": {
       "prefix": "-",
-      "value": 95,
+      "value": 87,
       "suffix": "%",
-      "label": "del tiempo estimado de migración",
+      "label": "de tiempo en tareas repetitivas",
       "dur": 3.4
     },
-    "resultado": "De 6 meses a *una semana.*",
+    "resultado": "Hoy ese tiempo lo usan para *vender más.*",
     "durResultado": 3.0,
-    "cta": "Tu caso puede ser el próximo",
+    "cta": "Tu negocio puede ser el próximo",
     "handle": "@aplicai.ia.ar",
     "durCta": 2.8
   }

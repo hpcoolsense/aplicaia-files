@@ -4,23 +4,23 @@
   "music": "trap-powerful-advertising",
   "content": {
     "hookTop": "Ojo con esto",
-    "hook": "*3 errores* al usar IA en tu negocio",
+    "hook": "*3 errores* que te hacen perder plata con la IA",
     "durHook": 2.8,
     "items": [
       {
-        "text": "Usar el modelo equivocado para cada tarea",
+        "text": "Pagar herramientas que nadie usa en tu equipo",
         "dur": 3.0
       },
       {
-        "text": "No darle contexto de tu negocio",
+        "text": "Copiar a la competencia sin entender qué hacés",
         "dur": 3.0
       },
       {
-        "text": "Empezar por la herramienta y no por el problema",
+        "text": "Esperar 'a que madure' mientras otros ya facturan con IA",
         "dur": 3.0
       }
     ],
-    "cierre": "El #1 es el más caro",
+    "cierre": "El #1 duele",
     "handle": "@aplicai.ia.ar",
     "durCierre": 2.8
   }

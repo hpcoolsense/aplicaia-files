@@ -3,33 +3,33 @@
   "accent": "#FACC15",
   "music": "corp-jungle-bass",
   "content": {
-    "kicker": "Benchmark",
-    "titulo": "Fable 5\nvs *GPT-5.5*",
+    "kicker": "Resultados reales",
+    "titulo": "90 días\ncon *IA aplicada*",
     "durTitulo": 2.8,
     "metrics": [
       {
         "prefix": "",
-        "value": 94,
-        "suffix": "%",
-        "label": "en SWE-bench (código real)",
+        "value": 14,
+        "suffix": " hs",
+        "label": "ahorradas por semana",
         "dur": 3.0
       },
       {
         "prefix": "",
         "value": 3,
         "suffix": "×",
-        "label": "menos errores en agentes largos",
+        "label": "más rápido respondiendo clientes",
         "dur": 3.0
       },
       {
         "prefix": "",
-        "value": 1,
-        "suffix": "M",
-        "label": "tokens de contexto",
+        "value": 0,
+        "suffix": "",
+        "label": "errores de carga",
         "dur": 3.0
       }
     ],
-    "cierre": "Los números *hablan.*",
+    "cierre": "Los números *no mienten.*",
     "cta": "Pedí tu diagnóstico",
     "handle": "@aplicai.ia.ar",
     "durCierre": 3.2

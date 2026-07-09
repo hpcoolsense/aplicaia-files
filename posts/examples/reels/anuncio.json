@@ -3,15 +3,15 @@
   "accent": "#FACC15",
   "music": "tech-time-technology",
   "content": {
-    "kicker": "Nuevo de Anthropic",
-    "titulo": "Claude ahora\ntrabaja con vos.\n*En equipo.*",
+    "kicker": "Atención dueños de negocio",
+    "titulo": "La IA que\ntrabaja mientras\n*vos dormís.*",
     "durTitulo": 3.2,
-    "fraseWord": "COWORK",
-    "frase": "Claude Cowork llega a la web y al *celular.*",
+    "fraseWord": "SOLA",
+    "frase": "Claude ahora hace tareas completas *sin que estés.*",
     "durFrase": 3.0,
-    "detalle": "Sesiones compartidas, contexto común y tareas en paralelo.",
+    "detalle": "Le pedís algo a la mañana y a la noche está listo. Así de simple.",
     "durDetalle": 2.8,
-    "cta": "Conocé cómo",
+    "cta": "Seguinos para más",
     "handle": "@aplicai.ia.ar",
     "durCta": 2.8
   }

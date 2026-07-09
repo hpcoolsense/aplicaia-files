@@ -4,27 +4,27 @@
   "music": "lofi-walk",
   "content": {
     "hookTop": "Guardá esto",
-    "hook": "5 skills de Claude que podés *usar hoy*",
+    "hook": "5 cosas que la IA puede hacer *por tu negocio hoy*",
     "durHook": 2.8,
     "tips": [
       {
-        "text": "Genera documentos Word y Excel reales",
+        "text": "Contestar a tus clientes mientras dormís",
         "dur": 2.8
       },
       {
-        "text": "Arma presentaciones desde un prompt",
+        "text": "Armar presupuestos en segundos",
         "dur": 2.8
       },
       {
-        "text": "Analiza PDFs de cientos de páginas",
+        "text": "Escribir tus publicaciones por vos",
         "dur": 2.8
       },
       {
-        "text": "Automatiza reportes recurrentes",
+        "text": "Ordenar tu bandeja de mails sola",
         "dur": 2.8
       },
       {
-        "text": "Crea tus propias skills a medida",
+        "text": "Avisarte antes de perder un cliente",
         "dur": 2.8
       }
     ],
