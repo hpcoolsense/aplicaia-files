@@ -1,0 +1,17 @@
+{
+  "template": "lanzamiento",
+  "accent": "#FACC15",
+  "music": "tech-space-age",
+  "content": {
+    "hookWords": "Se acabó\nla tarea\n*aburrida.*",
+    "durHook": 2.8,
+    "kicker": "Recién lanzado",
+    "titulo": "Ahora la IA maneja tus mails y tu agenda sola. Vos solo *le pedís.*",
+    "durTitulo": 3.4,
+    "puntos": "Te escribe y manda los mails\nTe ordena la agenda y los turnos\nTe crea y edita tus documentos",
+    "durPuntos": 4.8,
+    "cta": "Guardá este reel 🔖",
+    "handle": "@aplicai.ia.ar",
+    "durCta": 2.8
+  }
+}

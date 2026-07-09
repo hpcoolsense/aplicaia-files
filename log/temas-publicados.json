@@ -761,5 +761,31 @@
     "post_id": "6a4dc5523da45d65acf27814",
     "instagram_url": "https://www.instagram.com/reel/DahFsxhjJQQ/",
     "_nota": "Reconciliado a mano el 2026-07-09: la corrida del 2026-07-08 03:34 UTC publicó pero el proxy le bloqueó el push del log. plantilla/musica inferidas del contenido (benchmark con cifras)."
+  },
+  {
+    "fecha": "2026-07-09",
+    "tema": "Ahora la IA te escribe y manda los mails, te ordena la agenda y te crea los archivos de tu oficina",
+    "formato": "reel",
+    "plantilla": "lanzamiento",
+    "musica": "tech-space-age",
+    "feature_principal": "mcp",
+    "angulo": "anuncio-oficial",
+    "tendencia_origen": "Claude Microsoft 365 write tools (conectar la IA con tus apps)",
+    "tweet_ancla": {
+      "url": "https://support.claude.com/en/articles/12138966-release-notes",
+      "autor": "Anthropic (release notes oficiales)",
+      "fecha_original": "2026-07-07",
+      "horas_antiguedad": 48,
+      "likes": null,
+      "retweets": null,
+      "replies": null
+    },
+    "tweets_referencia": [
+      "https://claude.com/connectors/microsoft-365",
+      "https://techcommunity.microsoft.com/discussions/microsoft-365/using-the-microsoft-365-connector-for-claude/4509576",
+      "https://office365itpros.com/2026/04/08/microsoft-365-connector-for-claude/"
+    ],
+    "post_id": null,
+    "instagram_url": null
   }
 ]
