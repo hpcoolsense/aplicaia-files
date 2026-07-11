@@ -29,6 +29,7 @@ Uso:
 
 import argparse
 import json
+import os
 import re
 import sys
 import time
@@ -36,10 +37,12 @@ import urllib.error
 import urllib.parse
 import urllib.request
 from datetime import datetime, timedelta, timezone
-from email.utils import parsedate_to_datetime
 
 UA = "Mozilla/5.0 (compatible; AplicaIA-routine/1.0)"
 TIMEOUT = 20
+# La API de búsqueda de GitHub sin token limita a ~10 req/min POR IP, y el sandbox
+# comparte IP saliente → 403 casi seguro. Con token sube a 30 req/min por-token.
+GH_TOKEN = os.environ.get("GH_TOKEN", "").strip()
 
 # El tema tiene que ser del ecosistema Claude, no de "IA" en general.
 CLAVES = ("claude", "anthropic", "sonnet", "opus", "haiku", "fable", "cowork")
@@ -51,14 +54,17 @@ DEVTO_API = "https://dev.to/api/articles"
 GNEWS_RSS = "https://news.google.com/rss/search"
 
 
-def _get(url: str, timeout: int = TIMEOUT) -> bytes:
-    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "*/*"})
+def _get(url: str, timeout: int = TIMEOUT, headers: dict | None = None) -> bytes:
+    h = {"User-Agent": UA, "Accept": "*/*"}
+    if headers:
+        h.update(headers)
+    req = urllib.request.Request(url, headers=h)
     with urllib.request.urlopen(req, timeout=timeout) as r:
         return r.read()
 
 
-def _json(url: str) -> dict:
-    return json.loads(_get(url))
+def _json(url: str, headers: dict | None = None) -> dict:
+    return json.loads(_get(url, headers=headers))
 
 
 def _sobre_claude(texto: str) -> bool:
@@ -143,8 +149,10 @@ def fuente_github(horas: int) -> list[dict]:
     params = urllib.parse.urlencode({
         "q": f"claude created:>{desde}", "sort": "stars", "order": "desc", "per_page": 30,
     })
+    # con el token del repo, la búsqueda deja de dar 403 por rate-limit compartido
+    gh_headers = {"Authorization": f"Bearer {GH_TOKEN}"} if GH_TOKEN else None
     out = []
-    for r in _json(f"{GH_API}?{params}").get("items", []):
+    for r in _json(f"{GH_API}?{params}", headers=gh_headers).get("items", []):
         texto = f"{r['name']} {r.get('description') or ''}"
         estrellas = r.get("stargazers_count", 0)
         # ruido: repos sin tracción o forks de juguete
