@@ -814,5 +814,32 @@
     ],
     "post_id": "6a4fca71cf3db4a13995e444",
     "instagram_url": "https://www.instagram.com/reel/DalCGPaAQX2/"
+  },
+  {
+    "fecha": "2026-07-11",
+    "tema": "Modo Aprendizaje de Claude para todos: la IA te enseña a hacerlo en vez de hacértelo",
+    "formato": "reel",
+    "plantilla": "tips",
+    "musica": "lofi-morning-ig60",
+    "feature_principal": "learning-mode",
+    "angulo": "anuncio-oficial",
+    "fuente_descubrimiento": "websearch",
+    "ancla": {
+      "url": "https://www.anthropic.com/news/learning-mode",
+      "titulo": "Claude Learning Mode disponible para todos los usuarios",
+      "autor": "Anthropic / cobertura Engadget, VentureBeat",
+      "fecha_original": "2026-07",
+      "horas_antiguedad": null,
+      "puntos": null,
+      "likes": null,
+      "comentarios": null
+    },
+    "fuentes_referencia": [
+      "https://www.engadget.com",
+      "https://venturebeat.com"
+    ],
+    "post_id": "6a5218cbdb7304ad445e30bf",
+    "instagram_url": null,
+    "_nota": "Publicado a mano el 2026-07-11: la corrida v6.8 renderizó y subió a Zernio pero abortó en el push del log (PUSH_MODE=none). Rescatado desde la sesión local con push access."
   }
 ]
