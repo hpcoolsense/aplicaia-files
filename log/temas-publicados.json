@@ -841,5 +841,29 @@
     "post_id": "6a5218cbdb7304ad445e30bf",
     "instagram_url": null,
     "_nota": "Publicado a mano el 2026-07-11: la corrida v6.8 renderizó y subió a Zernio pero abortó en el push del log (PUSH_MODE=none). Rescatado desde la sesión local con push access."
+  },
+  {
+    "fecha": "2026-07-12",
+    "tema": "El truco que le bajó 77% el costo de usar IA (mismo trabajo, 4 veces más barato)",
+    "formato": "reel",
+    "plantilla": "caso",
+    "musica": "tech-time-technology",
+    "feature_principal": "claude-code",
+    "angulo": "caso-de-uso",
+    "fuente_descubrimiento": "devto",
+    "ancla": {
+      "url": "https://dev.to/rguiu/what-i-learned-cutting-claude-codes-token-bill-by-77-3ef",
+      "titulo": "What I Learned Cutting Claude Code's Token Bill by 77%",
+      "autor": "rguiu",
+      "fecha_original": "2026-07-12",
+      "horas_antiguedad": 21,
+      "estrellas": null,
+      "puntos": null,
+      "likes": 4,
+      "comentarios": 1
+    },
+    "fuentes_referencia": [],
+    "post_id": null,
+    "instagram_url": null
   }
 ]

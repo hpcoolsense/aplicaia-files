@@ -1,0 +1,24 @@
+{
+  "template": "caso",
+  "accent": "#FACC15",
+  "music": "tech-time-technology",
+  "content": {
+    "kicker": "Caso real",
+    "cliente": "Usaba la IA para laburar todos los días.\nPero le repetía los mismos datos una y otra vez.",
+    "durIntro": 3.4,
+    "problema": "Le salía\n*carísimo.*",
+    "durProblema": 2.8,
+    "metric": {
+      "prefix": "-",
+      "value": 77,
+      "suffix": "%",
+      "label": "en lo que pagaba por la misma IA",
+      "dur": 3.4
+    },
+    "resultado": "Frenó la repetición.\nMismo resultado, *4 veces más barato.*",
+    "durResultado": 3.2,
+    "cta": "Guardá este reel 🔖",
+    "handle": "@aplicai.ia.ar",
+    "durCta": 2.8
+  }
+}
