@@ -1,0 +1,17 @@
+{
+  "template": "lanzamiento",
+  "accent": "#FACC15",
+  "music": "epic-cinematic-trailer",
+  "content": {
+    "hookWords": "El trabajo\nmás aburrido\n*ya no es tuyo.*",
+    "durHook": 2.8,
+    "kicker": "Recién lanzado",
+    "titulo": "Anthropic soltó asistentes de IA que hacen *solos* la parte de los números de tu negocio.",
+    "durTitulo": 3.4,
+    "puntos": "Te cierran el mes contable\nCuadran la caja y los movimientos\nRevisan tus balances buscando errores",
+    "durPuntos": 4.4,
+    "cta": "Guardá este reel 🔖",
+    "handle": "@aplicai.ia.ar",
+    "durCta": 2.6
+  }
+}

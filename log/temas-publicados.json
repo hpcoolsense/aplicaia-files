@@ -868,5 +868,32 @@
     ],
     "post_id": "6a5454dca8008500eacfc2ed",
     "instagram_url": null
+  },
+  {
+    "fecha": "2026-07-13",
+    "tema": "Anthropic lanzó asistentes de IA listos para el trabajo de números de tu negocio (cerrar el mes, cuadrar la caja, revisar balances)",
+    "formato": "reel",
+    "plantilla": "lanzamiento",
+    "musica": "epic-cinematic-trailer",
+    "feature_principal": "otro",
+    "angulo": "anuncio-oficial",
+    "fuente_descubrimiento": "devto",
+    "ancla": {
+      "url": "https://www.anthropic.com/news/finance-agents",
+      "titulo": "Agents for financial services",
+      "autor": "Anthropic",
+      "fecha_original": "2026-05-05",
+      "horas_antiguedad": 1656,
+      "estrellas": null,
+      "puntos": null,
+      "likes": null,
+      "comentarios": null
+    },
+    "fuentes_referencia": [
+      "https://dev.to/techshaala/save-hours-with-3-finance-agents-2ij4",
+      "https://www.anthropic.com/news/claude-for-financial-services"
+    ],
+    "post_id": null,
+    "instagram_url": null
   }
 ]
