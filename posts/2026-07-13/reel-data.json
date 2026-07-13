@@ -1,0 +1,27 @@
+{
+  "template": "countdown",
+  "accent": "#FACC15",
+  "music": "trap-500-sale",
+  "content": {
+    "hookTop": "Ojo, dueño de PyME",
+    "hook": "*3 cosas* que ya no hacés a mano en tu Excel",
+    "durHook": 3.0,
+    "items": [
+      {
+        "text": "Le hablás normal y te arma las *fórmulas* solo",
+        "dur": 3.2
+      },
+      {
+        "text": "Te caza el *error* que descuadra toda la planilla",
+        "dur": 3.2
+      },
+      {
+        "text": "Ordena el quilombo de datos y te da los *números listos*",
+        "dur": 3.4
+      }
+    ],
+    "cierre": "*Guardalo* y dejá de pelearte con el Excel",
+    "handle": "@aplicai.ia.ar",
+    "durCierre": 3.0
+  }
+}
