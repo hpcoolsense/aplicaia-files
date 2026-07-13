@@ -6,8 +6,14 @@ Carga posts/templates/reel-player.html (autocontenido) en chromium headless,
 avanza el playhead frame a frame (window.__seek es determinístico: mismo JSON
 → mismo video) y compone el MP4 con ffmpeg + música de fondo.
 
+Además genera la PORTADA (<output>-cover.jpg, 1080×1920): el frame del hook ya
+entrado del todo. Va a Instagram como `instagramThumbnail` — sin ella IG usa el
+frame 0, que con tipografía cinética es negro. Y aplica un piso de duración de
+10s: si el guión queda corto, sostiene el cierre (CTA) hasta llegar al mínimo.
+
 Uso:
     python3 posts/render_reel.py posts/AAAA-MM-DD/reel-data.json -o posts/AAAA-MM-DD/reel.mp4
+    # deja también posts/AAAA-MM-DD/reel-cover.jpg (portada para instagramThumbnail)
 
 JSON de entrada (ver posts/examples/reels/ y posts/templates/reels-manifest.json):
     {
@@ -26,6 +32,7 @@ Requiere: playwright con chromium; ffmpeg en PATH o `pip install imageio-ffmpeg`
 import argparse
 import json
 import math
+import os
 import shutil
 import subprocess
 import sys
@@ -39,6 +46,10 @@ DEFAULT_AUDIO = ROOT / "assets" / "reel-bg.mp3"
 
 TEMPLATE_IDS = {"lanzamiento", "anuncio", "tips", "countdown", "caso", "metricas"}
 W, H = 1080, 1920
+# Piso duro de duración: menos de esto no alcanza para explicar la idea.
+# Si el guión queda corto, se sostiene el último frame (el cierre con CTA)
+# hasta llegar al mínimo — pero lo correcto es escribir escenas con sustancia.
+MIN_TOTAL = 10.0
 
 
 def find_ffmpeg():
@@ -52,8 +63,17 @@ def find_ffmpeg():
         return None
 
 
-def render_frames(data: dict, frames_dir: Path, fps: int) -> dict:
-    """Renderiza todos los frames PNG. Devuelve window.__reel (total, scenes)."""
+def cover_time(info: dict) -> float:
+    """Momento de la portada: la escena 1 (hook) ya entró del todo, antes del
+    flash de transición. Las animaciones son solo de entrada (ease-out), así
+    que cerca del final de la escena el frame está completo."""
+    sc = info["scenes"][0]
+    start, dur = float(sc["start"]), float(sc["dur"])
+    return start + max(0.6 * dur, dur - 0.35)
+
+
+def render_frames(data: dict, frames_dir: Path, fps: int, cover: Path | None) -> dict:
+    """Renderiza todos los frames PNG (+ la portada). Devuelve window.__reel."""
     try:
         from playwright.sync_api import sync_playwright
     except ImportError:
@@ -65,7 +85,10 @@ def render_frames(data: dict, frames_dir: Path, fps: int) -> dict:
     frames_dir.mkdir(parents=True, exist_ok=True)
 
     with sync_playwright() as p:
-        browser = p.chromium.launch()
+        # REEL_CHROMIUM: usar un chromium de sistema (p.ej. en la Raspberry) en
+        # vez del bundle de playwright. En el sandbox de la routine queda vacío.
+        exe = os.environ.get("REEL_CHROMIUM", "").strip() or None
+        browser = p.chromium.launch(executable_path=exe) if exe else p.chromium.launch()
         ctx = browser.new_context(viewport={"width": W, "height": H}, device_scale_factor=1)
         page = ctx.new_page()
         page.add_init_script(f"window.DATA = {json.dumps(data, ensure_ascii=False)};")
@@ -84,6 +107,23 @@ def render_frames(data: dict, frames_dir: Path, fps: int) -> dict:
             page.screenshot(path=str(frames_dir / f"f_{i:05d}.png"))
             if i % (fps * 3) == 0:
                 print(f"  frame {i}/{n} ({t:.1f}s)")
+
+        # Portada para Instagram (instagramThumbnail): el hook completo.
+        # Sin esto IG usa el frame 0, que con tipografía cinética es negro.
+        if cover:
+            t_cov = cover_time(info)
+            page.evaluate("t => window.__seek(t)", t_cov)
+            page.screenshot(path=str(cover), type="jpeg", quality=92)
+            print(f"→ portada: {cover} (frame en t={t_cov:.2f}s)")
+
+        # Piso de duración: sostener el cierre (último frame) hasta MIN_TOTAL.
+        n_min = int(math.ceil(MIN_TOTAL * fps))
+        if n < n_min:
+            print(f"⚠ el guión dura {total:.1f}s < {MIN_TOTAL:.0f}s — se sostiene el cierre hasta {MIN_TOTAL:.0f}s")
+            last = frames_dir / f"f_{n - 1:05d}.png"
+            for i in range(n, n_min):
+                shutil.copyfile(last, frames_dir / f"f_{i:05d}.png")
+            info["padded_total"] = MIN_TOTAL
 
         browser.close()
     return info
@@ -121,6 +161,8 @@ def main():
     ap.add_argument("--fps", type=int, default=30)
     ap.add_argument("--audio", help=f"Pista de audio (default: {DEFAULT_AUDIO.name}; 'none' = mudo)")
     ap.add_argument("--keep-frames", action="store_true", help="No borrar los PNG intermedios")
+    ap.add_argument("--cover", help="Path de la portada JPEG (default: <output>-cover.jpg)")
+    ap.add_argument("--no-cover", action="store_true", help="No generar portada")
     args = ap.parse_args()
 
     raw = sys.stdin.read() if args.input == "-" else Path(args.input).read_text(encoding="utf-8")
@@ -150,6 +192,11 @@ def main():
     else:
         audio = DEFAULT_AUDIO
 
+    if args.no_cover:
+        cover = None
+    else:
+        cover = Path(args.cover) if args.cover else out.parent / (out.stem + "-cover.jpg")
+
     tmp = None
     if args.keep_frames:
         frames_dir = out.parent / (out.stem + "-frames")
@@ -157,8 +204,8 @@ def main():
         tmp = tempfile.TemporaryDirectory(prefix="reel-frames-")
         frames_dir = Path(tmp.name)
 
-    info = render_frames(data, frames_dir, args.fps)
-    total = float(info["total"])
+    info = render_frames(data, frames_dir, args.fps, cover)
+    total = float(info.get("padded_total") or info["total"])
     if total > 90:
         print(f"⚠ dura {total:.0f}s (>90s recomendado por Reels)")
 
@@ -168,7 +215,8 @@ def main():
 
     sz = out.stat().st_size
     print(f"✓ Reel OK: {out}  ({sz // 1024} KB, {total:.1f}s, {W}x{H}@{args.fps}fps, "
-          f"audio={'sí' if audio else 'mudo'})")
+          f"audio={'sí' if audio else 'mudo'}"
+          f"{', portada=' + cover.name if cover else ''})")
 
 
 if __name__ == "__main__":

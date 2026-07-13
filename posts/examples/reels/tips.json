@@ -3,7 +3,7 @@
   "accent": "#FACC15",
   "music": "lofi-walk",
   "content": {
-    "hookTop": "Guardá esto",
+    "hookTop": "Tip de Claude",
     "hook": "5 cosas que la IA puede hacer *por tu negocio hoy*",
     "durHook": 2.8,
     "tips": [
@@ -28,7 +28,7 @@
         "dur": 2.8
       }
     ],
-    "cierre": "Guardá este reel",
+    "cierre": "Comentá IA para más info",
     "handle": "@aplicai.ia.ar",
     "durCierre": 2.8
   }

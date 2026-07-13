@@ -7,16 +7,17 @@
     "CERO JERGA: prohibido usar términos técnicos sin traducir (MCP, API, SDK, benchmark, tokens, deploy, agente, endpoint, repo, prompt engineering...). Regla de oro: si el dueño de un kiosco no lo entiende en 2 segundos, reescribilo. Ejemplos: 'MCP' → 'conectar la IA con tus aplicaciones'; 'agente' → 'una IA que trabaja sola'; 'benchmark' → 'pruebas de rendimiento'; 'Claude Code' → 'la IA que programa por vos'.",
     "BENEFICIO > TECNOLOGÍA: no cuentes QUÉ salió, contá QUÉ GANA el que está mirando. 'Salió Claude X con 1M de contexto' → 'La IA ahora lee TODOS tus documentos de una sola vez'. Cada escena responde: ¿y a mí qué?",
     "PUNCH VENDEDOR: hooks de curiosidad, urgencia y FOMO — 'Tu competencia ya lo está usando', 'Mientras dormías, la IA aprendió a...', 'Nadie te está contando esto'. Superlativos y energía alta: SÍ. Datos o cifras inventadas: NO (la regla de números reales de las fuentes sigue firme — el humo está en la energía, nunca en los hechos).",
-    "FRASES CORTAS que golpean. Una idea por escena. Como se lo contás a un amigo en un asado, no como un paper. Nada de 'permite optimizar procesos': decí 'te ahorra horas todos los días'."
+    "FRASES CORTAS que golpean. Una idea por escena. Como se lo contás a un amigo en un asado, no como un paper. Nada de 'permite optimizar procesos': decí 'te ahorra horas todos los días'.",
+    "EN LOS TIPS (el contenido principal del canal): enseñá algo que el que mira pueda hacer HOY con Claude. Cada tip se entiende completo — qué hacer y qué gana — sin apurar el corte. Simple y vendedor no significa incompleto: la idea se explica entera."
   ],
   "reglas_de_redaccion": [
     "PROHIBIDO inventar números, métricas, porcentajes o 'datos' para llenar una plantilla: cada cifra del reel tiene que existir explícitamente en el ancla o sus fuentes. Si el tema no trae números reales, usá una plantilla narrativa (anuncio, lanzamiento, tips) en vez de caso/metricas.",
-    "CTA del cierre: una acción que el espectador pueda hacer AHÍ MISMO — 'Guardá este reel', 'Seguinos para más', 'Compartilo con tu equipo', 'Link en la bio'. PROHIBIDO 'Mirá el reel completo' o variantes (ya lo está viendo) y PROHIBIDO 'pasá las slides'/'deslizá'.",
+    "CTA del cierre: SIEMPRE exactamente 'Comentá IA para más info' — es EL llamado a la acción del canal, en todos los reels, sin excepción (la píldora ya es amarilla: no lleva marcas *así*). PROHIBIDO 'Guardá este reel', 'Guardalo', 'Seguinos', 'Link en la bio', 'Mirá el reel completo' y 'pasá las slides'/'deslizá'.",
     "Marcá *así* la palabra o frase a pintar con el acento amarillo. Usalo en 1-2 lugares por escena, no más.",
     "La puntuación pegada a una palabra marcada va DENTRO de las marcas: '*Aplicala.*' y no '*Aplicala*.' (si no, el punto queda flotando separado).",
     "Campos multilínea usan \\n para separar líneas. Líneas cortas pegan más fuerte que oraciones largas.",
     "Respetá los límites de caracteres: el texto se auto-achica para entrar, pero pasado el límite pierde impacto.",
-    "Cada escena/tip/métrica tiene su 'dur' en segundos (podés ajustar ±1s). Duración total recomendada: 12-35s. Nunca >90s.",
+    "Cada escena/tip/métrica tiene su 'dur' en segundos (podés ajustar ±1s). Duración total: MÍNIMO DURO 10s — abajo de eso no se explica bien la idea (el render sostiene el cierre hasta 10s como red, pero lo correcto es que el guión llegue solo). Recomendada: 15-35s, con escenas de 2.8-4.2s para que dé tiempo a leer y entender. Nunca >90s.",
     "El total del reel = suma de las dur. No agregues ni saques campos del schema del example."
   ],
   "accents": {
@@ -57,7 +58,7 @@
       "nombre": "Tips · Lista",
       "tag": "Tips",
       "estructura": "hook → 3-5 tips con dígito gigante de fondo → CTA de guardado",
-      "cuando_usarla": "Tutoriales y guías paso a paso (angulo: tutorial; también caso-de-uso desglosado en aprendizajes). CTA natural: 'Guardalo'.",
+      "cuando_usarla": "LA plantilla estrella del canal: tips de uso de Claude, tutoriales y guías paso a paso (angulo: tutorial; también caso-de-uso desglosado en aprendizajes). Cierre: 'Comentá IA para más info'.",
       "limites": {
         "hook": "≤60 chars",
         "tips": "3-5 items, ≤60 chars c/u",
